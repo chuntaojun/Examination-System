@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'exam'
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    elasticsearch 搜索引擎服务
+    compile group: 'org.springframework.data', name: 'spring-data-elasticsearch', version: '3.1.2.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
