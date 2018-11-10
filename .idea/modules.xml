@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.api.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.iml" group="com.tensor.org.api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" group="com.tensor.org.api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" group="com.tensor.org.api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.api.dao.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.api.dao.iml" group="com.tensor.org.api.dao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.api.exam.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.api.exam.iml" group="com.tensor.org.api.exam" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.api.user.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.api.user.iml" group="com.tensor.org.api.user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.dao.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.dao.iml" group="com.tensor.org.dao" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_main.iml" group="com.tensor.org.dao" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_test.iml" group="com.tensor.org.dao" />

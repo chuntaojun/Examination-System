@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'api'
-version 'unspecified'
+version = 'v0.0.1'
 
 sourceCompatibility = 1.8
 

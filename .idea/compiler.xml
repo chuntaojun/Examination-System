@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-com.tensor.org.api_main" target="1.8" />
+      <module name="api-com.tensor.org.api_test" target="1.8" />
+      <module name="api_main" target="1.8" />
+      <module name="api_test" target="1.8" />
       <module name="com.tensor.org.api_main" target="1.8" />
       <module name="com.tensor.org.api_test" target="1.8" />
       <module name="com.tensor.org.dao_main" target="1.8" />
