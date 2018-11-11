@@ -28,6 +28,14 @@ public interface StudentVOMapper {
     List<StudentVO> findAllByOrgId(@Param(value = "orgId") String orgId);
 
     /**
+     *
+     * @param orgId
+     * @param studentNo
+     * @return
+     */
+    int saveStuBelongOrg(@Param(value = "orgId") String orgId, @Param(value = "studentNo") String studentNo);
+
+    /**
      * 根据 {@link String orgId} 组织编号以及 {@link String studentNo} 学生编号退出该组织
      * @param orgId
      * @param studentNo

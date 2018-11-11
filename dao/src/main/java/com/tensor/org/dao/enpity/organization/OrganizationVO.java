@@ -23,7 +23,7 @@ public class OrganizationVO implements Serializable {
     @NonNull
     private String orgDoc;
 
-    @DateTimeFormat(pattern="yyyy-MM-ddHH:mm:ss")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createDate;
 
     private String orgLogo;
