@@ -20,6 +20,21 @@
 
     </select>
 
+    <!--新增用户账户信息-->
+    <insert id="saveUserVO">
+        insert into
+          user_account(user_id, nick_name, head_image_url, email, phone, password, register_date)
+        value (
+          #{userVO.userId},
+          #{userVO.nickName},
+          #{userVO.headImageUrl},
+          #{userVO.email},
+          #{userVO.phone},
+          #{userVO.password},
+          #{userVO.registerDate}
+        )
+    </insert>
+
     <!--用户信息更新-->
     <update id="updateUserVOSelective" parameterType="com.tensor.org.dao.enpity.user.UserVO">
         update user_account

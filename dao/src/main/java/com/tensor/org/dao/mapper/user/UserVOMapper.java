@@ -27,6 +27,13 @@ public interface UserVOMapper {
     List<UserVO> findAllUserVO();
 
     /**
+     * 新增用户账户
+     * @param userVO {@link UserVO}
+     * @return
+     */
+    int saveUserVO(@Param(value = "userVO") UserVO userVO);
+
+    /**
      * 更新用户账户信息
      * @param userVO
      * @return

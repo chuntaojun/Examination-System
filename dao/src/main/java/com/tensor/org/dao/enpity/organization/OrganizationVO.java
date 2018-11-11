@@ -28,6 +28,8 @@ public class OrganizationVO implements Serializable {
 
     private String orgLogo;
 
+    private String teacherNo;
+
     private List<StudentVO> studentVOS;
 
     private static final long serialVersionUID = -6411614573805541566L;

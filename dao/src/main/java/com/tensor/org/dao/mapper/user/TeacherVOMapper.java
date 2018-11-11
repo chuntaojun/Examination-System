@@ -14,8 +14,22 @@ import java.util.List;
 public interface TeacherVOMapper {
 
     /**
+     * 添加教师信息
+     * @param teacherVO {@link TeacherVO}
+     * @return
+     */
+    int saveTeacherVO(@Param(value = "teacherVO") TeacherVO teacherVO);
+
+    /**
+     * 更新教师信息
+     * @param teacherVO {@link TeacherVO}
+     * @return
+     */
+    int updateTeacherVO(@Param(value = "teacherVO") TeacherVO teacherVO);
+
+    /**
      * 根据教师编号查找对应的教师
-     * @param teacherNo
+     * @param teacherNo {@link String}
      * @return
      */
     TeacherVO findOneTeacherVO(@Param(value = "teacherNo") String teacherNo);
