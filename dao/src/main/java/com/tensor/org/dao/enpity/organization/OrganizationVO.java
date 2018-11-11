@@ -1,21 +1,35 @@
 package com.tensor.org.dao.enpity.organization;
 
 import com.tensor.org.dao.enpity.user.StudentVO;
-import lombok.Builder;
 import lombok.Data;
+import lombok.NonNull;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
- * @author liaochuntao
+ * @author 
  */
 @Data
-@Builder
-public class OrganizationVO {
+public class OrganizationVO implements Serializable {
 
-    private int id;
-    private String organizationName;
-    private String organizationDoc;
+    private String orgId;
+
+    @NonNull
+    private String orgName;
+
+    @NonNull
+    private String orgDoc;
+
+    @DateTimeFormat(pattern="yyyy-MM-ddHH:mm:ss")
+    private Date createDate;
+
+    private String orgLogo;
+
     private List<StudentVO> studentVOS;
+
+    private static final long serialVersionUID = -6411614573805541566L;
 
 }

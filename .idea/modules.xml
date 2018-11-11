@@ -16,6 +16,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.exam.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.exam.iml" group="com.tensor.org.exam" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_main.iml" filepath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_main.iml" group="com.tensor.org.exam" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_test.iml" filepath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_test.iml" group="com.tensor.org.exam" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.notice.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.notice.iml" group="com.tensor.org.notice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_main.iml" group="com.tensor.org.notice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_test.iml" group="com.tensor.org.notice" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tensor.org.user.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tensor.org.user.iml" group="com.tensor.org.user" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_main.iml" filepath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_main.iml" group="com.tensor.org.user" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_test.iml" filepath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_test.iml" group="com.tensor.org.user" />

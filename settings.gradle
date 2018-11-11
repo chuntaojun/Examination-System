@@ -24,4 +24,6 @@ include 'user'
 findProject(':user')?.name = 'com.tensor.org.user'
 include 'exam'
 findProject(':exam')?.name = 'com.tensor.org.exam'
+include 'notice'
+findProject(':notice')?.name = 'com.tensor.org.notice'
 

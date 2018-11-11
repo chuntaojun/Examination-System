@@ -1,18 +1,21 @@
 package com.tensor.org.dao.enpity.user;
 
 import lombok.Data;
+import lombok.NonNull;
 
-import java.util.List;
+import java.io.Serializable;
 
 /**
- * @author liaochuntao
+ * @author 
  */
 @Data
-public class StudentVO extends UserVO {
+public class StudentVO extends UserVO implements Serializable {
 
+    private static final long serialVersionUID = -1717920161233721216L;
+
+    @NonNull
     private String studentNo;
 
-    StudentVO(String id, String nickName, String headImageUrl, String account, String password, String email, String phone, List<RoleVO> roles) {
-        super(id, nickName, headImageUrl, account, password, email, phone, roles);
-    }
+    @NonNull
+    private String studentRealName;
 }
