@@ -29,7 +29,7 @@ dependencies {
     //    SpringBoot依赖(核心)
     implementation('org.springframework.boot:spring-boot-starter')
     //    SpringBoot kafka依赖
-    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.1.0.RELEASE'
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.2.0.RELEASE'
     //    阿里 Dubbo 依赖
     implementation group: 'com.alibaba.spring.boot', name: 'dubbo-spring-boot-starter', version: '2.0.0'
     compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'

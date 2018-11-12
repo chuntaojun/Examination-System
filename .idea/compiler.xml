@@ -21,6 +21,8 @@
       <module name="com.tensor.org.user_test" target="1.8" />
       <module name="com.tensor.org.web_main" target="1.8" />
       <module name="com.tensor.org.web_test" target="1.8" />
+      <module name="com.tensor.org.work_main" target="1.8" />
+      <module name="com.tensor.org.work_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

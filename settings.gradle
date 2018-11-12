@@ -18,12 +18,15 @@ include 'com.tensor.org.api.dao'
 findProject(':com.tensor.org.api.dao')
 include 'api'
 findProject(':com.tensor.org.api')
+
 include 'dao'
 findProject(':dao')?.name = 'com.tensor.org.dao'
 include 'user'
 findProject(':user')?.name = 'com.tensor.org.user'
 include 'exam'
 findProject(':exam')?.name = 'com.tensor.org.exam'
-include 'notice'
-findProject(':notice')?.name = 'com.tensor.org.notice'
+include 'work'
+findProject(':work')?.name = 'com.tensor.org.work'
+include 'api'
+findProject(':api')?.name = 'com.tensor.org.api'
 

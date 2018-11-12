@@ -15,9 +15,9 @@
             <option value="$PROJECT_DIR$/com.tensor.org.api.user" />
             <option value="$PROJECT_DIR$/dao" />
             <option value="$PROJECT_DIR$/exam" />
-            <option value="$PROJECT_DIR$/notice" />
             <option value="$PROJECT_DIR$/user" />
             <option value="$PROJECT_DIR$/web" />
+            <option value="$PROJECT_DIR$/work" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
