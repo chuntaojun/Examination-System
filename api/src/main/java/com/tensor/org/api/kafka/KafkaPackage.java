@@ -1,5 +1,9 @@
-package com.tensor.org.api.kafka.enpity;
+package com.tensor.org.api.kafka;
 
+/**
+ * kafka中对消息的包装，带上了主题topic信息
+ * @author liaochuntao
+ */
 public class KafkaPackage {
 
     private String topic;

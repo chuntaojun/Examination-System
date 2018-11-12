@@ -1,6 +1,9 @@
 package com.tensor.org.work.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.tensor.org.api.ResultData;
+import com.tensor.org.api.kafka.KafkaProducerService;
+import com.tensor.org.api.kafka.KafkaPackage;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,8 +14,10 @@ import org.springframework.stereotype.Component;
          application = "${dubbo.application.id}",
          protocol = "${dubbo.protocol.id}",
          registry = "${dubbo.registry.id}")
-public class KafkaApiServiceImpl implements com.tensor.org.api.kafka.KafkaApiService {
+public class KafkaProducerServiceImpl implements KafkaProducerService {
 
-
-
+    @Override
+    public ResultData sendDataToKafka(KafkaPackage kafkaPackage) {
+        return null;
+    }
 }

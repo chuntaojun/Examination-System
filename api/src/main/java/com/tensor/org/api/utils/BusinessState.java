@@ -2,6 +2,7 @@ package com.tensor.org.api.utils;
 
 /**
  * 业务状态类，所有的业务状态信息
+ * @author liaochuntao
  */
 public final class BusinessState {
 

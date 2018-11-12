@@ -1,8 +1,9 @@
-package com.tensor.org.api.kafka.enpity;
+package com.tensor.org.api.kafka;
 
 import java.util.Date;
 
 /**
+ * kafka消息通道中消息存储格式
  * @author liaochuntao
  */
 public class KafkaMsg {

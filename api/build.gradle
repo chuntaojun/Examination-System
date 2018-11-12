@@ -1,6 +1,5 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'eclipse'
 
 group 'api'
 version 'v0.0.1'
@@ -13,4 +12,6 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    //    lombok插件
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
 }

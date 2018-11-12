@@ -1,7 +1,7 @@
 package com.tensor.org.work.service.kafka;
 
-import com.tensor.org.api.kafka.enpity.KafkaMsg;
-import com.tensor.org.api.kafka.enpity.KafkaPackage;
+import com.tensor.org.api.kafka.KafkaMsg;
+import com.tensor.org.api.kafka.KafkaPackage;
 import com.tensor.org.work.utils.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

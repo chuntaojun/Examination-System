@@ -2,6 +2,10 @@ package com.tensor.org.api;
 
 import java.io.Serializable;
 
+/**
+ * 全局设置返回消息包装类
+ * @author liaochuntao
+ */
 public class ResultData<V> implements Serializable {
 
     private static final long serialVersionUID = 6674999278660577990L;
