@@ -20,4 +20,25 @@
         select * from user_account u left join teacher t on u.user_id=t.user_id
     </select>
 
+    <!--添加教师信息-->
+    <insert id="saveTeacherVO" parameterType="com.tensor.org.dao.enpity.user.TeacherVO">
+        insert into
+          teacher(teacher_no, teacher_real_name, user_id)
+        value (
+          #{teacherVO.teacherNo},
+          #{teacherVO.teacherRealName},
+          #{teacherVO.userId}
+        )
+    </insert>
+
+    <!--更新教师信息-->
+    <update id="updateTeacherVO">
+        update teacher
+        <set>
+            <if test="teacherVO.teacherRealName != null and teacherVO.teacherRealName != ''">
+                teacher_real_name = #{teacherVO.teacherRealName}
+            </if>
+        </set>
+    </update>
+
 </mapper>

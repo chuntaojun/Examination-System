@@ -12,6 +12,36 @@
                     select="com.tensor.org.dao.mapper.user.StudentVOMapper.findAllByOrgId" />
     </resultMap>
 
+    <!--新增组织信息-->
+    <insert id="saveOrganizationVO">
+        insert into
+          organization(org_id, org_name, org_doc, create_date, org_logo, teacher_no)
+        value (
+          #{organizationVO.orgId},
+          #{organizationVO.orgName},
+          #{organizationVO.orgDoc},
+          #{organizationVO.createDate},
+          #{organizationVO.orgLogo},
+          #{organizationVO.teacherNo}
+        )
+    </insert>
+
+    <!--更新组织信息-->
+    <update id="updateOrganizationVO">
+        update organization
+        <set>
+            <if test="organizationVO.orgName != null and organizationVO.orgName != ''">
+                org_name = #{organizationVO.orgName}
+            </if>
+            <if test="organizationVO.orgLogo != null and organizationVO.orgLogo != ''">
+                org_logo = #{organizationVO.orgLogo}
+            </if>
+            <if test="organizationVO.orgDoc != null and organizationVO.orgDoc != ''">
+                org_doc = #{organizationVO.orgDoc}
+            </if>
+        </set>
+    </update>
+
     <!--根据教师编号查找教师所拥有的组织机构-->
     <select id="findAllByTeacherNo" resultType="java.lang.OutOfMemoryError">
         select * from organization where teacher_no = #{teacherNo};

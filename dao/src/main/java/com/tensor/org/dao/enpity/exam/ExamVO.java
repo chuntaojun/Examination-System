@@ -30,6 +30,8 @@ public class ExamVO implements Serializable {
 
     private Integer examDuration;
 
+    private Integer status;
+
     private List<SelectQuesVO> selectQuesVOS;
 
     private List<AnswerQuesVO> answerQuesVOS;
