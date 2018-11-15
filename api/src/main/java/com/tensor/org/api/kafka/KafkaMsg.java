@@ -1,13 +1,15 @@
 package com.tensor.org.api.kafka;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * kafka消息通道中消息存储格式
  * @author liaochuntao
  */
-public class KafkaMsg {
+public class KafkaMsg implements Serializable {
 
+    private static final long serialVersionUID = 2401738017678951664L;
     private String id;
     private String body;
     private Date sendTime;
@@ -31,6 +33,10 @@ public class KafkaMsg {
 
     public Date getSendTime() {
         return sendTime;
+    }
+
+    public static Builder builder() {
+        return new Builder();
     }
 
     public static class Builder {

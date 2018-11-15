@@ -2,6 +2,7 @@ package com.tensor.org.api.dao.user;
 
 
 import com.tensor.org.api.ResultData;
+import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.user.UserVO;
 
 import java.util.List;
@@ -20,9 +21,10 @@ public interface UserVODao {
 
     /**
      * 获取所有的账户信息
+     * @param page {@link Page 分页对象}
      * @return
      */
-    ResultData<List<UserVO>> findAllUserVO();
+    ResultData<List<UserVO>> findAllUserVO(Page page);
 
     /**
      * 保存用户账户(根据curdType选择插入 or 更新)
@@ -33,9 +35,9 @@ public interface UserVODao {
 
     /**
      * 删除该账户
-     * @param userId
+     * @param userIds
      * @return
      */
-    ResultData deleteUserVO(String userId);
+    ResultData deleteUserVOBatch(List<String> userIds);
 
 }

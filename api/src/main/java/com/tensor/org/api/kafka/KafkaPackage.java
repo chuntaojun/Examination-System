@@ -1,11 +1,14 @@
 package com.tensor.org.api.kafka;
 
+import java.io.Serializable;
+
 /**
  * kafka中对消息的包装，带上了主题topic信息
  * @author liaochuntao
  */
-public class KafkaPackage {
+public class KafkaPackage implements Serializable {
 
+    private static final long serialVersionUID = 8431505051653279635L;
     private String topic;
     private KafkaMsg kafkaMsg;
 
@@ -23,6 +26,10 @@ public class KafkaPackage {
 
     public KafkaMsg getKafkaMsg() {
         return kafkaMsg;
+    }
+
+    public static Builder builder() {
+        return new Builder();
     }
 
     public static class Builder {

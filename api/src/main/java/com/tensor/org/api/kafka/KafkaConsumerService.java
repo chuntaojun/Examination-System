@@ -2,6 +2,9 @@ package com.tensor.org.api.kafka;
 
 import com.tensor.org.api.ResultData;
 
+/**
+ * @author liaochuntao
+ */
 public interface KafkaConsumerService {
 
     /**

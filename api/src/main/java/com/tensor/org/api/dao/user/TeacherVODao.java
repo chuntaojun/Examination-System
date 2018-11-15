@@ -1,6 +1,7 @@
 package com.tensor.org.api.dao.user;
 
 import com.tensor.org.api.ResultData;
+import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.user.TeacherVO;
 
 import java.util.List;
@@ -27,8 +28,9 @@ public interface TeacherVODao {
 
     /**
      * 查找全部教师
+     * @param page
      * @return
      */
-    ResultData<List<TeacherVO>> findAllTeacherVO();
+    ResultData<List<TeacherVO>> findAllTeacherVO(Page page);
 
 }

@@ -39,6 +39,10 @@ public class ResultData<V> implements Serializable {
         return value;
     }
 
+    public static Builder builder() {
+        return new Builder();
+    }
+
     /**
      * 建造者模式
      * @param <V>
