@@ -10,15 +10,6 @@
 rootProject.name = 'dubbo-cloud'
 include 'web'
 findProject(':web')?.name = 'com.tensor.org.web'
-include 'com.tensor.org.api.user'
-findProject(':com.tensor.org.api.user')
-include 'com.tensor.org.api.exam'
-findProject(':com.tensor.org.api.exam')
-include 'com.tensor.org.api.dao'
-findProject(':com.tensor.org.api.dao')
-include 'api'
-findProject(':com.tensor.org.api')
-
 include 'dao'
 findProject(':dao')?.name = 'com.tensor.org.dao'
 include 'user'

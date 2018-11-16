@@ -20,7 +20,7 @@ import java.util.List;
  * @author liaochuntao
  */
 @Configuration
-public class RouterFuncMapConfig extends AbstractHandlerMapping implements InitializingBean {
+public class RouterFuncMapConfigure extends AbstractHandlerMapping implements InitializingBean {
 
     @Nullable
     private RouterFunction<?> routerFunction;

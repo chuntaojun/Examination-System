@@ -1,4 +1,4 @@
-package com.tensor.org.web.handler;
+package com.tensor.org.web.handler.exam;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tensor.org.api.kafka.KafkaMsg;

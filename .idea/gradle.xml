@@ -10,9 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
-            <option value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-            <option value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-            <option value="$PROJECT_DIR$/com.tensor.org.api.user" />
             <option value="$PROJECT_DIR$/dao" />
             <option value="$PROJECT_DIR$/exam" />
             <option value="$PROJECT_DIR$/user" />

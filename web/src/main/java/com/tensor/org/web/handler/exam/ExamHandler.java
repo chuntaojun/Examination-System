@@ -1,4 +1,4 @@
-package com.tensor.org.web.handler;
+package com.tensor.org.web.handler.exam;
 
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;

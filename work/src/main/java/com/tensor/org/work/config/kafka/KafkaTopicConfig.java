@@ -1,4 +1,4 @@
-package com.tensor.org.work.config;
+package com.tensor.org.work.config.kafka;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

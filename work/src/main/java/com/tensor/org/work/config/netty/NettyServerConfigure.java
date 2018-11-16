@@ -1,4 +1,4 @@
-package com.tensor.org.work.config;
+package com.tensor.org.work.config.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelOption;
@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import java.net.InetSocketAddress;
 import java.util.HashMap;
@@ -20,6 +21,7 @@ import java.util.Set;
 /**
  * @author liaochuntao
  */
+@PropertySource(value = "classpath:netty-server.properties")
 @Configuration
 public class NettyServerConfigure {
 

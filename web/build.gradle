@@ -28,12 +28,17 @@ configurations {
 }
 
 dependencies {
+
+    compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
+
     compile('org.springframework.boot:spring-boot-starter-webflux')
+    //    Json web token 安全框架依赖
+    compile 'com.auth0:java-jwt:3.4.1'
+
     compile group: 'org.synchronoss.cloud', name: 'nio-multipart-parser', version: '1.1.0'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.3'
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.3'
     //    阿里Dubbo
-    implementation group: 'com.alibaba.spring.boot', name: 'dubbo-spring-boot-starter', version: '2.0.0'
     compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'
     implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
     //    apache common pool

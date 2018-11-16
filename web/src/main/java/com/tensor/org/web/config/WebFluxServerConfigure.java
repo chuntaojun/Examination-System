@@ -17,12 +17,12 @@ import java.util.Objects;
  * @author liaochuntao
  */
 @Configuration
-public class HttpServerConfigure {
+public class WebFluxServerConfigure {
 
     @Autowired private Environment environment;
 
     @Bean
-    public HttpServer httpServer(@Qualifier(value = "UserApiRouter")RouterFunction<?> routerFunction) {
+    public HttpServer httpServer(@Qualifier(value = "LoginApiRouter")RouterFunction<?> routerFunction) {
         return getHttpServer(routerFunction);
     }
 

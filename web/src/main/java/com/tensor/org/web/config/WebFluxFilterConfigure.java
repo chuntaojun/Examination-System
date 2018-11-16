@@ -10,9 +10,7 @@ import reactor.core.publisher.Mono;
  * @author liaochuntao
  */
 @Configuration
-public class WebFluxFilterConfig implements WebFilter {
-
-
+public class WebFluxFilterConfigure implements WebFilter {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {

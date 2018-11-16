@@ -1,4 +1,4 @@
-package com.tensor.org.work.utils;
+package com.tensor.org.work.service.socket;
 
 /**
  * @author liaochuntao
