@@ -12,6 +12,7 @@ import java.util.List;
 @Builder
 public class NoticePackage {
 
+    private String noticeLabel;
     private String userId;
     private String orgId;
     private List<String> receivers;
