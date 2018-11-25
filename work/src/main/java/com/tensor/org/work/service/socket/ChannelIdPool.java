@@ -1,6 +1,8 @@
 package com.tensor.org.work.service.socket;
 
+import com.tensor.org.work.service.socket.impl.NoticeConsumerCenterImpl;
 import io.netty.channel.ChannelId;
+import org.springframework.stereotype.Component;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -10,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @author liaochuntao
  */
-public class ChannelIdManager {
+public class ChannelIdPool {
 
     private static ConcurrentHashMap<String, ChannelId> channelIdMap;
 
@@ -18,7 +20,7 @@ public class ChannelIdManager {
         channelIdMap = new ConcurrentHashMap<>();
     }
 
-    private ChannelIdManager() {}
+    public ChannelIdPool() {}
 
     public static Optional<ChannelId> get(String key) {
         return Optional.ofNullable(channelIdMap.get(key));
@@ -51,6 +53,7 @@ public class ChannelIdManager {
             Map.Entry<String, ChannelId> entry = iterator.next();
             if (entry.getValue().compareTo(channelId) == 0) {
                 iterator.remove();
+                NoticeConsumerCenterImpl.removeReceiver(entry.getKey());
             }
         }
     }

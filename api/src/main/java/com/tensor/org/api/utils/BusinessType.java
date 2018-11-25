@@ -75,7 +75,7 @@ public final class BusinessType {
             return role;
         }
 
-        public String getRoleName(int value) {
+        public static String getRoleName(int value) {
             if (value == ROLE_ADMIN.getValue()) {
                 return ROLE_ADMIN.getRole();
             }
@@ -85,7 +85,7 @@ public final class BusinessType {
             if (value == ROLE_USER.getValue()) {
                 return ROLE_USER.getRole();
             }
-            throw new NoSuchRoleTypeException("There is no role for this value", "getRoleName", this.getClass());
+            throw new NoSuchRoleTypeException("There is no role for this value", "getRoleName", RoleType.class);
         }
 
     }

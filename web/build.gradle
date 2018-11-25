@@ -31,8 +31,14 @@ dependencies {
 
     compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
 
+    //    SpringBoot 核心依赖
+    compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-webflux')
-    //    Json web token 安全框架依赖
+    //    SpringBoot AOP依赖
+    implementation('org.springframework.boot:spring-boot-starter-aop')
+    //    SpringBoot 应用系统的监控与管理
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+//        Json web token 安全框架依赖
     compile 'com.auth0:java-jwt:3.4.1'
 
     compile group: 'org.synchronoss.cloud', name: 'nio-multipart-parser', version: '1.1.0'

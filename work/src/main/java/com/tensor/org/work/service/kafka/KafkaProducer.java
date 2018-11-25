@@ -1,5 +1,6 @@
 package com.tensor.org.work.service.kafka;
 
+import com.tensor.org.api.ResultData;
 import com.tensor.org.api.kafka.KafkaPackage;
 
 /**
@@ -7,6 +8,6 @@ import com.tensor.org.api.kafka.KafkaPackage;
  */
 public interface KafkaProducer {
 
-    void producerMsg(KafkaPackage kafkaPackage);
+    ResultData producerMsg(KafkaPackage kafkaPackage);
 
 }

@@ -7,8 +7,4 @@ import java.util.Observer;
  */
 public interface NoticeConsumerCenter extends Observer {
 
-    void addReceiver(String receiver);
-
-    void removeReceiver(String receiver);
-
 }

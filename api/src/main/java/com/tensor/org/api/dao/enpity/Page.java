@@ -11,6 +11,7 @@ public class Page implements Serializable {
     private long limit;
     private long offset;
     private long totalNum;
+    private String maxId;
 
     public Page() {
     }

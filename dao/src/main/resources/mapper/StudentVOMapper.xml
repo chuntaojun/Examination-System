@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tensor.org.dao.mapper.user.StudentVOMapper">
-    <resultMap id="BaseResultMap" type="com.tensor.org.dao.enpity.user.StudentVO">
+    <resultMap id="BaseResultMap" type="com.tensor.org.api.dao.enpity.user.StudentVO">
         <id column="student_no" jdbcType="VARCHAR" property="studentNo"/>
         <result column="student_real_name" jdbcType="VARCHAR" property="studentRealName"/>
-        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="user_id" jdbcType="VARCHAR" property="publisher"/>
     </resultMap>
 
     <!--根据学生编号查找该学生账户-->
-    <select id="findOneStudentVO" resultType="com.tensor.org.dao.enpity.user.StudentVO">
+    <select id="findOneStudentVO" resultType="com.tensor.org.api.dao.enpity.user.StudentVO">
         select * from student s left join user_account u on s.user_id = u.user_id where s.student_no = #{studentNo};
     </select>
 
     <!--根据组织编号查询属于该组织的所有学生信息-->
-    <select id="findAllByOrgId" resultType="com.tensor.org.dao.enpity.user.StudentVO">
+    <select id="findAllByOrgId" resultType="com.tensor.org.api.dao.enpity.user.StudentVO">
         select * from student where student_no in (select student_no from org_link_stu where org_id = #{orgId});
     </select>
 

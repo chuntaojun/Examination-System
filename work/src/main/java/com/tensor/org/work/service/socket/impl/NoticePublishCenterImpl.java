@@ -1,34 +1,39 @@
 package com.tensor.org.work.service.socket.impl;
 
+import com.tensor.org.api.kafka.KafkaMsg;
+import com.tensor.org.api.kafka.KafkaPackage;
 import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.utils.JsonUtils;
+import com.tensor.org.work.service.kafka.KafkaProducer;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.util.Date;
 import java.util.Observable;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 通知发布者中心
- *
+ * 通知发布者中心，发布的消息进入此处准备发送
  * @author liaochuntao
  */
+@Slf4j
 @Component
 public class NoticePublishCenterImpl extends Observable implements NoticePublishCenter {
+
+    @Value("${kafka.consumer.topic.notice}") private String kafkaTopicNotice;
 
     private static final Object lock = new Object();
 
     @Autowired private NoticeConsumerCenter noticeConsumerCenter;
-
-    protected static ConcurrentHashMap<String, NoticePackage> noticeCenterMap;
-
-    static {
-        noticeCenterMap = new ConcurrentHashMap<>();
-    }
-
-    public NoticePublishCenterImpl() {}
+    @Qualifier("KafkaProducer")
+    @Autowired private KafkaProducer kafkaProducer;
 
     @PostConstruct
     public void init() {
@@ -36,28 +41,31 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
     }
 
     @Override
-    public boolean createNoticeGroup(String groupName, NoticePackage noticePackage) {
-        if (noticeCenterMap.containsKey(groupName)) {
-            noticeCenterMap.put(groupName, noticePackage);
-            notifyObservers(groupName);
+    public boolean createNoticeGroup(NoticePackage noticePackage) {
+            setChanged();
+            notifyObservers(noticePackage);
             return true;
-        }
-        return false;
     }
 
-    public static void finishNotice(String groupName) {
-        synchronized (lock) {
-            noticeCenterMap.remove(groupName);
-        }
-    }
-
+    /**
+     * 由消息消费者中心通知回调告知通知发布中心该消息消费结果
+     * 如果消息通知任务未完成，则消息发布中心将消息回压至kafka消息队列
+     * @param o
+     * @param arg
+     */
     @Override
     public void update(Observable o, Object arg) {
         NoticePackage noticePackage = (NoticePackage) arg;
         if (noticePackage.getTotalReceivers() == 0) {
-            finishNotice(noticePackage.getNoticeLabel());
+            // 更新消息发布状态信息
         } else {
-            noticeCenterMap.put(noticePackage.getNoticeLabel(), noticePackage);
+            KafkaMsg kafkaMsg = KafkaMsg.builder()
+                    .id(UUID.randomUUID().toString())
+                    .body(JsonUtils.toJson(noticePackage))
+                    .sendTime(new Date())
+                    .builded();
+            kafkaProducer.producerMsg(KafkaPackage.builder().topic(kafkaTopicNotice).kafkaMsg(kafkaMsg).builded());
         }
     }
+
 }

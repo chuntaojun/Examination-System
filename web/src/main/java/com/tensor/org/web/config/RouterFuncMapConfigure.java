@@ -1,5 +1,7 @@
 package com.tensor.org.web.config;
 
+import com.tensor.org.web.config.filter.RegisterUrlContainer;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -19,8 +21,11 @@ import java.util.List;
  * 多路由注册
  * @author liaochuntao
  */
+@Slf4j
 @Configuration
 public class RouterFuncMapConfigure extends AbstractHandlerMapping implements InitializingBean {
+
+    @Autowired private RegisterUrlContainer urlContainer;
 
     @Nullable
     private RouterFunction<?> routerFunction;
@@ -49,12 +54,16 @@ public class RouterFuncMapConfigure extends AbstractHandlerMapping implements In
     private List<RouterFunction<?>> routerFunctions() {
         SortedRouterFunctionsContainer container = new SortedRouterFunctionsContainer();
         obtainApplicationContext().getAutowireCapableBeanFactory().autowireBean(container);
-        return CollectionUtils.isEmpty(container.routerFunctions) ? Collections.emptyList() : container.routerFunctions;
+        List<RouterFunction<?>> routerFunctions = CollectionUtils
+                .isEmpty(container.routerFunctions) ? Collections.emptyList() : container.routerFunctions;
+        urlContainer.init(routerFunctions);
+        return routerFunctions;
     }
 
     @Override
     protected Mono<?> getHandlerInternal(ServerWebExchange exchange) {
-        return null;
+
+        return Mono.empty();
     }
 
     private static class SortedRouterFunctionsContainer {

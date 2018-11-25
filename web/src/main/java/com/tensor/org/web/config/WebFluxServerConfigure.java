@@ -1,5 +1,7 @@
 package com.tensor.org.web.config;
 
+import com.tensor.org.api.utils.BusinessType;
+import com.tensor.org.web.config.security.SecurityConfigure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -35,6 +37,14 @@ public class WebFluxServerConfigure {
                 .port(Integer.valueOf(Objects.requireNonNull(environment.getProperty("server.port"))));
         httpServer.handle(httpHandlerAdapter);
         return httpServer;
+    }
+
+    @Bean(value = "securityConfigure")
+    public SecurityConfigure securityConfigure() {
+        return new SecurityConfigure()
+                .init()
+                .addMatcher("/api", BusinessType.RoleType.ROLE_ADMIN)
+                .build();
     }
 
 }

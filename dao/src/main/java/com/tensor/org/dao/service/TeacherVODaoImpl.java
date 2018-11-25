@@ -2,9 +2,11 @@ package com.tensor.org.dao.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
+import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.user.TeacherVO;
 import com.tensor.org.dao.mapper.user.TeacherVOMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -21,6 +23,7 @@ public class TeacherVODaoImpl implements com.tensor.org.api.dao.user.TeacherVODa
 
     @Resource private TeacherVOMapper teacherVOMapper;
 
+    @Transactional
     @Override
     public ResultData save(TeacherVO teacherVO, int curdType) {
         return null;
@@ -32,7 +35,8 @@ public class TeacherVODaoImpl implements com.tensor.org.api.dao.user.TeacherVODa
     }
 
     @Override
-    public ResultData<List<TeacherVO>> findAllTeacherVO() {
+    public ResultData<List<TeacherVO>> findAllTeacherVO(Page page) {
         return null;
     }
+
 }

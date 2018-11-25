@@ -8,6 +8,7 @@ import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.RouterFunction;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
+import static org.springframework.web.reactive.function.server.RequestPredicates.POST;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
@@ -22,7 +23,7 @@ public class ApiLoginRouter {
     @Bean(value = "LoginApiRouter")
     public RouterFunction<?> loginApiRouter() {
         return route(
-                GET("/api"), request -> ok().body(BodyInserters.fromObject("")));
+                POST("/v1/api/login"), loginHandler::login);
     }
 
 }

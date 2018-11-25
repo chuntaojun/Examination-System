@@ -1,6 +1,7 @@
 package com.tensor.org.web.config;
 
 import com.tensor.org.api.ResultData;
+import com.tensor.org.web.utils.ResponseAdaperUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler;
@@ -18,7 +19,7 @@ import reactor.core.scheduler.Schedulers;
 
 import java.util.Map;
 
-import static com.tensor.org.web.utils.StringsValue.CN.SERVRE_BROKEN_ERR;
+import static com.tensor.org.web.utils.StringsValue.CN.SERVER_BROKEN_ERR;
 
 /**
  * 全局异常处理
@@ -49,14 +50,13 @@ public class GlobalExceptionConfigure {
         private Mono<ServerResponse> renderErrorResponse(ServerRequest request) {
             final Map<String, Object> errorMap = getErrorAttributes(request, true);
             log.error("[内部错误信息]：{}", errorMap);
-            Mono<ResultData> errMono = Mono.just(ResultData
+            Mono<ResultData> errMono = Mono.justOrEmpty(ResultData
                     .builder()
                     .code(HttpStatus.INTERNAL_SERVER_ERROR.value())
-                    .errMsg(SERVRE_BROKEN_ERR)
+                    .value(errorMap)
+                    .errMsg(SERVER_BROKEN_ERR)
                     .builded());
-            return ServerResponse.ok().body(BodyInserters
-                    .fromPublisher(errMono.publishOn(Schedulers.elastic()), ResultData.class))
-                    .subscribeOn(Schedulers.elastic());
+            return ResponseAdaperUtils.render(errMono);
         }
     }
 

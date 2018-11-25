@@ -1,7 +1,7 @@
 package com.tensor.org.dao.mapper.organization;
 
 
-import com.tensor.org.dao.enpity.organization.OrganizationVO;
+import com.tensor.org.api.dao.enpity.organization.OrganizationVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

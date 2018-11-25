@@ -11,10 +11,9 @@ public interface NoticePublishCenter extends Observer {
 
     /**
      * 创建消息通知主题并放入消息信息
-     * @param groupName
      * @param noticePackage
      * @return
      */
-    boolean createNoticeGroup(String groupName, NoticePackage noticePackage);
+    boolean createNoticeGroup(NoticePackage noticePackage);
 
 }

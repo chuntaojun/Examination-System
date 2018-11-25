@@ -1,6 +1,8 @@
-package com.tensor.org.work.service.socket;
+package com.tensor.org.work.service.socket.impl;
 
 import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.work.service.socket.ChannelIdPool;
+import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.utils.StringsValue;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -40,15 +42,23 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
      */
     protected static ChannelGroup globalChannels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
+    /**
+     * 客户端首次接入时，需发送用户编号信息
+     * 客户端发送的信息：{ChannelGroupType}-{user_uuid}
+     *
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
-        log.info("channelRead0");
         Channel channel = ctx.channel();
         String[] contexts = msg.text().split("-");
         int clientContextSplitNum = 2;
         if (contexts.length != clientContextSplitNum) {
             channel.writeAndFlush(new TextWebSocketFrame(StringsValue.CN.CLIENT_SEND_ERR_MSG));
         } else {
+            NoticeConsumerCenterImpl.addReceiver(contexts[1]);
             ChannelIdPool.add(contexts[1], channel.id());
             addToChannelGroup(contexts[0], channel);
         }
@@ -74,37 +84,21 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
         ctx.close();
     }
 
-    @Override
-    public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
-        super.handlerAdded(ctx);
-    }
-
-    @Override
-    public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
-        super.handlerRemoved(ctx);
-    }
-
-    @Override
-    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        super.userEventTriggered(ctx, evt);
-    }
-
     /**
      * @param noticePackage
      */
-    public void publishMsg(NoticePackage noticePackage) {
-        String channelId = noticePackage.getUserId();
+    @Override
+    public void publishMsg(NoticePackage noticePackage, String receiver) {
         if (noticePackage.getGroupType() == CHANNEL_GROUP_STUDENT.getValue()) {
-            send(channelId, studentChannels, noticePackage);
+            send(receiver, studentChannels, noticePackage);
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_TEACHER.getValue()) {
-            send(channelId, teacherChannels, noticePackage);
+            send(receiver, teacherChannels, noticePackage);
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_GLOBAL.getValue()) {
             send(null, globalChannels, noticePackage);
         }
     }
 
     /**
-     *
      * @param channelId
      * @param channels
      * @param noticePackage
@@ -118,8 +112,7 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
             }).count();
         } else {
             final Channel[] channel = {null};
-            Optional<ChannelId> channelId1 = ChannelIdPool.get(channelId);
-            channelId1.ifPresent(channelId2 -> {
+            ChannelIdPool.get(channelId).ifPresent(channelId2 -> {
                 channel[0] = channels.find(channelId2);
                 channel[0].writeAndFlush(frame).addListener(future ->
                         log.info("消息主题为 [{}] 通知已完成", noticePackage.getNoticeLabel()));
@@ -128,7 +121,6 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
     }
 
     /**
-     *
      * @param type
      * @param channel
      */

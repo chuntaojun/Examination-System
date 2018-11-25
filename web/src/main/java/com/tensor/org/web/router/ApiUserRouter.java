@@ -9,6 +9,9 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
+/**
+ * @author liaochuntao
+ */
 @Configuration
 public class ApiUserRouter {
 

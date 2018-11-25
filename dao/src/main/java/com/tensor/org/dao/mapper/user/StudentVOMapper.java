@@ -1,8 +1,8 @@
 package com.tensor.org.dao.mapper.user;
 
 
-import com.tensor.org.dao.enpity.user.OrgLinkStuVO;
-import com.tensor.org.dao.enpity.user.StudentVO;
+import com.tensor.org.api.dao.enpity.user.OrgLinkStuVO;
+import com.tensor.org.api.dao.enpity.user.StudentVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

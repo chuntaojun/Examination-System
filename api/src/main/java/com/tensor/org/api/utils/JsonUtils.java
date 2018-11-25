@@ -2,6 +2,11 @@ package com.tensor.org.api.utils;
 
 import com.google.gson.Gson;
 
+import java.lang.reflect.Type;
+
+/**
+ * @author liaochuntao
+ */
 public class JsonUtils<T> {
 
     private volatile static Gson gson;
@@ -17,7 +22,7 @@ public class JsonUtils<T> {
     }
 
     public static <T> Object toObj(String s, T t) {
-        return gson.fromJson(s, t.getClass());
+        return gson.fromJson(s, (Type) t);
     }
 
 }
