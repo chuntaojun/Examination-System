@@ -1,10 +1,11 @@
-package com.tensor.org.dao.service;
+package com.tensor.org.dao.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.user.StudentVO;
+import com.tensor.org.dao.aop.Dynamic;
+import com.tensor.org.dao.config.DataSourceType;
 import com.tensor.org.dao.mapper.user.StudentVOMapper;
-import com.tensor.org.dao.mapper.user.UserVOMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,12 +24,14 @@ public class StudentVODaoImpl implements com.tensor.org.api.dao.user.StudentVODa
 
     @Resource private StudentVOMapper studentVOMapper;
 
+    @Dynamic(value = DataSourceType.MASTER_DB)
     @Transactional
     @Override
     public ResultData save(StudentVO studentVO, int curdType) {
         return null;
     }
 
+    @Dynamic(value = DataSourceType.SALVE_ONE)
     @Override
     public ResultData<StudentVO> findStuVOByStuNo(String stuNo) {
         return null;

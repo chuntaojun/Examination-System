@@ -4,7 +4,7 @@
     <resultMap id="TeacherResultMap" type="com.tensor.org.api.dao.enpity.user.TeacherVO">
         <id column="teacher_no" jdbcType="VARCHAR" property="teacherNo"/>
         <result column="teacher_real_name" jdbcType="VARCHAR" property="teacherRealName"/>
-        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="user_id" jdbcType="VARCHAR" property="publisher"/>
         <collection property="organizationVOS" column="teacher_no"
                     fetchType="lazy"
                     select="com.tensor.org.dao.mapper.organization.OrganizationVOMapper.findAllByTeacherNo" />
@@ -27,7 +27,7 @@
         value (
           #{teacherVO.teacherNo},
           #{teacherVO.teacherRealName},
-          #{teacherVO.userId}
+          #{teacherVO.publisher}
         )
     </insert>
 

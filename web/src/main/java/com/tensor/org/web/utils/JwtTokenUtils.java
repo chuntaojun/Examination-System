@@ -38,6 +38,7 @@ public class JwtTokenUtils {
 
     public JwtTokenUtils login(UserVO user, Optional<UserVO> voOptional) {
         voOptional.ifPresent(userDB -> {
+            log.info("userDB : {}", userDB);
             if (user.getPassword().equals(userDB.getPassword())) {
                 jwtUser = new JwtUser();
                 jwtUser.setRole(BusinessType.RoleType.getRoleName(userDB.getRoles()));

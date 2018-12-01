@@ -24,9 +24,8 @@ public class LoginHandlerImpl implements LoginHandler {
 
     @Reference(version = "1.0.0",
             application = "${dubbo.application.id}",
-            url = "dubbo://192.168.31.217:20880",
-            timeout = 50000,
-            parameters = {"findOneUserVO.retries", "2"})
+            url = "${dubbo.provider.url.dao}",
+            timeout = 50000)
     private UserVODao userVODao;
 
     @Autowired

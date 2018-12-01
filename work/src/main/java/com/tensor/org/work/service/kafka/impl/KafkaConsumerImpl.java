@@ -24,8 +24,6 @@ import java.util.Optional;
 public class KafkaConsumerImpl implements KafkaConsumer {
 
     @Autowired private NoticePublishCenter noticePublishCenter;
-    @Qualifier("KafkaProducer")
-    @Autowired private KafkaProducer kafkaProducer;
 
     @KafkaListener(topics = {"kafka-topic-notice"})
     @Override

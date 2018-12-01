@@ -26,7 +26,7 @@
         insert into
           user_account(user_id, nick_name, head_image_url, email, phone, password, register_date)
         value (
-          #{userVO.userId},
+          #{userVO.publisher},
           #{userVO.nickName},
           #{userVO.headImageUrl},
           #{userVO.email},
@@ -50,12 +50,12 @@
                 password = #{password}
             </if>
         </set>
-        where user_id = #{userId}
+        where user_id = #{publisher}
     </update>
 
     <!--删除用户账户-->
     <delete id="deleteUserVO">
-        delete from user_account where user_id = #{userId}
+        delete from user_account where user_id = #{publisher}
     </delete>
 
 </mapper>

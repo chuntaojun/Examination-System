@@ -39,6 +39,18 @@ public class ResultData<V> implements Serializable {
         return value;
     }
 
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public void setErrMsg(String errMsg) {
+        this.errMsg = errMsg;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
+    }
+
     public static Builder builder() {
         return new Builder();
     }

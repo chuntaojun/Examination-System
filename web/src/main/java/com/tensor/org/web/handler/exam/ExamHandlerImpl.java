@@ -20,7 +20,7 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @Component
 public class ExamHandlerImpl implements ExamHandler {
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "dubbo://192.168.31.217:20880")
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}")
     private KafkaProducerService producerService;
 
     @Override

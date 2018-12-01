@@ -1,10 +1,11 @@
-package com.tensor.org.dao.service;
+package com.tensor.org.dao.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.alibaba.dubbo.validation.MethodValidated;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.user.UserVO;
+import com.tensor.org.dao.aop.Dynamic;
+import com.tensor.org.dao.config.DataSourceType;
 import com.tensor.org.dao.mapper.user.UserVOMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +26,7 @@ public class UserVODaoImpl implements com.tensor.org.api.dao.user.UserVODao {
     @Resource
     private UserVOMapper userVOMapper;
 
+    @Dynamic(value = DataSourceType.SALVE_ONE)
     @Override
     public ResultData<UserVO> findOneUserVO(String login) {
         UserVO userVO = userVOMapper.findOneUserVO(login);
@@ -36,12 +38,14 @@ public class UserVODaoImpl implements com.tensor.org.api.dao.user.UserVODao {
         return null;
     }
 
+    @Dynamic(value = DataSourceType.MASTER_DB)
     @Transactional
     @Override
     public ResultData save(UserVO userVO, int curdType) {
         return null;
     }
 
+    @Dynamic(value = DataSourceType.MASTER_DB)
     @Transactional
     @Override
     public ResultData deleteUserVOBatch(List<String> userIds) {

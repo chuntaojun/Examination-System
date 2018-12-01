@@ -1,6 +1,5 @@
 package com.tensor.org.web.utils;
 
-import com.alibaba.dubbo.remoting.Server;
 import com.tensor.org.api.ResultData;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -10,6 +9,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+import static org.springframework.web.reactive.function.server.ServerResponse.status;
 
 /**
  * @author liaochuntao
@@ -23,8 +23,7 @@ public class ResponseAdaperUtils {
      * @return
      */
     public static Mono<ServerResponse> renderImmediatel(Mono<ResultData> dataMono, HttpStatus httpStatus) {
-        return ServerResponse
-                .status(httpStatus)
+        return status(httpStatus)
                 .header("Access-Control-Allow-Origin", "*")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromPublisher(dataMono.publishOn(Schedulers.immediate()), ResultData.class))
@@ -32,8 +31,7 @@ public class ResponseAdaperUtils {
     }
 
     public static Mono<ServerResponse> render(Mono<ResultData> dataMono, HttpStatus status) {
-        return ServerResponse
-                .status(status)
+        return status(status)
                 .header("Access-Control-Allow-Origin", "*")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromPublisher(dataMono.publishOn(Schedulers.elastic()), ResultData.class))
@@ -45,6 +43,14 @@ public class ResponseAdaperUtils {
                 .header("Access-Control-Allow-Origin", "*")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromPublisher(dataMono.publishOn(Schedulers.elastic()), ResultData.class))
+                .subscribeOn(Schedulers.elastic());
+    }
+
+    public static Mono<ServerResponse> render(Object o, HttpStatus status) {
+        return status(status)
+                .header("Access-Control-Allow-Origin", "*")
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(BodyInserters.fromObject(o))
                 .subscribeOn(Schedulers.elastic());
     }
 

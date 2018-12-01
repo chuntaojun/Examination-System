@@ -1,4 +1,4 @@
-package com.tensor.org.dao.service;
+package com.tensor.org.dao.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;

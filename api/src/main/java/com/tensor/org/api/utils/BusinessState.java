@@ -38,4 +38,8 @@ public final class BusinessState {
         }
     }
 
+    public enum File {
+
+    }
+
 }

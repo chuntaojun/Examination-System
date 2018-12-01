@@ -8,7 +8,7 @@ import com.tensor.org.api.user.NoticePackage;
  */
 public interface NoticeDao {
 
-    ResultData<?> save(NoticePackage noticePackage);
+    ResultData<NoticePackage> save(NoticePackage noticePackage);
 
     ResultData<NoticePackage> findNoticeById(String id);
 

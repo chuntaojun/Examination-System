@@ -2,6 +2,7 @@ package com.tensor.org.api.user;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author liaochuntao
@@ -10,6 +11,7 @@ import java.util.List;
 public class NoticePackage implements Serializable {
 
     protected static final long serialVersionUID = -6075185081509822385L;
+    protected String noticeId;
     protected String noticeLabel;
     protected String publisher;
     protected String orgId;
@@ -18,9 +20,12 @@ public class NoticePackage implements Serializable {
     protected String message;
     protected long totalReceivers;
 
-    public NoticePackage() {}
+    public NoticePackage() {
+        noticeId = UUID.randomUUID().toString();
+    }
 
     public NoticePackage(String noticeLabel, String publisher, String orgId, List<String> receivers, int groupType, String message, long totalReceivers) {
+        this.noticeId = UUID.randomUUID().toString();
         this.noticeLabel = noticeLabel;
         this.publisher = publisher;
         this.orgId = orgId;
@@ -28,6 +33,14 @@ public class NoticePackage implements Serializable {
         this.groupType = groupType;
         this.message = message;
         this.totalReceivers = totalReceivers;
+    }
+
+    public String getNoticeId() {
+        return noticeId;
+    }
+
+    public void setNoticeId(String noticeId) {
+        this.noticeId = noticeId;
     }
 
     public String getNoticeLabel() {
@@ -89,7 +102,8 @@ public class NoticePackage implements Serializable {
     @Override
     public String toString() {
         return "NoticePackage{" +
-                "noticeLabel='" + noticeLabel + '\'' +
+                "noticeId='" + noticeId + '\'' +
+                ", noticeLabel='" + noticeLabel + '\'' +
                 ", publisher='" + publisher + '\'' +
                 ", orgId='" + orgId + '\'' +
                 ", receivers=" + receivers +
