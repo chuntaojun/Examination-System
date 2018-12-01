@@ -12,4 +12,6 @@ public interface NoticeDao {
 
     ResultData<NoticePackage> findNoticeById(String id);
 
+    ResultData<Boolean> updateStatus(NoticePackage noticePackage);
+
 }

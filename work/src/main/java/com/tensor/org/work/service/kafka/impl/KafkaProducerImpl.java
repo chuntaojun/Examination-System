@@ -47,13 +47,13 @@ public class KafkaProducerImpl implements KafkaProducer {
                 while (retry.get() != MAX_RETRY_TIMES) {
                     retry.incrementAndGet();
                 }
+                log.error("kafka send failure : {}", ex);
             }
 
             @Override
             public void onSuccess(SendResult<String, String> result) {
             }
         });
-
     }
 
 }

@@ -1,5 +1,7 @@
 package com.tensor.org.work.service.socket.impl;
 
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.tensor.org.api.dao.log.NoticeDao;
 import com.tensor.org.api.kafka.KafkaMsg;
 import com.tensor.org.api.kafka.KafkaPackage;
 import com.tensor.org.api.user.NoticePackage;
@@ -21,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 通知发布者中心，发布的消息进入此处准备发送
- *
+ * @// FIXME: 2018/12/1 修复多线程消费消息导致客户端消息漏收bug
  * @author liaochuntao
  */
 @Slf4j
@@ -30,6 +32,9 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
 
     @Value("${kafka.consumer.topic.notice}")
     private String kafkaTopicNotice;
+
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.dao}")
+    private NoticeDao noticeDao;
 
     @Autowired
     private NoticeConsumerCenter noticeConsumerCenter;
@@ -60,13 +65,16 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
     public void update(Observable o, Object arg) {
         NoticePackage noticePackage = (NoticePackage) arg;
         if (noticePackage.getTotalReceivers() == 0) {
-            // 更新消息发布状态信息
+            noticePackage.setFinish(true);
+            log.info("消息 [{}] 发布完成", noticePackage.getMessage());
+            noticeDao.updateStatus(noticePackage);
         } else {
             KafkaMsg kafkaMsg = KafkaMsg.builder()
                     .id(UUID.randomUUID().toString())
                     .body(JsonUtils.toJson(noticePackage))
                     .sendTime(new Date())
                     .builded();
+//            log.info("消息回压 : {}", noticePackage);
             kafkaProducer.producerMsg(KafkaPackage.builder().topic(kafkaTopicNotice).kafkaMsg(kafkaMsg).builded());
         }
     }

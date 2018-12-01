@@ -60,10 +60,13 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
         if (!receivers.contains(receiver)) {
             receivers.add(receiver);
         }
+        log.info("当前的 receivers : {}", receivers);
     }
 
     public static void removeReceiver(String receiver) {
+        log.info("移除前的 receivers : {}", receivers);
         receivers.remove(receiver);
+        log.info("移除后的 receivers : {}", receivers);
     }
 
     private class NoticeConsumeTask implements Runnable {

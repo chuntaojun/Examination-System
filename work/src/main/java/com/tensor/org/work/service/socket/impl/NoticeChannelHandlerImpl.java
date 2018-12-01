@@ -16,6 +16,7 @@ import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
+import java.util.stream.Stream;
 
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_GLOBAL;
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_STUDENT;
@@ -58,6 +59,7 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
         if (contexts.length != clientContextSplitNum) {
             channel.writeAndFlush(new TextWebSocketFrame(StringsValue.CN.CLIENT_SEND_ERR_MSG));
         } else {
+            channel.writeAndFlush(new TextWebSocketFrame("客户端id ：" + channel.id()));
             NoticeConsumerCenterImpl.addReceiver(contexts[1]);
             ChannelIdPool.add(contexts[1], channel.id());
             addToChannelGroup(contexts[0], channel);
@@ -67,21 +69,19 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         log.info("新接入编号为 [{}] 的客户端", ctx.channel().id());
-        super.channelActive(ctx);
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-        super.channelInactive(ctx);
         log.info("客户端编号为 [{}] 已断开链接", ctx.channel().id());
         ChannelIdPool.remove(ctx.channel().id());
+        super.channelInactive(ctx);
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        super.exceptionCaught(ctx, cause);
         log.error("客户端编号为 [{}] 报错：[{}]", ctx.channel().id(), cause.getMessage());
-        ctx.close();
+        super.exceptionCaught(ctx, cause);
     }
 
     /**
@@ -94,7 +94,7 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_TEACHER.getValue()) {
             send(receiver, teacherChannels, noticePackage);
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_GLOBAL.getValue()) {
-            send(null, globalChannels, noticePackage);
+            send(receiver, globalChannels, noticePackage);
         }
     }
 
@@ -105,19 +105,12 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
      */
     private void send(String channelId, ChannelGroup channels, NoticePackage noticePackage) {
         TextWebSocketFrame frame = new TextWebSocketFrame(noticePackage.getMessage());
-        if (channelId == null) {
-            globalChannels.stream().flatMap(channel -> {
-                channel.writeAndFlush(frame);
-                return null;
-            }).count();
-        } else {
-            final Channel[] channel = {null};
-            ChannelIdPool.get(channelId).ifPresent(channelId2 -> {
-                channel[0] = channels.find(channelId2);
-                channel[0].writeAndFlush(frame).addListener(future ->
-                        log.info("消息主题为 [{}] 通知已完成", noticePackage.getNoticeLabel()));
-            });
-        }
+        final Channel[] channel = {null};
+        ChannelIdPool.get(channelId).ifPresent(channelId2 -> {
+            channel[0] = channels.find(channelId2);
+            channel[0].writeAndFlush(frame).addListener(future ->
+                    log.info("消息主题为 [{}] 通知已向客户端 [{}] 推送完成", noticePackage.getNoticeLabel(), channel[0].id()));
+        });
     }
 
     /**

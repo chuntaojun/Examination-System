@@ -26,7 +26,6 @@ public class NettyWebSocketChannelInitializer extends ChannelInitializer<SocketC
         pipeline.addLast(new HttpObjectAggregator(65536));
         pipeline.addLast(new ChunkedWriteHandler());
         pipeline.addLast(new WebSocketServerProtocolHandler("/notice"));
-//        pipeline.addLast("ping", new IdleStateHandler(25, 15, 10, TimeUnit.SECONDS));
         pipeline.addLast(new NoticeChannelHandlerImpl());
 
     }

@@ -24,20 +24,11 @@ public class NoticeHandlerImpl implements NoticeHandler {
     @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.work}")
     private NoticeService noticeService;
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.dao}")
-    private NoticeDao noticeDao;
-
     @Override
     public Mono<ServerResponse> publish(ServerRequest request) {
         return request.bodyToMono(String.class)
                 .map(s -> (NoticePackage) JsonUtils.toObj(s, NoticePackage.class))
-                .map(noticePackage -> noticeDao.save(noticePackage))
-                .map(resultData -> {
-                    if (resultData.getCode() == HttpStatus.OK.value()) {
-                        return noticeService.publish(resultData.getValue());
-                    }
-                    return resultData;
-                })
+                .map(noticePackage -> noticeService.publish(noticePackage))
                 .map(Mono::justOrEmpty)
                 .flatMap(dataMono -> ResponseAdaperUtils.render(dataMono, HttpStatus.OK));
     }

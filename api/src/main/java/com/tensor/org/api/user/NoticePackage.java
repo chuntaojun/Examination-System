@@ -19,12 +19,13 @@ public class NoticePackage implements Serializable {
     protected int groupType;
     protected String message;
     protected long totalReceivers;
+    private boolean finish;
 
     public NoticePackage() {
         noticeId = UUID.randomUUID().toString();
     }
 
-    public NoticePackage(String noticeLabel, String publisher, String orgId, List<String> receivers, int groupType, String message, long totalReceivers) {
+    public NoticePackage(String noticeLabel, String publisher, String orgId, List<String> receivers, int groupType, String message, long totalReceivers, boolean finish) {
         this.noticeId = UUID.randomUUID().toString();
         this.noticeLabel = noticeLabel;
         this.publisher = publisher;
@@ -33,6 +34,7 @@ public class NoticePackage implements Serializable {
         this.groupType = groupType;
         this.message = message;
         this.totalReceivers = totalReceivers;
+        this.finish = finish;
     }
 
     public String getNoticeId() {
@@ -99,6 +101,14 @@ public class NoticePackage implements Serializable {
         this.totalReceivers = totalReceivers;
     }
 
+    public boolean isFinish() {
+        return finish;
+    }
+
+    public void setFinish(boolean finish) {
+        this.finish = finish;
+    }
+
     @Override
     public String toString() {
         return "NoticePackage{" +
@@ -110,6 +120,7 @@ public class NoticePackage implements Serializable {
                 ", groupType=" + groupType +
                 ", message='" + message + '\'' +
                 ", totalReceivers=" + totalReceivers +
+                ", finish=" + finish +
                 '}';
     }
 }
