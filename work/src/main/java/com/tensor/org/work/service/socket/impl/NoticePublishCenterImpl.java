@@ -74,7 +74,6 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
                     .body(JsonUtils.toJson(noticePackage))
                     .sendTime(new Date())
                     .builded();
-//            log.info("消息回压 : {}", noticePackage);
             kafkaProducer.producerMsg(KafkaPackage.builder().topic(kafkaTopicNotice).kafkaMsg(kafkaMsg).builded());
         }
     }

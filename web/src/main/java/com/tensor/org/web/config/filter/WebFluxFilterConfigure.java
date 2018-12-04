@@ -23,8 +23,6 @@ public class WebFluxFilterConfigure implements WebFilter {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
-        ServerHttpRequest request = exchange.getRequest();
-        String url = request.getURI().toString();
         return chain.filter(exchange);
     }
 

@@ -38,7 +38,7 @@ public class LoginHandlerImpl implements LoginHandler {
                     final UserVO[] userDB = {null};
                     Optional<ResultData<UserVO>> oneUserVO = Optional.ofNullable(userVODao.findOneUserVO(userVO.getAccount()));
                     oneUserVO.ifPresent(userVOResultData -> userDB[0] = userVOResultData.getValue());
-                    return Mono.just(jwtTokenUtils.login(userVO, Optional.ofNullable(userDB[0])).createSign());
+                    return jwtTokenUtils.login(userVO, Optional.ofNullable(userDB[0])).createSign();
                 })
                 .flatMap(ResponseAdaperUtils::render);
     }

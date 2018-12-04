@@ -1,8 +1,10 @@
 package com.tensor.org.web.config;
 
 import com.tensor.org.api.ResultData;
+import com.tensor.org.web.aop.HttpFilterAspect;
 import com.tensor.org.web.utils.ResponseAdaperUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler;
 import org.springframework.boot.web.reactive.error.ErrorAttributes;
@@ -29,6 +31,8 @@ import static com.tensor.org.web.utils.StringsValue.CN.SERVER_BROKEN_ERR;
 @Configuration
 public class GlobalExceptionConfigure {
 
+    @Autowired private HttpFilterAspect httpFilterAspect;
+
     @Component
     @Order(-2)
     public class GlobalErrorWebExceptionHandler extends AbstractErrorWebExceptionHandler {
@@ -49,7 +53,8 @@ public class GlobalExceptionConfigure {
 
         private Mono<ServerResponse> renderErrorResponse(ServerRequest request) {
             final Map<String, Object> errorMap = getErrorAttributes(request, true);
-            log.error("[内部错误信息]：{}", errorMap);
+//            log.error("[内部错误信息]：{}", errorMap);
+            httpFilterAspect.afterThrow(request, errorMap);
             Mono<ResultData> errMono = Mono.justOrEmpty(ResultData
                     .builder()
                     .code(HttpStatus.INTERNAL_SERVER_ERROR.value())

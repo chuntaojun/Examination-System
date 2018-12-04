@@ -11,17 +11,25 @@ import com.tensor.org.api.dao.enpity.user.UserVO;
 import com.tensor.org.api.utils.BusinessType;
 import com.tensor.org.api.utils.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.reactivestreams.Publisher;
+import org.reactivestreams.Subscriber;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import reactor.core.publisher.Mono;
+import reactor.util.function.Tuple2;
+import reactor.util.function.Tuples;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 import static com.tensor.org.web.utils.PropertiesEnum.Jwt.*;
 import static com.tensor.org.web.utils.StringsValue.CN.INCORRECT_LOGIN_PASSWORD;
 
 /**
+ * @// FIXME: 2018/12/3 遗留token刷新机制的问题
  * @author liaochuntao
  */
 @Slf4j
@@ -48,30 +56,39 @@ public class JwtTokenUtils {
         return this;
     }
 
-    public ResultData createSign() {
+    @SuppressWarnings("unchecked")
+    public Mono<ResultData> createSign() {
         if (jwtUser == null) {
-            return ResultData.builder()
+            return Mono.just(ResultData.builder()
                     .code(HttpStatus.NOT_FOUND.value())
                     .errMsg(INCORRECT_LOGIN_PASSWORD)
-                    .builded();
+                    .builded());
         }
-        Date expire = new Date();
-        Calendar calendar = new GregorianCalendar();
-        calendar.setTime(expire);
-        calendar.add(Calendar.SECOND, TOKEN_SURVIVAL_MILLISECOND.getValue());
-        Map<String, String> token = new HashMap<>();
-        token.put("token", JWT
-                .create()
-                .withIssuer(ISSUSER)
-                .withSubject(JsonUtils.toJson(jwtUser))
-                .withExpiresAt(calendar.getTime())
-                .sign(algorithm));
-        token.put("userId", jwtUser.getUserId());
-        return ResultData.builder()
-                .code(HttpStatus.OK.value())
-                .value(token)
-                .errMsg("")
-                .builded();
+        return Mono.just(new Date()).map(date -> {
+            Calendar calendar = new GregorianCalendar();
+            calendar.setTime(date);
+            calendar.add(Calendar.SECOND, TOKEN_SURVIVAL_MILLISECOND.getValue());
+            return calendar;
+        }).map(calendar -> Tuples.of(calendar, new HashMap<>()))
+                .map(data -> {
+                    data.getT2().put("token", JWT
+                            .create()
+                            .withIssuer(ISSUSER)
+                            .withSubject(JsonUtils.toJson(jwtUser))
+                            .withExpiresAt(data.getT1().getTime())
+                            .sign(algorithm));
+                    data.getT2().put("userId", jwtUser.getUserId());
+                    return data.getT2();
+                }).flatMap(map -> Mono.just(ResultData.builder()
+                        .code(HttpStatus.OK.value())
+                        .value(map)
+                        .errMsg("")
+                        .builded()));
+    }
+
+    public Mono<ResultData> refresh(DecodedJWT decodedJWT) {
+        this.jwtUser = (JwtUser) JsonUtils.toObj(decodedJWT.getSubject(), JwtUser.class);
+        return createSign();
     }
 
     /**

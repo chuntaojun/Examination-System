@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Observable;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 /**
@@ -84,12 +85,11 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
         public void run() {
             List<String> already = new ArrayList<>();
             noticePackage.getReceivers()
-                    .stream()
+                    .parallelStream()
                     .filter(receiver -> receivers.contains(receiver))
-                    .flatMap(receiver -> {
+                    .peek(receiver -> {
                         already.add(receiver);
                         noticeChannelHandler.publishMsg(noticePackage, receiver);
-                        return Stream.of(noticePackage);
                     })
                     .count();
             noticePackage.getReceivers().removeAll(already);
@@ -125,4 +125,5 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
             return new Thread(r, name);
         }
     }
+
 }

@@ -1,5 +1,6 @@
 package com.tensor.org.web.config;
 
+import com.tensor.org.web.aop.HttpFilterAspect;
 import com.tensor.org.web.config.filter.RegisterUrlContainer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
@@ -26,6 +27,7 @@ import java.util.List;
 public class RouterFuncMapConfigure extends AbstractHandlerMapping implements InitializingBean {
 
     @Autowired private RegisterUrlContainer urlContainer;
+    @Autowired private HttpFilterAspect httpFilterAspect;
 
     @Nullable
     private RouterFunction<?> routerFunction;
@@ -57,6 +59,7 @@ public class RouterFuncMapConfigure extends AbstractHandlerMapping implements In
         List<RouterFunction<?>> routerFunctions = CollectionUtils
                 .isEmpty(container.routerFunctions) ? Collections.emptyList() : container.routerFunctions;
         urlContainer.init(routerFunctions);
+        httpFilterAspect.init(urlContainer.getUrlContainer());
         return routerFunctions;
     }
 
