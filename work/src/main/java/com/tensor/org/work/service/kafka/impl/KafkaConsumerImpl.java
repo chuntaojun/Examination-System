@@ -1,16 +1,13 @@
 package com.tensor.org.work.service.kafka.impl;
 
-import com.tensor.org.api.kafka.KafkaMsg;
-import com.tensor.org.api.kafka.KafkaPackage;
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.work.service.kafka.KafkaConsumer;
-import com.tensor.org.work.service.kafka.KafkaProducer;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 

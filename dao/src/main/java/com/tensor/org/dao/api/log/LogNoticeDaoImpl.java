@@ -3,8 +3,8 @@ package com.tensor.org.dao.api.log;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.mongodb.client.result.UpdateResult;
 import com.tensor.org.api.ResultData;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.api.dao.log.NoticeDao;
-import com.tensor.org.api.user.NoticePackage;
 import com.tensor.org.dao.mapper.log.NoticeLogPOMapper;
 import com.tensor.org.dao.mongo.MongoQueryField;
 import org.jboss.netty.handler.codec.http.HttpResponseStatus;
@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.Resource;
-import java.util.function.Consumer;
 
 /**
  * @author liaochuntao

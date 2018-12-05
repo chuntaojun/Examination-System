@@ -1,10 +1,17 @@
 package com.tensor.org.web.config.filter;
 
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.tensor.org.api.dao.log.ApiRequestDao;
+import com.tensor.org.api.utils.JsonUtils;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.RouterFunction;
 
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -14,88 +21,99 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component(value = "registerUrlContainer")
 public class RegisterUrlContainer {
 
-    private static ConcurrentHashMap<String, RouterInfo> urlMap;
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.dao}")
+    private ApiRequestDao apiRequestDao;
+    private static ConcurrentHashMap<String, RouterInfo> urlContainer;
 
     /**
      * 初始化获取路由信息
+     *
      * @param routerFunctions
      */
     public void init(List<RouterFunction<?>> routerFunctions) {
-        urlMap = routerFunctions
+        urlContainer = routerFunctions
                 .stream()
                 .map(Object::toString)
                 .map(s -> s.split(" -> "))
-                .map(strings -> {
-                    strings[0] = strings[0].replace("(", "").replace(")", "");
-                    return strings;
-                })
+                .peek(strings -> strings[0] = strings[0].replace("(", "").replace(")", ""))
                 .map(strings -> {
                     String[] url = strings[0].split(" && ");
                     return new RouterInfo(url[1], url[0], strings[1]);
                 }).collect(ConcurrentHashMap::new, (m, v) -> m.put(v.getUrl(), v), ConcurrentHashMap::putAll);
     }
 
+    /**
+     * 返回不可变的map对象
+     * @return
+     */
+    public Map<String, RouterInfo> getUrlContainer() {
+        return Collections.unmodifiableMap(urlContainer);
+    }
+
+    public void updateRequestInfo(String pattern, RouterInfo routerInfo, boolean update) {
+        urlContainer.put(pattern, routerInfo);
+        if (update) {
+            apiRequestDao.save(JsonUtils.toJson(routerInfo));
+        }
+    }
+
+    @Data
     public class RouterInfo {
+        private final Object successLock = new Object();
+        private final Object failLock = new Object();
         private String url;
         private String method;
         private String handler;
+        private Date lastRequestTime;
+        private Date lastFailRequestTime;
+        private long lastRequestSpend;
         private long requestCount;
         private long maxSpendTime;
         private long totalSpendTime;
-        private long averageSpendTime;
+        private double averageSpendTime;
+        private long successRequestCount;
+        private long failRequestCount;
+        private String errInfo;
+        private transient Map<String, Object> errorMap;
 
-        public RouterInfo(String url, String method, String handler) {
+        RouterInfo(String url, String method, String handler) {
             this.url = url;
             this.method = method;
             this.handler = handler;
-            this.requestCount = 0;
-            this.maxSpendTime = 0;
-            this.totalSpendTime = 0;
-            this.averageSpendTime = 0;
+            this.lastRequestSpend = 0L;
+            this.requestCount = 0L;
+            this.maxSpendTime = 0L;
+            this.totalSpendTime = 0L;
+            this.averageSpendTime = 0L;
+            this.successRequestCount = 0L;
+            this.failRequestCount = 0L;
         }
 
-        public String getUrl() {
-            return url;
+        public void addSpendTime(long spend) {
+            this.totalSpendTime += spend;
         }
 
-        public String getMethod() {
-            return method;
+        public void setLastRequestSpend(long lastRequestSpend) {
+            this.lastRequestSpend = lastRequestSpend;
+            this.maxSpendTime = Math.max(this.maxSpendTime, lastRequestSpend);
         }
 
-        public String getHandler() {
-            return handler;
+        public void setSuccessRequestCount() {
+            synchronized (successLock) {
+                this.successRequestCount += 1;
+            }
         }
 
-        public long getRequestCount() {
-            return requestCount;
+        public void setFailRequestCount() {
+            synchronized (failLock) {
+                this.successRequestCount = this.successRequestCount == 0 ? 0 : this.successRequestCount - 1;
+                this.failRequestCount += 1;
+            }
         }
 
-        public void setRequestCount(long requestCount) {
-            this.requestCount = requestCount;
-        }
-
-        public long getMaxSpendTime() {
-            return maxSpendTime;
-        }
-
-        public void setMaxSpendTime(long maxSpendTime) {
-            this.maxSpendTime = maxSpendTime;
-        }
-
-        public long getTotalSpendTime() {
-            return totalSpendTime;
-        }
-
-        public void setTotalSpendTime(long totalSpendTime) {
-            this.totalSpendTime = totalSpendTime;
-        }
-
-        public long getAverageSpendTime() {
-            return averageSpendTime;
-        }
-
-        public void setAverageSpendTime(long averageSpendTime) {
-            this.averageSpendTime = averageSpendTime;
+        public void setErrorMap(Map<String, Object> errorMap) {
+            this.errorMap = errorMap;
+            this.errInfo = JsonUtils.toJson(errorMap);
         }
     }
 

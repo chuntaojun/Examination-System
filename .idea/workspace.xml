@@ -2,489 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64fd663-508d-49e4-9263-2bbf26e23673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-DOC.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/ResultData$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/ResultData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/Page$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/Page.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/ExamScoreVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/ExamVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/organization/OrganizationVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/JwtUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/OrgLinkStuVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/StudentVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/TeacherVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/UserVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/AnswerQuesVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/ExamScoreVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/ExamVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/SelectQuesVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/log/NoticeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/organization/OrganizationVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/StudentVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/TeacherVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/UserVODao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/ExamPaperService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionManagerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaProducerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticePackage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState$ExamStateEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState$File.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$NoticeTopicEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$QuestionType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$RoleType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/CurdTypeEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/JsonUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/exception/NoSuchRoleTypeException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/ExamScoreVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/ExamVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/organization/OrganizationVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/JwtUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/OrgLinkStuVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/StudentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/TeacherVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamScoreVODao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/log/NoticeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/ExamPaperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionPackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaPackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticePackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/CurdTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/exception/NoSuchRoleTypeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/DaoApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/DataSourceAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/Dynamic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/SQLAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/exam/ExamScoreVODaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/exam/ExamVODaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/log/LogNoticeDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/StudentVODaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/TeacherVODaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/UserVODaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DataSourceConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DataSourceType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DynamicDataSource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/JdbcContextHolder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/handler/ServiceExceptionHandle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/ExamScoreVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/ExamVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/SelectQuesVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/OrgLinkStuVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/StudentVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/TeacherVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/UserVOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mongo/MongoQueryField$NoticePackageDom.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mongo/MongoQueryField.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/ExamScoreVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/DataSourceAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/Dynamic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/SQLAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/ExamScoreVODaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/ExamVODaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/log/LogNoticeDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/StudentVODaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/TeacherVODaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/UserVODaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DynamicDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/JdbcContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/handler/ServiceExceptionHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamScoreVOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mongo/MongoQueryField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/ExamScoreVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/ExamVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/SelectQuesVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/org/OrgLinkStuVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/org/OrganizationVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/TeacherVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/UserVOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/bean/FileChunk.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/WebFluxFilterConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/JwtConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure$SecurityUrlOption.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandlerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandlerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiFileRouter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiLoginRouter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiNoticeRouter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/EncryptionUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/FileUploadUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/JwtTokenUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/PropertiesEnum$Jwt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/PropertiesEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/ResponseAdaperUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$CN.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$EN.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/exception/JwtTokenVerifyException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/out/production/resources/url.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/bean/FileChunk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/JwtConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/EncryptionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/FileUploadUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/PropertiesEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/StringsValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/exception/JwtTokenVerifyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/url.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/NoticeApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyServerConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/TcpServerConfigure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaConsumer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaProducer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelIdPool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeConsumerCenter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticePublishCenter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/NoticeGlobalIdUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$CN.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$EN.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/out/production/resources/netty-server.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/kafka/KafkaTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/kafka/KafkaTopicProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/TcpServerConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelIdPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeConsumerCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticePublishCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/NoticeGlobalIdUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/StringsValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/resources/netty-server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/log/LogApiRequestPO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/notice/KafkaMsg$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/notice/KafkaPackage$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/notice/KafkaPackage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/log/ApiRequestDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/log/LogApiRequestPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/log/ApiRequestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/log/LogApiRequestDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/log/ApiRequestPOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/log/LogApiRequestDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/ApiRequestPOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HasRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/SecurityAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/exception/NotAuthorizationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/exception/NotLoginException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HasRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/exception/NotAuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/exception/NotLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/quartz/QuartzConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/quartz/ScheduleJobFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/resources/schema/quartz_mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/ScheduleJobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/JobTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/JobTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/QuartzJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/resources/schema/quartz_mysql.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/960a4547-8739-4924-97dd-f8ebb9aba992.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/liaochuntao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_starter_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_dubbo_2_6_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_spring_boot_dubbo_spring_boot_starter_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jsqlparser_jsqlparser_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_5_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ulisesbocchio_jasypt_spring_boot_2_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ulisesbocchio_jasypt_spring_boot_starter_2_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_core_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_3_10_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http2_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_socks_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_proxy_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_29_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_0_8_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_reactor_core_3_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jline_jline_0_9_94.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_client_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_framework_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_kafka_kafka_clients_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_3_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jasypt_jasypt_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_netty_netty_3_2_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lz4_lz4_java_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_reactor_netty_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_webflux_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_kafka_spring_kafka_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_restdocs_core_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_restdocs_mockmvc_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_retry_spring_retry_1_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_messaging_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webflux_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xerial_snappy_snappy_java_1_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.api.dao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.dao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.api.exam.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.exam.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.api.user.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.user.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.dao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.exam.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.notice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.user.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/web/com.tensor.org.web_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/web/com.tensor.org.web_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/ResultData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/SelectQuesVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/SelectQuesVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/organization/OrganizationVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/organization/OrganizationVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/StudentVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/StudentVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/TeacherVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/TeacherVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/UserVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/UserVODao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessState.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dao/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/AnswerQuesVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/ExamVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/SelectQuesVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/organization/OrganizationVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/OrgLinkStuVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/StudentVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/TeacherVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/UserVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamVOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/StudentVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/StudentVOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/TeacherVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/TeacherVOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/UserVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/UserVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/log/NoticeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/log/NoticeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/ExamPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/ExamPaperService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionManagerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/notice/KafkaMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaProducerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaProducerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticePackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/notice/NoticePackage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/JsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/JwtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/JwtUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/log/NoticeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/log/NoticeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/ExamPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/ExamPaperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/notice/KafkaMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/notice/KafkaPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticePackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/notice/NoticePackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/log/LogNoticeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/log/LogNoticeDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/handler/ServiceExceptionHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/handler/ServiceExceptionHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/StudentVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/log/LogNoticeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/log/LogNoticeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/handler/ServiceExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/handler/ServiceExceptionHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/AnswerQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/ExamVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/ExamVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/OrgLinkStuVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/org/OrgLinkStuVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/OrganizationVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/org/OrganizationVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/SelectQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/SelectQuesVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/StudentVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/TeacherVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/TeacherVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/UserVOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/exam/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/work/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/src/main/java/com/tensor/org/notice/NoticeApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/WebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/WebApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/StudentVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/WebFluxFilterConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/WebFluxFilterConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure$SecurityUrlOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure$SecurityUrlOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiFileRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiFileRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiLoginRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiLoginRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiNoticeRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiNoticeRouter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiUserRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiUserRouter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/JwtTokenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/JwtTokenUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$CN.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$CN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$EN.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$EN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/StringsValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/StringsValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/work/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticePublishCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticePublishCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticePublishCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticePublishCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/api/build/" />
@@ -516,6 +172,8 @@
     <ignored path="$PROJECT_DIR$/work/.gradle/" />
     <ignored path="$PROJECT_DIR$/work/build/" />
     <ignored path="$PROJECT_DIR$/work/out/" />
+    <ignored path="$PROJECT_DIR$/task/.gradle/" />
+    <ignored path="$PROJECT_DIR$/task/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -547,14 +205,15 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="5" />
-          <entry key="java" value="4" />
+          <entry key="gradle" value="7" />
+          <entry key="java" value="37" />
           <entry key="md" value="2" />
           <entry key="properties" value="5" />
           <entry key="xml" value="2" />
@@ -562,8 +221,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="4" />
+          <entry key="Groovy" value="7" />
+          <entry key="JAVA" value="37" />
           <entry key="Markdown" value="2" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="2" />
@@ -571,13 +230,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="146" />
+          <entry key="dummy" value="14" />
+          <entry key="gradle" value="5" />
+          <entry key="java" value="1057" />
           <entry key="properties" value="507" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="146" />
+          <entry key="Groovy" value="5" />
+          <entry key="JAVA" value="1057" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="Properties" value="507" />
         </counts>
       </usages-collector>
@@ -586,98 +249,113 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notice/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API-DOC.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor />
-              <second_editor />
+            <state relative-caret-position="288">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/JobTaskServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="304">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/QuartzJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6544">
-              <caret line="561" column="49" selection-start-line="561" selection-start-column="49" selection-end-line="561" selection-end-column="49" />
+            <state relative-caret-position="208">
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
               <folding>
-                <element signature="e#14067#14068#0" expanded="true" />
-                <element signature="e#14092#14093#0" expanded="true" />
-                <element signature="e#14572#14573#0" expanded="true" />
-                <element signature="e#14613#14614#0" expanded="true" />
-                <element signature="e#15436#15437#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/JobBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+              <folding>
+                <element signature="e#2646#2647#0" expanded="true" />
+                <element signature="e#2685#2686#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/JobDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308">
+              <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/JobTaskService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Calendar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="457" column="36" selection-start-line="457" selection-start-column="36" selection-end-line="457" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -688,6 +366,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -697,7 +377,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\liaoc\.gradle\wrapper\dists\gradle-4.10.2-bin\cghg6c4gf4vkiutgsab8yrnwv\gradle-4.10.2" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\liaoc\.gradle\wrapper\dists\gradle-4.10.2-all\9fahxiiecdb76a5g3aw9oi8rv\gradle-4.10.2" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1441,6 +1121,62 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/task">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':com.tensor.org.task'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.task'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':com.tensor.org.task'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.task'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/task" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/user">
           <value>
             <list>
@@ -1957,7 +1693,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="15435202427481" />
+        <entry key="$PROJECT_DIR$" value="15435481930281" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/api/build.gradle" value="2376014887" />
         <entry key="$PROJECT_DIR$/build.gradle" value="0" />
@@ -1968,7 +1704,7 @@
         <entry key="$PROJECT_DIR$/settings.gradle" value="1544724460" />
         <entry key="$PROJECT_DIR$/user/build.gradle" value="29070574" />
         <entry key="$PROJECT_DIR$/web/build.gradle" value="3738330944" />
-        <entry key="$PROJECT_DIR$/work/build.gradle" value="2646416024" />
+        <entry key="$PROJECT_DIR$/work/build.gradle" value="290886110" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2035,6 +1771,13 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/exam" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/task">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/task" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2112,156 +1855,156 @@
               <option name="name" value="dubbo-cloud" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="C:/gradle/src/announce" />
-                  <option value="C:/gradle/src/antlr" />
-                  <option value="C:/gradle/src/base-services" />
-                  <option value="C:/gradle/src/base-services-groovy" />
-                  <option value="C:/gradle/src/build-cache" />
-                  <option value="C:/gradle/src/build-cache-http" />
-                  <option value="C:/gradle/src/build-comparison" />
-                  <option value="C:/gradle/src/build-init" />
-                  <option value="C:/gradle/src/build-option" />
-                  <option value="C:/gradle/src/cli" />
-                  <option value="C:/gradle/src/code-quality" />
-                  <option value="C:/gradle/src/composite-builds" />
-                  <option value="C:/gradle/src/core" />
-                  <option value="C:/gradle/src/core-api" />
-                  <option value="C:/gradle/src/dependency-management" />
-                  <option value="C:/gradle/src/diagnostics" />
-                  <option value="C:/gradle/src/docs" />
-                  <option value="C:/gradle/src/ear" />
-                  <option value="C:/gradle/src/ide" />
-                  <option value="C:/gradle/src/ide-native" />
-                  <option value="C:/gradle/src/ide-play" />
-                  <option value="C:/gradle/src/installation-beacon" />
-                  <option value="C:/gradle/src/internal-android-performance-testing" />
-                  <option value="C:/gradle/src/internal-integ-testing" />
-                  <option value="C:/gradle/src/internal-performance-testing" />
-                  <option value="C:/gradle/src/internal-testing" />
-                  <option value="C:/gradle/src/ivy" />
-                  <option value="C:/gradle/src/jacoco" />
-                  <option value="C:/gradle/src/javascript" />
-                  <option value="C:/gradle/src/jvm-services" />
-                  <option value="C:/gradle/src/language-groovy" />
-                  <option value="C:/gradle/src/language-java" />
-                  <option value="C:/gradle/src/language-jvm" />
-                  <option value="C:/gradle/src/language-native" />
-                  <option value="C:/gradle/src/language-scala" />
-                  <option value="C:/gradle/src/launcher" />
-                  <option value="C:/gradle/src/logging" />
-                  <option value="C:/gradle/src/maven" />
-                  <option value="C:/gradle/src/messaging" />
-                  <option value="C:/gradle/src/model-core" />
-                  <option value="C:/gradle/src/model-groovy" />
-                  <option value="C:/gradle/src/native" />
-                  <option value="C:/gradle/src/osgi" />
-                  <option value="C:/gradle/src/persistent-cache" />
-                  <option value="C:/gradle/src/platform-base" />
-                  <option value="C:/gradle/src/platform-jvm" />
-                  <option value="C:/gradle/src/platform-native" />
-                  <option value="C:/gradle/src/platform-play" />
-                  <option value="C:/gradle/src/plugin-development" />
-                  <option value="C:/gradle/src/plugin-use" />
-                  <option value="C:/gradle/src/plugins" />
-                  <option value="C:/gradle/src/process-services" />
-                  <option value="C:/gradle/src/publish" />
-                  <option value="C:/gradle/src/reporting" />
-                  <option value="C:/gradle/src/resources" />
-                  <option value="C:/gradle/src/resources-gcs" />
-                  <option value="C:/gradle/src/resources-http" />
-                  <option value="C:/gradle/src/resources-s3" />
-                  <option value="C:/gradle/src/resources-sftp" />
-                  <option value="C:/gradle/src/scala" />
-                  <option value="C:/gradle/src/signing" />
-                  <option value="C:/gradle/src/test-kit" />
-                  <option value="C:/gradle/src/testing-base" />
-                  <option value="C:/gradle/src/testing-junit-platform" />
-                  <option value="C:/gradle/src/testing-jvm" />
-                  <option value="C:/gradle/src/testing-native" />
-                  <option value="C:/gradle/src/tooling-api" />
-                  <option value="C:/gradle/src/tooling-api-builders" />
-                  <option value="C:/gradle/src/tooling-native" />
-                  <option value="C:/gradle/src/version-control" />
-                  <option value="C:/gradle/src/workers" />
-                  <option value="C:/gradle/src/wrapper" />
-                  <option value="C:/gradle/lib/ant-1.9.11.jar" />
-                  <option value="C:/gradle/lib/ant-launcher-1.9.11.jar" />
-                  <option value="C:/gradle/lib/gradle-api-metadata-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-base-services-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-base-services-groovy-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-build-cache-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-build-option-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-cli-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-core-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-core-api-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-docs-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-installation-beacon-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-jvm-services-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
-                  <option value="C:/gradle/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
-                  <option value="C:/gradle/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
-                  <option value="C:/gradle/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
-                  <option value="C:/gradle/lib/gradle-launcher-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-logging-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-messaging-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-model-core-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-model-groovy-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-persistent-cache-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-process-services-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-resources-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-runtime-api-info-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-tooling-api-4.10.2.jar" />
-                  <option value="C:/gradle/lib/gradle-wrapper-4.10.2.jar" />
-                  <option value="C:/gradle/lib/groovy-all-2.4.15.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-announce-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-antlr-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-build-comparison-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-build-init-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-code-quality-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-composite-builds-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-dependency-management-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-diagnostics-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-ear-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-ide-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-ide-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-ide-play-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-ivy-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-jacoco-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-javascript-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-language-groovy-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-language-java-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-language-jvm-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-language-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-language-scala-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-maven-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-osgi-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-platform-base-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-platform-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-platform-play-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-plugin-development-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-plugin-use-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-plugins-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-publish-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-reporting-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-resources-http-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-resources-s3-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-scala-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-signing-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-test-kit-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-testing-base-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-testing-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-tooling-native-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-version-control-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/gradle-workers-4.10.2.jar" />
-                  <option value="C:/gradle/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/docs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/tooling-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-api-metadata-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-base-services-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-base-services-groovy-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-build-cache-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-build-option-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-cli-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-core-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-core-api-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-docs-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-installation-beacon-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-jvm-services-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-launcher-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-logging-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-messaging-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-model-core-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-model-groovy-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-persistent-cache-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-process-services-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-resources-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-runtime-api-info-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-tooling-api-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/gradle-wrapper-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/groovy-all-2.4.15.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-announce-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-antlr-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-build-comparison-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-build-init-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-code-quality-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-composite-builds-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-dependency-management-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-diagnostics-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-ear-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-ide-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-ide-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-ide-play-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-ivy-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-jacoco-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-javascript-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-language-groovy-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-language-java-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-language-jvm-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-language-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-language-scala-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-maven-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-osgi-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-platform-base-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-platform-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-platform-play-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-plugin-development-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-plugin-use-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-plugins-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-publish-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-reporting-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-resources-http-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-resources-s3-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-scala-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-signing-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-test-kit-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-testing-base-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-testing-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-tooling-native-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-version-control-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/gradle-workers-4.10.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-all/9fahxiiecdb76a5g3aw9oi8rv/gradle-4.10.2/lib/plugins/ivy-2.2.0.jar" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -2281,6 +2024,21 @@
         <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java" />
         <option value="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" />
+        <option value="$PROJECT_DIR$/web/build.gradle" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/WorkAddService.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/TaskAddService.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/JobTaskService.java" />
+        <option value="$PROJECT_DIR$/work/build.gradle" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/QuartzJob.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntity.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/JobTaskService.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/JobTaskServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -2304,109 +2062,143 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="user" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="enpity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2416,8 +2208,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541991772697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544014392496" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liaoc\code\java\Examination-System\web\src\main\java\com\tensor\org\web\handler" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2431,7 +2228,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebApplication">
+  <component name="RunManager" selected="Application.CronExpressUtils">
+    <configuration name="CronExpressUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tensor.org.work.utils.CronExpressUtils" />
+      <module name="com.tensor.org.work_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tensor.org.work.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.tensor.org.dao_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.dao.DaoApplication" />
@@ -2442,6 +2252,13 @@
     <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.tensor.org.exam_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.exam.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoticeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.tensor.org.work_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.work.NoticeApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -2473,7 +2290,14 @@
       <item itemvalue="Spring Boot.NoticeApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
       <item itemvalue="Spring Boot.WebApplication" />
+      <item itemvalue="Spring Boot.NoticeApplication (1)" />
+      <item itemvalue="Application.CronExpressUtils" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CronExpressUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -2490,16 +2314,18 @@
       <workItem from="1543919300776" duration="357000" />
       <workItem from="1543919708069" duration="580000" />
       <workItem from="1544009487961" duration="947000" />
+      <workItem from="1544010568367" duration="3790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3902000" />
+    <option name="totallyTimeSpent" value="7692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="23" width="1577" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26298487" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2662722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -2508,7 +2334,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.57270694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -2516,8 +2342,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49967128" weight="0.32997763" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49967128" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003287" side_tool="true" visible="true" weight="0.32997763" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4990138" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5009862" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32997763" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32997763" />
@@ -2607,20 +2433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API-DOC.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -2653,8 +2465,286 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/EncryptionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/FileUploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/JwtConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#2594#2595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/NoticeGlobalIdUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/StringsValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/exception/NotAuthorizationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="457" column="36" selection-start-line="457" selection-start-column="36" selection-end-line="457" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/JobBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding>
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2685#2686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/JobDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/QuartzJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/JobTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/JobTaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

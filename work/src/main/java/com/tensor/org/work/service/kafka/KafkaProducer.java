@@ -1,7 +1,7 @@
 package com.tensor.org.work.service.kafka;
 
 import com.tensor.org.api.ResultData;
-import com.tensor.org.api.kafka.KafkaPackage;
+import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
 
 /**
  * @author liaochuntao

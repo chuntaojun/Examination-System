@@ -21,6 +21,7 @@ public class JsonUtils<T> {
         return gson.toJson(o);
     }
 
+    @SuppressWarnings("nochecked")
     public static <T> Object toObj(String s, T t) {
         return gson.fromJson(s, (Type) t);
     }

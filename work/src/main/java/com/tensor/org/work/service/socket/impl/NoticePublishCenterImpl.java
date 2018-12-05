@@ -2,9 +2,9 @@ package com.tensor.org.work.service.socket.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tensor.org.api.dao.log.NoticeDao;
-import com.tensor.org.api.kafka.KafkaMsg;
-import com.tensor.org.api.kafka.KafkaPackage;
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
+import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.work.service.kafka.KafkaProducer;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
@@ -19,7 +19,6 @@ import javax.annotation.PostConstruct;
 import java.util.Date;
 import java.util.Observable;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 通知发布者中心，发布的消息进入此处准备发送
@@ -66,7 +65,6 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
         NoticePackage noticePackage = (NoticePackage) arg;
         if (noticePackage.getTotalReceivers() == 0) {
             noticePackage.setFinish(true);
-            log.info("消息 [{}] 发布完成", noticePackage.getMessage());
             noticeDao.updateStatus(noticePackage);
         } else {
             KafkaMsg kafkaMsg = KafkaMsg.builder()
@@ -74,7 +72,6 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
                     .body(JsonUtils.toJson(noticePackage))
                     .sendTime(new Date())
                     .builded();
-//            log.info("消息回压 : {}", noticePackage);
             kafkaProducer.producerMsg(KafkaPackage.builder().topic(kafkaTopicNotice).kafkaMsg(kafkaMsg).builded());
         }
     }

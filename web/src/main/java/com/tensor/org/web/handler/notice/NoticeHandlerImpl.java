@@ -1,9 +1,7 @@
 package com.tensor.org.web.handler.notice;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.tensor.org.api.ResultData;
-import com.tensor.org.api.dao.log.NoticeDao;
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.api.user.NoticeService;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.web.utils.ResponseAdaperUtils;

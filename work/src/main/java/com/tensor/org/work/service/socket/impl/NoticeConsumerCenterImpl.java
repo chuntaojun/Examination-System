@@ -1,6 +1,6 @@
 package com.tensor.org.work.service.socket.impl;
 
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Observable;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Stream;
 
 /**
  * 通知消费者中心，websocket channel从这里获取信息进行消费
@@ -60,13 +59,10 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
         if (!receivers.contains(receiver)) {
             receivers.add(receiver);
         }
-        log.info("当前的 receivers : {}", receivers);
     }
 
     public static void removeReceiver(String receiver) {
-        log.info("移除前的 receivers : {}", receivers);
         receivers.remove(receiver);
-        log.info("移除后的 receivers : {}", receivers);
     }
 
     private class NoticeConsumeTask implements Runnable {
@@ -84,12 +80,11 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
         public void run() {
             List<String> already = new ArrayList<>();
             noticePackage.getReceivers()
-                    .stream()
+                    .parallelStream()
                     .filter(receiver -> receivers.contains(receiver))
-                    .flatMap(receiver -> {
+                    .peek(receiver -> {
                         already.add(receiver);
                         noticeChannelHandler.publishMsg(noticePackage, receiver);
-                        return Stream.of(noticePackage);
                     })
                     .count();
             noticePackage.getReceivers().removeAll(already);
@@ -125,4 +120,5 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
             return new Thread(r, name);
         }
     }
+
 }

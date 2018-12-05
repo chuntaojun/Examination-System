@@ -23,7 +23,7 @@ public class ApiLoginRouter {
     @Bean(value = "LoginApiRouter")
     public RouterFunction<?> loginApiRouter() {
         return route(
-                POST("/v1/api/login"), loginHandler::login);
+                POST("/v1/api/login/{type}"), loginHandler::login);
     }
 
 }

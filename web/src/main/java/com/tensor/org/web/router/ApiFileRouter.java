@@ -22,9 +22,9 @@ public class ApiFileRouter {
     @Bean(value = "fileApiRouter")
     public RouterFunction<?> fileApiRouter() {
         return route(
-                GET("/chunk"), fileHandler::chunkCheck)
-                .andRoute(POST("/chunk"), fileHandler::chunkSave)
-                .andRoute(POST("/merge"), fileHandler::merge);
+                GET("/v1/api/file/upload/chunk"), fileHandler::chunkCheck)
+                .andRoute(POST("/v1/api/file/upload/chunk"), fileHandler::chunkSave)
+                .andRoute(POST("/v1/api/file/upload/merge"), fileHandler::merge);
     }
 
 }

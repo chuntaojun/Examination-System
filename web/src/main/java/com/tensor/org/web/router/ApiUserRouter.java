@@ -18,7 +18,7 @@ public class ApiUserRouter {
     @Bean(value = "UserApiRouter")
     public RouterFunction<?> userApiRouter() {
         return route(
-                GET("/api"), request -> ok().body(BodyInserters.fromObject("")));
+                GET("/v1/api"), request -> ok().body(BodyInserters.fromObject("")));
     }
 
 }

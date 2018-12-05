@@ -1,6 +1,6 @@
 package com.tensor.org.work.service.socket;
 
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 
 import java.util.Observer;
 
