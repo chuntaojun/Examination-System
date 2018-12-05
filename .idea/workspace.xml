@@ -2,13 +2,489 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64fd663-508d-49e4-9263-2bbf26e23673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-DOC.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/ResultData$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/ResultData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/Page$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/Page.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/ExamScoreVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/ExamVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/organization/OrganizationVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/JwtUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/OrgLinkStuVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/StudentVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/TeacherVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/user/UserVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/AnswerQuesVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/ExamScoreVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/ExamVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/SelectQuesVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/log/NoticeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/organization/OrganizationVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/StudentVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/TeacherVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/user/UserVODao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/ExamPaperService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionManagerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/exam/QuestionPackage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaMsg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaPackage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/kafka/KafkaProducerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticePackage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/user/NoticeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState$ExamStateEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState$File.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$NoticeTopicEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$QuestionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType$RoleType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/CurdTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/JsonUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/exception/NoSuchRoleTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/ExamScoreVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/ExamVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/organization/OrganizationVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/JwtUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/OrgLinkStuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/StudentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/TeacherVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/user/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamScoreVODao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/log/NoticeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/ExamPaperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/kafka/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticePackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/user/NoticeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/CurdTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/exception/NoSuchRoleTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/DaoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/DataSourceAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/Dynamic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/aop/SQLAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/exam/ExamScoreVODaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/exam/ExamVODaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/log/LogNoticeDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/StudentVODaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/TeacherVODaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/api/user/UserVODaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DataSourceConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DataSourceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/DynamicDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/config/JdbcContextHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/handler/ServiceExceptionHandle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/ExamScoreVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/ExamVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/SelectQuesVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/OrgLinkStuVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/StudentVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/TeacherVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/user/UserVOMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mongo/MongoQueryField$NoticePackageDom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mongo/MongoQueryField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/ExamScoreVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/DataSourceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/Dynamic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/aop/SQLAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/ExamScoreVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/ExamVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/log/LogNoticeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/StudentVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/TeacherVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/user/UserVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DynamicDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/JdbcContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/handler/ServiceExceptionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamScoreVOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/NoticeLogPOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mongo/MongoQueryField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/ExamScoreVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/ExamVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/SelectQuesVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/org/OrgLinkStuVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/org/OrganizationVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/TeacherVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/user/UserVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/bean/FileChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/WebFluxFilterConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/JwtConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure$SecurityUrlOption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/security/SecurityConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/login/LoginHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiFileRouter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiLoginRouter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiNoticeRouter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/EncryptionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/FileUploadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/JwtTokenUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/PropertiesEnum$Jwt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/PropertiesEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/ResponseAdaperUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$CN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue$EN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/StringsValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/exception/JwtTokenVerifyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/out/production/resources/url.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/bean/FileChunk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/JwtConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/EncryptionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/PropertiesEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/StringsValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/exception/JwtTokenVerifyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/url.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/NoticeApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyServerConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/TcpServerConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelIdPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeConsumerCenter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticePublishCenter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/NoticeGlobalIdUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$CN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$EN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/out/production/resources/netty-server.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/kafka/KafkaTopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/kafka/KafkaTopicProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/TcpServerConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelIdPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeConsumerCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticePublishCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/NoticeGlobalIdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/StringsValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/src/main/resources/netty-server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/960a4547-8739-4924-97dd-f8ebb9aba992.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/liaochuntao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_starter_0_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_dubbo_2_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_spring_boot_dubbo_spring_boot_starter_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jsqlparser_jsqlparser_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_5_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ulisesbocchio_jasypt_spring_boot_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ulisesbocchio_jasypt_spring_boot_starter_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_core_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_3_10_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http2_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_socks_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_proxy_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_0_8_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_reactor_core_3_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jline_jline_0_9_94.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_client_2_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_framework_2_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_kafka_kafka_clients_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_3_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jasypt_jasypt_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_netty_netty_3_2_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lz4_lz4_java_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_reactor_netty_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_webflux_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_kafka_spring_kafka_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_restdocs_core_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_restdocs_mockmvc_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_retry_spring_retry_1_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_messaging_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webflux_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xerial_snappy_snappy_java_1_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/api/com.tensor.org.api_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.api.dao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.dao/com.tensor.org.dao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.api.exam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.exam/com.tensor.org.exam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.api.user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.api.user/com.tensor.org.user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.dao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.exam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.notice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.tensor.org.web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/dao/com.tensor.org.dao_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exam/com.tensor.org.exam_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/notice/com.tensor.org.notice_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/user/com.tensor.org.user_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/web/com.tensor.org.web_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/web/com.tensor.org.web_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/ResultData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/ExamVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/SelectQuesVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/SelectQuesVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/organization/OrganizationVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/organization/OrganizationVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/StudentVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/StudentVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/TeacherVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/TeacherVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/UserVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/UserVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessState.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dao/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/AnswerQuesVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/ExamVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/exam/SelectQuesVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/organization/OrganizationVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/OrgLinkStuVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/StudentVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/TeacherVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/enpity/user/UserVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/ExamVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/organization/OrganizationVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/StudentVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/StudentVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/TeacherVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/TeacherVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/UserVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/user/UserVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/AnswerQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/ExamVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/ExamVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/OrgLinkStuVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/org/OrgLinkStuVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/OrganizationVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/org/OrganizationVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/SelectQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/SelectQuesVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/StudentVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/StudentVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/TeacherVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/TeacherVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/user/UserVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/exam/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/work/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice/src/main/java/com/tensor/org/notice/NoticeApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/WebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/WebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiUserRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiUserRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/api/build/" />
@@ -37,6 +513,9 @@
     <ignored path="$PROJECT_DIR$/web/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/work/.gradle/" />
+    <ignored path="$PROJECT_DIR$/work/build/" />
+    <ignored path="$PROJECT_DIR$/work/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +527,44 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2144559649">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="2" />
-          <entry key="java" value="3" />
+          <entry key="gradle" value="5" />
+          <entry key="java" value="4" />
+          <entry key="md" value="2" />
           <entry key="properties" value="5" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="3" />
+          <entry key="Groovy" value="5" />
+          <entry key="JAVA" value="4" />
+          <entry key="Markdown" value="2" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="2" />
         </counts>
@@ -91,15 +586,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
@@ -113,11 +599,69 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="48">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API-DOC.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -125,7 +669,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
+            <state relative-caret-position="6544">
               <caret line="561" column="49" selection-start-line="561" selection-start-column="49" selection-end-line="561" selection-end-column="49" />
               <folding>
                 <element signature="e#14067#14068#0" expanded="true" />
@@ -153,7 +697,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\gradle" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\liaoc\.gradle\wrapper\dists\gradle-4.10.2-bin\cghg6c4gf4vkiutgsab8yrnwv\gradle-4.10.2" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -177,20 +721,8 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":api" />
+                <option name="name" value=":com.tensor.org.api" />
                 <option name="path" value="$PROJECT_DIR$/api" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":com.tensor.org.api.dao" />
-                <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":com.tensor.org.api.exam" />
-                <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":com.tensor.org.api.user" />
-                <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.user" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":com.tensor.org.dao" />
@@ -201,16 +733,16 @@
                 <option name="path" value="$PROJECT_DIR$/exam" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":com.tensor.org.notice" />
-                <option name="path" value="$PROJECT_DIR$/notice" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
                 <option name="name" value=":com.tensor.org.user" />
                 <option name="path" value="$PROJECT_DIR$/user" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":com.tensor.org.web" />
                 <option name="path" value="$PROJECT_DIR$/web" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":com.tensor.org.work" />
+                <option name="path" value="$PROJECT_DIR$/work" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -416,7 +948,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':api'. [incubating]" />
+                <option name="description" value="Displays the components produced by project ':com.tensor.org.api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -426,18 +958,9 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="cleanEclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':api'." />
+                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Cleans all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="cleanEclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
@@ -445,18 +968,14 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':api'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':api'." />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="cleanEclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
@@ -469,17 +988,12 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse classpath file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="eclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':api'. [incubating]" />
+                <option name="description" value="Displays the configuration model of project ':com.tensor.org.api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -489,13 +1003,9 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':api'." />
+                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="cleanEclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
@@ -508,7 +1018,7 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':api'." />
+                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -533,14 +1043,9 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':api'." />
+                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="eclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
@@ -553,11 +1058,6 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse JDT settings file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="eclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="build" />
@@ -568,182 +1068,9 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse project file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="eclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':api'." />
+                <option name="description" value="Displays the properties of project ':com.tensor.org.api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/com.tensor.org.api.dao">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':com.tensor.org.api.dao'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.api.dao'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':com.tensor.org.api.dao'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.api.dao'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/com.tensor.org.api.exam">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':com.tensor.org.api.exam'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.api.exam'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':com.tensor.org.api.exam'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.api.exam'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/com.tensor.org.api.user">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':com.tensor.org.api.user'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.api.user'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':com.tensor.org.api.user'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.api.user'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/com.tensor.org.api.user" />
-                <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1114,189 +1441,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/notice">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':com.tensor.org.notice'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="cleanEclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Cleans all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="cleanEclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.notice'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="cleanEclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="bootJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse classpath file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="eclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':com.tensor.org.notice'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="cleanEclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependency management declared in project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="dependencyManagement" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a Spring Boot application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="bootRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="eclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse JDT settings file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="eclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse project file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="eclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':com.tensor.org.notice'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/notice" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/user">
           <value>
             <list>
@@ -1626,20 +1770,205 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/work">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':com.tensor.org.work'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':com.tensor.org.work'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="bootJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':com.tensor.org.work'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':com.tensor.org.work'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/work" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="13877800710681" />
+        <entry key="$PROJECT_DIR$" value="15435202427481" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/api/build.gradle" value="2713510803" />
+        <entry key="$PROJECT_DIR$/api/build.gradle" value="2376014887" />
         <entry key="$PROJECT_DIR$/build.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/dao/build.gradle" value="253456071" />
-        <entry key="$PROJECT_DIR$/exam/build.gradle" value="572725819" />
+        <entry key="$PROJECT_DIR$/dao/build.gradle" value="1472274459" />
+        <entry key="$PROJECT_DIR$/exam/build.gradle" value="1067894553" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2290625707" />
         <entry key="$PROJECT_DIR$/notice/build.gradle" value="324570504" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="2495194875" />
-        <entry key="$PROJECT_DIR$/user/build.gradle" value="2675699477" />
-        <entry key="$PROJECT_DIR$/web/build.gradle" value="3526236643" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1544724460" />
+        <entry key="$PROJECT_DIR$/user/build.gradle" value="29070574" />
+        <entry key="$PROJECT_DIR$/web/build.gradle" value="3738330944" />
+        <entry key="$PROJECT_DIR$/work/build.gradle" value="2646416024" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1660,27 +1989,6 @@
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$/api" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/com.tensor.org.api.dao">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.dao" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/com.tensor.org.api.exam">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.exam" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/com.tensor.org.api.user">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/com.tensor.org.api.user" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -1730,29 +2038,6 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
-                  <entry key="$PROJECT_DIR$/notice">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="entries">
-                          <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.0.RELEASE/1fed802dfe5680a1d10627c430d351e8ed3ffe21/spring-boot-gradle-plugin-2.1.0.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.0.RELEASE/b7b07edaae47f829d5d88b388eaf02c465adf41/spring-boot-loader-tools-2.1.0.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.2.RELEASE/4dec566dccc17e1973aada5847fcbf5ad01046e9/spring-core-5.1.2.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/a25b942b99fde2cc2913ab39ad34abc0df4f5eb9/commons-compress-1.18-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/4f16a4df95fc152d71c9f334abb1f676ac3ec725/spring-jcl-5.1.2.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.0.RELEASE/da29bcfa10d5e31fd81b02d9f6c02cb8c61b3674/spring-boot-gradle-plugin-2.1.0.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.0.RELEASE/a32bf0b0084f0a5540d5167a76e278f8b593e9ef/spring-boot-loader-tools-2.1.0.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.2.RELEASE/b9b00d4075c92761cfd4e527e0bdce1931b4f3dc/spring-core-5.1.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/f0d7165b6cfb90356da4f25b14a6437fdef1ec8a/spring-jcl-5.1.2.RELEASE.jar" />
-                          </list>
-                        </option>
-                        <option name="path" value="$PROJECT_DIR$/notice" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
                   <entry key="$PROJECT_DIR$/user">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -1796,6 +2081,29 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/web" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/work">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.0.RELEASE/1fed802dfe5680a1d10627c430d351e8ed3ffe21/spring-boot-gradle-plugin-2.1.0.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.0.RELEASE/b7b07edaae47f829d5d88b388eaf02c465adf41/spring-boot-loader-tools-2.1.0.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.2.RELEASE/4dec566dccc17e1973aada5847fcbf5ad01046e9/spring-core-5.1.2.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/a25b942b99fde2cc2913ab39ad34abc0df4f5eb9/commons-compress-1.18-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/4f16a4df95fc152d71c9f334abb1f676ac3ec725/spring-jcl-5.1.2.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.0.RELEASE/da29bcfa10d5e31fd81b02d9f6c02cb8c61b3674/spring-boot-gradle-plugin-2.1.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.0.RELEASE/a32bf0b0084f0a5540d5167a76e278f8b593e9ef/spring-boot-loader-tools-2.1.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.2.RELEASE/b9b00d4075c92761cfd4e527e0bdce1931b4f3dc/spring-core-5.1.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/f0d7165b6cfb90356da4f25b14a6437fdef1ec8a/spring-jcl-5.1.2.RELEASE.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/work" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2001,92 +2309,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="user" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="notice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="notice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="notice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="notice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -2094,7 +2344,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -2103,12 +2353,54 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Examination-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Examination-System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2125,7 +2417,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541991772697" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2188,30 +2480,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="848d1b2d-6d4b-43b6-b556-83cae5b5624e" name="Default Changelist" comment="" />
+      <changelist id="c64fd663-508d-49e4-9263-2bbf26e23673" name="Default Changelist" comment="" />
       <created>1541991489835</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541991489835</updated>
       <workItem from="1541991506937" duration="346000" />
       <workItem from="1541991869803" duration="1475000" />
+      <workItem from="1543919300776" duration="357000" />
+      <workItem from="1543919708069" duration="580000" />
+      <workItem from="1544009487961" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2018000" />
+    <option name="totallyTimeSpent" value="3902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="23" width="1577" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25312296" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26298487" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.57270694" />
@@ -2219,21 +2514,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49967128" weight="0.32997763" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49967128" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003287" side_tool="true" visible="true" weight="0.32997763" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32997763" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32997763" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32997763" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32938856" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -2243,6 +2539,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -2250,45 +2572,12 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="561" column="49" selection-start-line="561" selection-start-column="49" selection-end-line="561" selection-end-column="49" />
-          <folding>
-            <element signature="e#14067#14068#0" expanded="true" />
-            <element signature="e#14092#14093#0" expanded="true" />
-            <element signature="e#14572#14573#0" expanded="true" />
-            <element signature="e#14613#14614#0" expanded="true" />
-            <element signature="e#15436#15437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notice/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="94" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/notice/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java" />
     <entry file="file://$PROJECT_DIR$/exam/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -2304,8 +2593,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exam/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="48">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API-DOC.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6544">
+          <caret line="561" column="49" selection-start-line="561" selection-start-column="49" selection-end-line="561" selection-end-column="49" />
+          <folding>
+            <element signature="e#14067#14068#0" expanded="true" />
+            <element signature="e#14092#14093#0" expanded="true" />
+            <element signature="e#14572#14573#0" expanded="true" />
+            <element signature="e#14613#14614#0" expanded="true" />
+            <element signature="e#15436#15437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>

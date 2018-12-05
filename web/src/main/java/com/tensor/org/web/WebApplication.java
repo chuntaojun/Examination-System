@@ -1,14 +1,14 @@
 package com.tensor.org.web;
 
-import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author liaochuntao
  */
+@Slf4j
 @SpringBootApplication
-@EnableDubboConfiguration
 public class WebApplication {
 
     public static void main(String[] args) {

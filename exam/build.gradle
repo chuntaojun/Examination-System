@@ -25,15 +25,21 @@ repositories {
 }
 
 dependencies {
+
+    compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
+    
     testCompile group: 'junit', name: 'junit', version: '4.12'
     //    SpringBoot依赖(核心)
     implementation('org.springframework.boot:spring-boot-starter')
+    //    SpringBoot Elasticsearch依赖(核心)
+    compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
     //    SpringBoot kafka依赖
-    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.1.0.RELEASE'
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.2.0.RELEASE'
     //    阿里 Dubbo 依赖
-    implementation group: 'com.alibaba.spring.boot', name: 'dubbo-spring-boot-starter', version: '2.0.0'
     compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'
     implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
+    //    lombok插件
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
     //    log4j日志架包
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }

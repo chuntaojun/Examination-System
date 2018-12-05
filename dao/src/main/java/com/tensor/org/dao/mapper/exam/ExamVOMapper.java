@@ -1,6 +1,6 @@
 package com.tensor.org.dao.mapper.exam;
 
-import com.tensor.org.dao.enpity.exam.ExamVO;
+import com.tensor.org.api.dao.enpity.exam.ExamVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
