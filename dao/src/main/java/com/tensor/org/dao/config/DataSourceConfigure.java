@@ -30,16 +30,24 @@ public class DataSourceConfigure {
         return DataSourceBuilder.create().build();
     }
 
+    @Bean(value = "quartzDataSource")
+    @ConfigurationProperties(prefix="spring.datasource.quartz")
+    public DataSource quartzDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
     @Primary
     @Bean(value = "dynamicDataSource")
     public DataSource dataSource() {
         DynamicDataSource dynamicDataSource = new DynamicDataSource();
         DataSource master = masterDataSource();
         DataSource slave = salveDataSource();
+        DataSource quartz = quartzDataSource();
         dynamicDataSource.setDefaultTargetDataSource(master);
         Map<Object, Object> datasource = new HashMap<>();
         datasource.put(DataSourceType.MASTER_DB.getType(), master);
         datasource.put(DataSourceType.SALVE_ONE.getType(), slave);
+        datasource.put(DataSourceType.QUARTZ_DB.getType(), quartz);
         dynamicDataSource.setTargetDataSources(datasource);
         return dynamicDataSource;
     }

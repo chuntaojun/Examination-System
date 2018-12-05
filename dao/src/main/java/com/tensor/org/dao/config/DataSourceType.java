@@ -12,7 +12,11 @@ public enum DataSourceType {
     /**
      * 数据库从库
      */
-    SALVE_ONE(2, "slave-one")
+    SALVE_ONE(2, "slave-one"),
+    /**
+     * QUARTZ 任务数据库
+     */
+    QUARTZ_DB(3, "quartz_master")
     ;
 
     private int value;
