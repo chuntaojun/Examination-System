@@ -53,13 +53,12 @@ public class GlobalExceptionConfigure {
 
         private Mono<ServerResponse> renderErrorResponse(ServerRequest request) {
             final Map<String, Object> errorMap = getErrorAttributes(request, true);
-//            log.error("[内部错误信息]：{}", errorMap);
             httpFilterAspect.afterThrow(request, errorMap);
             Mono<ResultData> errMono = Mono.justOrEmpty(ResultData
                     .builder()
                     .code(HttpStatus.INTERNAL_SERVER_ERROR.value())
                     .value(errorMap)
-                    .errMsg(SERVER_BROKEN_ERR)
+                    .errMsg(errorMap.get("message").toString())
                     .builded());
             return ResponseAdaperUtils.render(errMono);
         }

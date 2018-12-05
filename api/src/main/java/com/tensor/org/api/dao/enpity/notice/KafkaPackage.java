@@ -1,4 +1,4 @@
-package com.tensor.org.api.kafka;
+package com.tensor.org.api.dao.enpity.notice;
 
 import java.io.Serializable;
 

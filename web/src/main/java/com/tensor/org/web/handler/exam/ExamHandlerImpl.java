@@ -1,8 +1,8 @@
 package com.tensor.org.web.handler.exam;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.tensor.org.api.kafka.KafkaMsg;
-import com.tensor.org.api.kafka.KafkaPackage;
+import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
+import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
 import com.tensor.org.api.kafka.KafkaProducerService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;

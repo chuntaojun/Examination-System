@@ -3,7 +3,10 @@ package com.tensor.org.web.config.security;
 import com.tensor.org.api.utils.BusinessType;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -12,7 +15,7 @@ import java.util.HashMap;
 @Slf4j
 public class SecurityConfigure {
 
-    private final HashMap<String, String> securityUrls;
+    private final HashMap<Pattern, String> securityUrls;
 
     public SecurityConfigure() {
         securityUrls = new HashMap<>();
@@ -22,25 +25,25 @@ public class SecurityConfigure {
         return new SecurityUrlOption();
     }
 
-    public SecurityConfigure start() {
+    public SecurityConfigure end() {
         return this;
     }
 
-    public HashMap<String, String> getSecurityUrls() {
-        return securityUrls;
+    public Map<Pattern, String> getSecurityUrls() {
+        return Collections.unmodifiableMap(securityUrls);
     }
 
     public class SecurityUrlOption {
 
-        public SecurityUrlOption() {}
+        SecurityUrlOption() {}
 
         public SecurityUrlOption addMatcher(String url, BusinessType.RoleType roleType) {
-            securityUrls.put(url, roleType.getRole());
+            securityUrls.put(Pattern.compile(url), roleType.getRole());
             return this;
         }
 
         public SecurityConfigure build() {
-            return start();
+            return end();
         }
 
     }

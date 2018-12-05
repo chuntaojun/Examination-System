@@ -20,7 +20,7 @@ public class ApiNoticeRouter {
     @Bean(value = "NoticeApiRouter")
     public RouterFunction<?> userApiRouter() {
         return route(
-                POST("/api/notice/publish"), noticeHandler::publish);
+                POST("/v1/api/notice/publish"), noticeHandler::publish);
     }
 
 }

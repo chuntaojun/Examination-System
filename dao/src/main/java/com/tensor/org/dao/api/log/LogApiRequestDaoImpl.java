@@ -3,7 +3,9 @@ package com.tensor.org.dao.api.log;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
+import com.tensor.org.api.dao.enpity.log.LogApiRequestPO;
 import com.tensor.org.api.dao.log.ApiRequestDao;
+import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.dao.mapper.log.ApiRequestPOMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
@@ -27,7 +29,9 @@ public class LogApiRequestDaoImpl implements ApiRequestDao {
 
     @Override
     public ResultData<String> save(String s) {
-        return apiRequestPOMapper.save(s).map(s1 -> ResultData.builder().value(s1).builded()).block();
+        return apiRequestPOMapper.save((LogApiRequestPO) JsonUtils.toObj(s, LogApiRequestPO.class))
+                .map(logApiRequestPO -> ResultData.builder().value(JsonUtils.toJson(logApiRequestPO)).builded())
+                .block();
     }
 
     @Override

@@ -1,12 +1,11 @@
 package com.tensor.org.work.service.socket.impl;
 
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.work.service.socket.ChannelIdPool;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.utils.StringsValue;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelId;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
@@ -14,9 +13,6 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import org.springframework.stereotype.Component;
-
-import java.util.Optional;
-import java.util.stream.Stream;
 
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_GLOBAL;
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_STUDENT;

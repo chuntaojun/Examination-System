@@ -39,4 +39,5 @@ public class JwtUser {
                 ", role='" + role + '\'' +
                 '}';
     }
+
 }

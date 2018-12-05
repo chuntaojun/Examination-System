@@ -50,10 +50,11 @@ public class RegisterUrlContainer {
         return Collections.unmodifiableMap(urlContainer);
     }
 
-    public void updateRequestInfo(String pattern, RouterInfo routerInfo) {
-        log.info("当前路由信息更改 : {}", routerInfo);
+    public void updateRequestInfo(String pattern, RouterInfo routerInfo, boolean update) {
         urlContainer.put(pattern, routerInfo);
-        apiRequestDao.save(JsonUtils.toJson(routerInfo));
+        if (update) {
+            apiRequestDao.save(JsonUtils.toJson(routerInfo));
+        }
     }
 
     @Data
@@ -72,9 +73,10 @@ public class RegisterUrlContainer {
         private double averageSpendTime;
         private long successRequestCount;
         private long failRequestCount;
-        private Map<String, Object> errorMap;
+        private String errInfo;
+        private transient Map<String, Object> errorMap;
 
-        public RouterInfo(String url, String method, String handler) {
+        RouterInfo(String url, String method, String handler) {
             this.url = url;
             this.method = method;
             this.handler = handler;
@@ -104,9 +106,14 @@ public class RegisterUrlContainer {
 
         public void setFailRequestCount() {
             synchronized (failLock) {
-                this.successRequestCount -= 1;
+                this.successRequestCount = this.successRequestCount == 0 ? 0 : this.successRequestCount - 1;
                 this.failRequestCount += 1;
             }
+        }
+
+        public void setErrorMap(Map<String, Object> errorMap) {
+            this.errorMap = errorMap;
+            this.errInfo = JsonUtils.toJson(errorMap);
         }
     }
 

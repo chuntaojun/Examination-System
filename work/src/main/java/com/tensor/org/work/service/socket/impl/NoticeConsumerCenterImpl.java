@@ -1,6 +1,6 @@
 package com.tensor.org.work.service.socket.impl;
 
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
@@ -14,8 +14,6 @@ import java.util.List;
 import java.util.Observable;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 /**
  * 通知消费者中心，websocket channel从这里获取信息进行消费

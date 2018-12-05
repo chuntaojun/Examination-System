@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceExceptionHandle {
 
-    @Pointcut(value = "execution(public com.tensor.org.dao.api.*DaoImpl.(..))")
+    @Pointcut(value = "execution(* com.tensor.org.dao.api..*DaoImpl.*(..))")
     private void servicePointcut() {}
 
     @Pointcut(value = "@annotation(org.springframework.transaction.annotation.Transactional)")

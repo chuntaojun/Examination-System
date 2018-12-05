@@ -1,8 +1,8 @@
 package com.tensor.org.work.service.kafka.impl;
 
 import com.tensor.org.api.ResultData;
-import com.tensor.org.api.kafka.KafkaMsg;
-import com.tensor.org.api.kafka.KafkaPackage;
+import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
+import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.work.service.kafka.KafkaProducer;
 import lombok.extern.slf4j.Slf4j;

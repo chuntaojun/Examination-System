@@ -11,32 +11,28 @@ import com.tensor.org.api.dao.enpity.user.UserVO;
 import com.tensor.org.api.utils.BusinessType;
 import com.tensor.org.api.utils.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.server.ServerRequest;
 import reactor.core.publisher.Mono;
-import reactor.util.function.Tuple2;
 import reactor.util.function.Tuples;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Stream;
 
 import static com.tensor.org.web.utils.PropertiesEnum.Jwt.*;
 import static com.tensor.org.web.utils.StringsValue.CN.INCORRECT_LOGIN_PASSWORD;
 
 /**
- * @// FIXME: 2018/12/3 遗留token刷新机制的问题
  * @author liaochuntao
+ * @// FIXME: 2018/12/3 遗留token刷新机制的问题
  */
 @Slf4j
 @Component
 public class JwtTokenUtils {
 
-    private final static String ISSUSER = "TENSOR";
+    private final static String ISS_USER = "TENSOR";
 
     @Autowired
     @Qualifier(value = "JwtTokenAlgorithm")
@@ -46,11 +42,11 @@ public class JwtTokenUtils {
 
     public JwtTokenUtils login(UserVO user, Optional<UserVO> voOptional) {
         voOptional.ifPresent(userDB -> {
-            log.info("userDB : {}", userDB);
             if (user.getPassword().equals(userDB.getPassword())) {
                 jwtUser = new JwtUser();
                 jwtUser.setRole(BusinessType.RoleType.getRoleName(userDB.getRoles()));
                 jwtUser.setUserId(userDB.getUserId());
+                log.info("JwtUser : {}", jwtUser);
             }
         });
         return this;
@@ -58,22 +54,17 @@ public class JwtTokenUtils {
 
     @SuppressWarnings("unchecked")
     public Mono<ResultData> createSign() {
-        if (jwtUser == null) {
-            return Mono.just(ResultData.builder()
-                    .code(HttpStatus.NOT_FOUND.value())
-                    .errMsg(INCORRECT_LOGIN_PASSWORD)
-                    .builded());
-        }
-        return Mono.just(new Date()).map(date -> {
-            Calendar calendar = new GregorianCalendar();
-            calendar.setTime(date);
-            calendar.add(Calendar.SECOND, TOKEN_SURVIVAL_MILLISECOND.getValue());
-            return calendar;
-        }).map(calendar -> Tuples.of(calendar, new HashMap<>()))
+        return Mono.justOrEmpty(jwtUser)
+                .map(jwt -> {
+                    Calendar calendar = new GregorianCalendar();
+                    calendar.setTime(new Date());
+                    calendar.add(Calendar.SECOND, TOKEN_SURVIVAL_MILLISECOND.getValue());
+                    return Tuples.of(calendar, jwt);
+                }).map(tuple2 -> Tuples.of(tuple2.getT1(), new HashMap<>(2)))
                 .map(data -> {
                     data.getT2().put("token", JWT
                             .create()
-                            .withIssuer(ISSUSER)
+                            .withIssuer(ISS_USER)
                             .withSubject(JsonUtils.toJson(jwtUser))
                             .withExpiresAt(data.getT1().getTime())
                             .sign(algorithm));
@@ -83,12 +74,20 @@ public class JwtTokenUtils {
                         .code(HttpStatus.OK.value())
                         .value(map)
                         .errMsg("")
-                        .builded()));
+                        .builded())).defaultIfEmpty(ResultData.builder()
+                        .code(HttpStatus.NOT_FOUND.value())
+                        .errMsg(INCORRECT_LOGIN_PASSWORD)
+                        .builded());
     }
 
     public Mono<ResultData> refresh(DecodedJWT decodedJWT) {
         this.jwtUser = (JwtUser) JsonUtils.toObj(decodedJWT.getSubject(), JwtUser.class);
         return createSign();
+    }
+
+    public static Optional<String> getTokenFromHeader(ServerRequest request) {
+        List<String> token = request.headers().header("Authorization");
+        return Optional.ofNullable(token == null || token.size() == 0 ? null : token.get(0));
     }
 
     /**
@@ -98,7 +97,7 @@ public class JwtTokenUtils {
     public Optional<DecodedJWT> tokenVerify(String jwt) {
         DecodedJWT decodedJWT = null;
         try {
-            JWTVerifier verifier = JWT.require(algorithm).withIssuer(ISSUSER).build();
+            JWTVerifier verifier = JWT.require(algorithm).withIssuer(ISS_USER).build();
             decodedJWT = verifier.verify(jwt);
         } catch (JWTVerificationException exception) {
             log.error(exception.getMessage());

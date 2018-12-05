@@ -20,7 +20,7 @@ public class ApiExamRouter {
     @Bean(value = "ExamApiRouter")
     public RouterFunction<?> examApiRouter() {
         return route(
-                GET("/api/exam"), examHandler::addQues);
+                GET("/v1/api/exam"), examHandler::addQues);
     }
 
 }

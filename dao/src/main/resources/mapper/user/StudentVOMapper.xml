@@ -4,7 +4,7 @@
     <resultMap id="BaseResultMap" type="com.tensor.org.api.dao.enpity.user.StudentVO">
         <id column="student_no" jdbcType="VARCHAR" property="studentNo"/>
         <result column="student_real_name" jdbcType="VARCHAR" property="studentRealName"/>
-        <result column="user_id" jdbcType="VARCHAR" property="publisher"/>
+        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
     </resultMap>
 
     <!--根据学生编号查找该学生账户-->

@@ -46,7 +46,7 @@ public class HttpServerConfigure {
     public SecurityConfigure securityConfigure() {
         return new SecurityConfigure()
                 .init()
-                .addMatcher("/api", BusinessType.RoleType.ROLE_ADMIN)
+                .addMatcher("^\\/v1\\/api$", BusinessType.RoleType.ROLE_ADMIN)
                 .build();
     }
 

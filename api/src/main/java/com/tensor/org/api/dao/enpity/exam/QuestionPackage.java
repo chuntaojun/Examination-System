@@ -1,4 +1,4 @@
-package com.tensor.org.api.exam;
+package com.tensor.org.api.dao.enpity.exam;
 
 import java.io.Serializable;
 

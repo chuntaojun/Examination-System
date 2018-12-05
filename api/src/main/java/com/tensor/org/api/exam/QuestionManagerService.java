@@ -2,6 +2,7 @@ package com.tensor.org.api.exam;
 
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
+import com.tensor.org.api.dao.enpity.exam.QuestionPackage;
 
 import java.util.List;
 

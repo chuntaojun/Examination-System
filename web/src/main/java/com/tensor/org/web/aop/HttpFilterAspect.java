@@ -52,7 +52,7 @@ public class HttpFilterAspect {
                     if (matchInfoPredicate.test(pathMatchInfo(routerInfo.getUrl(), request))) {
                         routerInfo.setLastRequestTime(new Date());
                         routerInfo.setRequestCount(routerInfo.getRequestCount() + 1);
-                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo);
+                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo, false);
                     }
                 }).count();
     }
@@ -74,7 +74,7 @@ public class HttpFilterAspect {
                         routerInfo.addSpendTime(routerInfo.getLastRequestSpend());
                         routerInfo.setAverageSpendTime(routerInfo.getTotalSpendTime() * 1.0 / routerInfo.getRequestCount());
                         routerInfo.setSuccessRequestCount();
-                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo);
+                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo, true);
                     }
                 }).count();
     }
@@ -85,9 +85,12 @@ public class HttpFilterAspect {
                 .parallelStream()
                 .peek(routerInfo -> {
                     if (matchInfoPredicate.test(pathMatchInfo(routerInfo.getUrl(), request))) {
+                        if (routerInfo.getLastRequestTime() == null) {
+                            routerInfo.setLastRequestTime(new Date());
+                        }
                         routerInfo.setFailRequestCount();
                         routerInfo.setErrorMap(errorMap);
-                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo);
+                        registerUrlContainer.updateRequestInfo(routerInfo.getUrl(), routerInfo, true);
                     }
                 }).count();
     }
