@@ -14,6 +14,6 @@ public class PublishJob implements Job {
 
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
-
+        log.info("start job");
     }
 }

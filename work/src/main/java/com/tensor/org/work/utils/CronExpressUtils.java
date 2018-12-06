@@ -2,10 +2,14 @@ package com.tensor.org.work.utils;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
+/**
+ * @author liaochuntao
+ */
 @Slf4j
 public class CronExpressUtils {
 
@@ -15,11 +19,10 @@ public class CronExpressUtils {
      * @return
      */
     public static String date2CornExpress(Date date) {
-        Calendar calendar = new GregorianCalendar();
+        Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
-        int week = calendar.get(Calendar.DAY_OF_WEEK);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
@@ -28,8 +31,8 @@ public class CronExpressUtils {
                 .append(minute).append(" ")
                 .append(hour).append(" ")
                 .append(day).append(" ")
-                .append(month).append(" ")
-                .append(week).append(" ")
+                .append(month + 1).append(" ")
+                .append("?").append(" ")
                 .append(year);
         return cornBuilder.toString();
     }

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author liaochuntao
  */
-public interface JobTaskService {
+public interface TaskService {
 
     ResultData createJob(JobEntityPO jobEntityPO);
 
