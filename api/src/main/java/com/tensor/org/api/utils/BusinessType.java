@@ -117,4 +117,27 @@ public final class BusinessType {
         }
     }
 
+    public enum SearchConditionType {
+        /**
+         * 试题查询
+         */
+        SEARCH_FOR_EXAM_QUESTION(1, "exam-question")
+        ;
+        private int val;
+        private String type;
+
+        SearchConditionType(int val, String type) {
+            this.val = val;
+            this.type = type;
+        }
+
+        public int getVal() {
+            return val;
+        }
+
+        public String getType() {
+            return type;
+        }
+    }
+
 }

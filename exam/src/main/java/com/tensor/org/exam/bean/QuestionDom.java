@@ -1,5 +1,6 @@
 package com.tensor.org.exam.bean;
 
+import lombok.Builder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
@@ -8,22 +9,22 @@ import java.util.Date;
 /**
  * @author liaochuntao
  */
+@Builder
 @Document(indexName = "dubbo-cloud-exam", type = "QuestionDom")
 public class QuestionDom {
 
     @Id
     private String quesId;
     private String quesBody;
-    private String quesAuthor;
     private Date quesCreate;
 
-    public QuestionDom() {
-    }
+    public static String SEARCH_FIELD_QUES_BODY = "quesBody";
 
-    public QuestionDom(String quesId, String quesBody, String quesAuthor, Date quesCreate) {
+    public QuestionDom() {}
+
+    public QuestionDom(String quesId, String quesBody, Date quesCreate) {
         this.quesId = quesId;
         this.quesBody = quesBody;
-        this.quesAuthor = quesAuthor;
         this.quesCreate = quesCreate;
     }
 
@@ -43,14 +44,6 @@ public class QuestionDom {
         this.quesBody = quesBody;
     }
 
-    public String getQuesAuthor() {
-        return quesAuthor;
-    }
-
-    public void setQuesAuthor(String quesAuthor) {
-        this.quesAuthor = quesAuthor;
-    }
-
     public Date getQuesCreate() {
         return quesCreate;
     }
@@ -64,7 +57,6 @@ public class QuestionDom {
         return "QuestionDom{" +
                 "quesId='" + quesId + '\'' +
                 ", quesBody='" + quesBody + '\'' +
-                ", quesAuthor='" + quesAuthor + '\'' +
                 ", quesCreate=" + quesCreate +
                 '}';
     }

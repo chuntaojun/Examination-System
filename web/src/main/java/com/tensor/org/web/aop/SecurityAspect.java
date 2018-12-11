@@ -30,7 +30,7 @@ public class SecurityAspect {
     @Pointcut("execution(* com.tensor.org.web.handler..*.*(..))")
     public void securityHandler() {}
 
-    @Before("securityHandler()")
+//    @Before("securityHandler()")
     public void beforeExecute(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         ServerRequest request = (ServerRequest) joinPoint.getArgs()[0];

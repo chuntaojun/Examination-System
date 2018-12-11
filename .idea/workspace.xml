@@ -2,41 +2,146 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64fd663-508d-49e4-9263-2bbf26e23673" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/SearchConditionPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/JudgeQuesVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/JudgeQuesVODao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/AnswerQuesVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/JudgeQuesVODaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/JudgeQuesVOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/JudgeQuesVOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/ExamQuesSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/impl/ExamQuesSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/QuesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ques/QuesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/exception/NoSuchQuesTypeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/job/JobEntityPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/job/JobEntityPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/AnswerQuesVODao.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/dao/exam/AnswerQuesVODao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/classes/java/main/com/tensor/org/api/utils/BusinessType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntityPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntityPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/ResultData$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/ResultData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/Page$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/ExamScoreVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/ExamVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/QuestionPackage$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/job/JobEntityPO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/log/LogApiRequestPO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/notice/KafkaMsg$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/notice/KafkaMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/notice/KafkaPackage$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/notice/KafkaPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/notice/NoticePackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/organization/OrganizationVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/user/JwtUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/user/OrgLinkStuVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/user/StudentVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/user/TeacherVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/enpity/user/UserVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/exam/AnswerQuesVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/exam/ExamScoreVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/exam/ExamVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/exam/SelectQuesVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/log/ApiRequestDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/log/NoticeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/organization/OrganizationVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/task/JobTaskPODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/user/StudentVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/user/TeacherVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/dao/user/UserVODao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/exam/ExamPaperService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/exam/QuestionManagerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/kafka/KafkaProducerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/task/JobTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/user/NoticeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/user/NoticeType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessState$ExamStateEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessState$File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessType$NoticeTopicEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessType$QuestionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessType$RoleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/BusinessType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/CurdTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/out/production/classes/com/tensor/org/api/utils/exception/NoSuchRoleTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/DaoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/DaoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/classes/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/AnswerQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/aop/HttpFilterAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure$SortedRouterFunctionsContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/RouterFuncMapConfigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer$RouterInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/notice/NoticeHandlerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/quartz/QuartzConfigure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/quartz/ScheduleJobFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/CronExpressUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/CronExpressUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/ScheduleJobFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/JobTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/JobTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/job/PublishJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/job/PublishJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure$GlobalErrorWebExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/GlobalExceptionConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/router/ApiExamRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/ResponseAdaperUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/utils/ResponseAdaperUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/NoticeApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/JobTaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/kafka/KafkaTopicProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyServerConfigure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/config/netty/TcpServerConfigure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/KafkaProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelIdPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeConsumerCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticePublishCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/task/TaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/task/impl/TaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/task/job/PublishJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/CronExpressUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/NoticeGlobalIdUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$CN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue$EN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/StringsValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/api/build/" />
@@ -76,6 +181,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dubbo_cloud" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dubbo_cloud" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dubbo_cloud" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dubbo_cloud: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dubbo_cloud" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dubbo_cloud: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="answer_ques: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -86,7 +228,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -144,48 +291,50 @@
     <session id="1885881708">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
+          <entry key="class" value="23" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="79" />
+          <entry key="java" value="203" />
           <entry key="md" value="2" />
-          <entry key="properties" value="9" />
-          <entry key="xml" value="2" />
+          <entry key="properties" value="15" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="23" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="79" />
+          <entry key="JAVA" value="203" />
           <entry key="Markdown" value="2" />
-          <entry key="Properties" value="9" />
-          <entry key="XML" value="2" />
+          <entry key="Properties" value="15" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="1341" />
+          <entry key="java" value="3729" />
           <entry key="md" value="14" />
-          <entry key="properties" value="128" />
-          <entry key="xml" value="58" />
+          <entry key="properties" value="176" />
+          <entry key="xml" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1341" />
+          <entry key="JAVA" value="3729" />
           <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Properties" value="128" />
-          <entry key="XML" value="58" />
+          <entry key="Properties" value="176" />
+          <entry key="SQL" value="15" />
+          <entry key="XML" value="132" />
         </counts>
       </usages-collector>
     </session>
@@ -193,101 +342,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/job/JobTaskHandlerImpl.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="343">
+              <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/TaskServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="343">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="210">
+              <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/jackson/JacksonProperties.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="177" column="16" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+            <state relative-caret-position="288">
+              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
-                <element signature="e#3710#3711#0" expanded="true" />
-                <element signature="e#3745#3746#0" expanded="true" />
-                <element signature="e#3889#3890#0" expanded="true" />
-                <element signature="e#3940#3941#0" expanded="true" />
-                <element signature="e#5080#5081#0" expanded="true" />
-                <element signature="e#5111#5112#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/TimeZone.java">
+        <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/exam/QuestionManagerService.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="525" column="17" lean-forward="true" selection-start-line="525" selection-start-column="17" selection-end-line="525" selection-end-column="17" />
+            <state relative-caret-position="112">
+              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/GregorianCalendar.java">
+        <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ques/QuesServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5235">
-              <caret line="329" column="13" selection-start-line="329" selection-start-column="13" selection-end-line="329" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="97" lean-forward="true" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
+            <state relative-caret-position="325">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -306,12 +451,21 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowGroupBy>Package</toolWindowGroupBy>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>TimezoneOffset</find>
       <find>JDBC</find>
       <find>getTimeZone</find>
+      <find>QuestionSearchServiceImpl</find>
+      <find>QuestionManagerService</find>
+      <find>QuestionPackage</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1835,36 +1989,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/NoticeTopicEnum.java" />
-        <option value="$PROJECT_DIR$/notice/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java" />
-        <option value="$PROJECT_DIR$/web/build.gradle" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/exception/NoSuchNoticeGroupNameException.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/WorkAddService.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/TaskAddService.java" />
-        <option value="$PROJECT_DIR$/work/build.gradle" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/QuartzJob.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/JobTaskService.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/work/impl/JobTaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntity.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceType.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/DataSourceConfigure.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/task/JobTaskPODao.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/task/JobTaskPODaoImpl.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/mapper/job/JobTaskPOMapper.xml" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/QuartzJob.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/PublishJob.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/task/JobTaskPOMapper.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/job/JobTaskHandler.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiJobRouter.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/task/JobTaskService.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/JobTaskService.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/job/PublishJob.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/JobTaskServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/job/JobTaskHandlerImpl.java" />
@@ -1872,14 +1996,50 @@
         <option value="$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java" />
         <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java" />
         <option value="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/TaskServiceImpl.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/exception/NoSuchQuesTypeException.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/JudgeQuesVO.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/ExamQuesSearchService.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/SearchConditionPO.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumer.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/QuesService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/JudgeQuesVODao.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/JudgeQuesVODaoImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/JudgeQuesVOMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/JudgeQuesVOMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/AnswerQuesVODaoImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionSearchService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/impl/ExamQuesSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java" />
+        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ques/QuesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java" />
       </list>
     </option>
   </component>
@@ -1903,8 +2063,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1928,14 +2086,14 @@
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1943,49 +2101,102 @@
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="enpity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="enpity" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="enpity" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
@@ -1995,10 +2206,31 @@
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -2074,49 +2306,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2128,39 +2317,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -2227,6 +2384,152 @@
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="ques" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="exam" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="user" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -2302,7 +2605,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -2312,8 +2615,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -2515,6 +2817,40 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2583,6 +2919,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2592,7 +2930,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544071292427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544540650601" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -2675,17 +3013,19 @@
       <workItem from="1544009487961" duration="947000" />
       <workItem from="1544010568367" duration="3790000" />
       <workItem from="1544015738863" duration="4829000" />
-      <workItem from="1544061438305" duration="8392000" />
+      <workItem from="1544061438305" duration="9346000" />
+      <workItem from="1544521068358" duration="9245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20913000" />
+    <option name="totallyTimeSpent" value="31112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="2005" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26846662" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27101377" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -2693,8 +3033,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="JProfiler" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297975" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49083894" />
@@ -2711,16 +3049,18 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32997763" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32997763" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="16" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="16" weight="0.3297975" />
       <window_info anchor="bottom" id="Statistic" order="17" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="18" />
+      <window_info anchor="bottom" id="JProfiler" order="19" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.32938856" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32908812" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32959756" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -2760,431 +3100,419 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/task/JobTaskPODao.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/JudgeQuesVOMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="128">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/task/JobTaskPODaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/exam/AnswerQuesVOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/ExamScoreVODaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/CurdTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/dao/exam/AnswerQuesVODao.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/api/exam/AnswerQuesVODaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/exam/QuestionSearchService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/ExamPaperService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/TeacherVODao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/UserVODao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/exam/AnswerQuesVODao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/log/ApiRequestPOMapper.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/task/JobTaskPODao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="92" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="92" />
+        <state relative-caret-position="288">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/mapper/task/JobTaskPOMapper.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/user/StudentVODao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionManagerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/job/JobTaskHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/task/JobTaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API-DOC.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+        <state relative-caret-position="448">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/ResponseAdaperUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="21" column="110" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="26" selection-start-line="26" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="48">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.2.RELEASE/f553c7dd353ea65f18d4e42d3070bc5bd83111a/spring-context-5.1.2.RELEASE-sources.jar!/org/springframework/stereotype/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/task/JobTaskService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiJobRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/login/LoginHandlerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/dao/enpity/job/JobEntityPO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="521">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/job/JobEntityPO.java">
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/bean/QuestionDom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="160">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/Calendar.java">
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/org/springframework/data/domain/Pageable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1769" column="18" selection-start-line="1769" selection-start-column="18" selection-end-line="1769" selection-end-column="18" />
+        <state relative-caret-position="-1215">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/org/springframework/data/domain/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-elasticsearch/3.1.2.RELEASE/3cdba66b706cff0010155322d9e49b7cf3de4f8d/spring-data-elasticsearch-3.1.2.RELEASE-sources.jar!/org/springframework/data/elasticsearch/repository/ElasticsearchRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/dao/QuestionDomRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectCenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
-            <element signature="e#71057#71058#0" expanded="true" />
-            <element signature="e#71104#71105#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ExamCorrectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/ExamCorrectCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/kafka/KafkaConsumerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/exception/NoSuchQuesTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/impl/ExamQuesSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="749" column="15" selection-start-line="749" selection-start-column="15" selection-end-line="749" selection-end-column="15" />
+          <folding>
+            <element signature="e#31376#31377#0" expanded="true" />
+            <element signature="e#31403#31404#0" expanded="true" />
+            <element signature="e#31780#31781#0" expanded="true" />
+            <element signature="e#31808#31809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="352" column="47" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/ExamQuesSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/QuesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/utils/BusinessType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/dao/enpity/exam/AnswerQuesVO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/mapper/exam/JudgeQuesVOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="401">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/jre/lib/rt.jar!/sun/util/calendar/CalendarDate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="136" column="15" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
-          <folding>
-            <element signature="e#2951#2952#0" expanded="true" />
-            <element signature="e#2984#2985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="791" column="33" selection-start-line="791" selection-start-column="33" selection-end-line="791" selection-end-column="33" />
-          <folding>
-            <element signature="e#28620#28621#0" expanded="true" />
-            <element signature="e#28671#28672#0" expanded="true" />
-            <element signature="e#30042#30043#0" expanded="true" />
-            <element signature="e#30120#30121#0" expanded="true" />
-            <element signature="e#33584#33585#0" expanded="true" />
-            <element signature="e#33655#33656#0" expanded="true" />
-            <element signature="e#34244#34245#0" expanded="true" />
-            <element signature="e#34289#34290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/quartz/JobStoreType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/tensor/org/user/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/ExamApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/utils/CronExpressUtils.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiExamRouter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/QuartzConfigure.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/spi/JobFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/5.1.2.RELEASE/e47b2bf8ff3db999b6b37f111bbf843e038e9631/spring-context-support-5.1.2.RELEASE-sources.jar!/org/springframework/scheduling/quartz/SpringBeanJobFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/quartz/ScheduleJobFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/5.1.2.RELEASE/e47b2bf8ff3db999b6b37f111bbf843e038e9631/spring-context-support-5.1.2.RELEASE-sources.jar!/org/springframework/scheduling/quartz/SchedulerFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
-          <folding>
-            <element signature="e#10859#10860#0" expanded="true" />
-            <element signature="e#10906#10907#0" expanded="true" />
-            <element signature="e#12886#12887#0" expanded="true" />
-            <element signature="e#12921#12922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/quartz/QuartzProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="138" column="11" lean-forward="true" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
-          <folding>
-            <element signature="e#2209#2210#0" expanded="true" />
-            <element signature="e#2248#2249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/Scheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="240" column="9" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/job/PublishJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/task/impl/TaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/NoticeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/WebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/GregorianCalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5235">
-          <caret line="329" column="13" selection-start-line="329" selection-start-column="13" selection-end-line="329" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/TimeZone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="525" column="17" lean-forward="true" selection-start-line="525" selection-start-column="17" selection-end-line="525" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/JobTaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="97" lean-forward="true" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/job/JobTaskHandlerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/jackson/JacksonProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="177" column="16" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
-          <folding>
-            <element signature="e#3710#3711#0" expanded="true" />
-            <element signature="e#3745#3746#0" expanded="true" />
-            <element signature="e#3889#3890#0" expanded="true" />
-            <element signature="e#3940#3941#0" expanded="true" />
-            <element signature="e#5080#5081#0" expanded="true" />
-            <element signature="e#5111#5112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="343">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="343">
+          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/dao/enpity/exam/QuestionPackage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/QuestionPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/com/tensor/org/api/exam/QuestionManagerService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/ques/QuesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/SecurityAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
         </state>
       </provider>
     </entry>

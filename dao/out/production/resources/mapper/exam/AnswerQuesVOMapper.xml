@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tensor.org.dao.mapper.exam.AnswerQuesVOMapper">
-  <resultMap id="BaseResultMap" type="com.tensor.org.api.dao.enpity.exam.AnswerQuesVO">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="ques_doc" jdbcType="VARCHAR" property="quesDoc" />
-    <result column="ques_score" jdbcType="REAL" property="quesScore" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-    <result column="teacher_no" jdbcType="VARCHAR" property="teacherNo" />
-  </resultMap>
+    <resultMap id="BaseResultMap" type="com.tensor.org.api.dao.enpity.exam.AnswerQuesVO">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="ques_doc" jdbcType="VARCHAR" property="quesDoc"/>
+        <result column="ques_score" jdbcType="REAL" property="quesScore"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="teacher_no" jdbcType="VARCHAR" property="teacherNo"/>
+    </resultMap>
+
+    <insert id="save">
+        insert into answer_ques (id, ques_doc, ques_score, create_time, teacher_no)
+        value (#{answerQuesVO.id},
+               #{answerQuesVO.quesDoc},
+               #{answerQuesVO.quesScore},
+               #{answerQuesVO.createTime},
+               #{answerQuesVO.teacherNo})
+    </insert>
 
 </mapper>

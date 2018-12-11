@@ -1,6 +1,6 @@
 package com.tensor.org.exam.service.exam.impl;
 
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.exam.service.exam.ExamCorrectService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

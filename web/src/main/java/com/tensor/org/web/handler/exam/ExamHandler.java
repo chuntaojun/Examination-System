@@ -16,4 +16,11 @@ public interface ExamHandler {
      */
     Mono<ServerResponse> addQues(ServerRequest request);
 
+    /**
+     * 查询操作
+     * @param request
+     * @return
+     */
+    Mono<ServerResponse> search(ServerRequest request);
+
 }

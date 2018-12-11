@@ -54,4 +54,12 @@ public class ResponseAdaperUtils {
                 .subscribeOn(Schedulers.elastic());
     }
 
+    public static ResultData change(ResultData<?> resultData) {
+        return ResultData.builder()
+                .code(resultData.getCode())
+                .errMsg(resultData.getErrMsg())
+                .value(resultData.getValue())
+                .builded();
+    }
+
 }

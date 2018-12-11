@@ -1,7 +1,8 @@
 package com.tensor.org.exam.service.exam.impl;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.tensor.org.api.ResultData;
-import com.tensor.org.api.user.NoticePackage;
+import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.exam.service.exam.ExamCorrectCenter;
 import com.tensor.org.exam.service.exam.ExamCorrectService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +22,8 @@ import java.util.Observable;
 @Component
 @Service
 public class ExamCorrectCenterImpl extends Observable implements ExamCorrectCenter {
+
+    @Reference
 
     @Autowired private ExamCorrectService examCorrectService;
 
