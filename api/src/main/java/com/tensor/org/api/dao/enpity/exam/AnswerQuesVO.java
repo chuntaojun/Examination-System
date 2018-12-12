@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class AnswerQuesVO implements Serializable {
 
-    private Integer id;
+    private String id;
 
     private String quesDoc;
 
@@ -27,7 +27,7 @@ public class AnswerQuesVO implements Serializable {
     public AnswerQuesVO() {
     }
 
-    public AnswerQuesVO(Integer id, String quesDoc, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
+    public AnswerQuesVO(String id, String quesDoc, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
         this.id = id;
         this.quesDoc = quesDoc;
         this.quesScore = quesScore;
@@ -36,11 +36,11 @@ public class AnswerQuesVO implements Serializable {
         this.teacherNo = teacherNo;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

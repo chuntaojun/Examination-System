@@ -9,7 +9,7 @@ import java.util.Date;
 public class JudgeQuesVO implements Serializable {
 
     private static final long serialVersionUID = 621035499403899530L;
-    private Integer id;
+    private String id;
 
     private String quesDoc;
 
@@ -26,7 +26,7 @@ public class JudgeQuesVO implements Serializable {
     public JudgeQuesVO() {
     }
 
-    public JudgeQuesVO(Integer id, String quesDoc, boolean quesChoice, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
+    public JudgeQuesVO(String id, String quesDoc, boolean quesChoice, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
         this.id = id;
         this.quesDoc = quesDoc;
         this.quesChoice = quesChoice;
@@ -36,11 +36,11 @@ public class JudgeQuesVO implements Serializable {
         this.teacherNo = teacherNo;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

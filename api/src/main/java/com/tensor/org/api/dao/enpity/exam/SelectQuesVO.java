@@ -12,7 +12,7 @@ public class SelectQuesVO implements Serializable {
 
     private static final long serialVersionUID = 875453298275031139L;
 
-    private Integer id;
+    private String id;
 
     private String quesDoc;
 
@@ -29,7 +29,7 @@ public class SelectQuesVO implements Serializable {
     public SelectQuesVO() {
     }
 
-    public SelectQuesVO(Integer id, String quesDoc, String quesChoice, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
+    public SelectQuesVO(String id, String quesDoc, String quesChoice, Float quesScore, Date createTime, Date updateTime, String teacherNo) {
         this.id = id;
         this.quesDoc = quesDoc;
         this.quesChoice = quesChoice;
@@ -43,11 +43,11 @@ public class SelectQuesVO implements Serializable {
         return serialVersionUID;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -16,10 +16,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * @author liaochuntao
@@ -45,18 +42,17 @@ public class ExamQuesSearchServiceImpl implements ExamQuesSearchService {
     }
 
     @Override
-    public ResultData<List<QuestionPackage>> findQuesFuzzy(SearchConditionPO searchConditionPO) {
+    public ResultData<List> findQuesFuzzy(SearchConditionPO searchConditionPO) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(QueryBuilders
                         .functionScoreQuery(QueryBuilders
                                 .matchQuery(QuestionDom.SEARCH_FIELD_QUES_BODY, searchConditionPO.getQueryBody())))
                 .build();
-        List<QuestionDom> doms = questionDomRepository.search(searchQuery).getContent();
-        return ResultData.builder().value(doms.parallelStream()
-                .map(questionDom -> QuestionPackage.builder()
-                        .quesId(questionDom.getQuesId())
-                        .quesBody((Map) JsonUtils.toObj(questionDom.getQuesBody(), HashMap.class))
-                        .builded())
-                .collect(Collectors.toList())).builded();
+        List doms = questionDomRepository.search(searchQuery).getContent();
+        return ResultData.builder()
+                .code((doms != null && !doms.isEmpty()) ? HttpResponseStatus.OK.code() : HttpResponseStatus.BAD_REQUEST.code())
+                .value(doms)
+                .builded();
     }
+
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tensor.org.dao.mapper.exam.SelectQuesVOMapper">
   <resultMap id="BaseResultMap" type="com.tensor.org.api.dao.enpity.exam.SelectQuesVO">
-    <id column="id" jdbcType="INTEGER" property="id" />
+    <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="ques_doc" jdbcType="VARCHAR" property="quesDoc" />
     <result column="ques_choice" jdbcType="VARCHAR" property="quesChoice" />
     <result column="ques_score" jdbcType="REAL" property="quesScore" />

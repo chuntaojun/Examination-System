@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author liaochuntao
@@ -50,6 +51,23 @@ public class QuestionDom {
 
     public void setQuesCreate(Date quesCreate) {
         this.quesCreate = quesCreate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        QuestionDom that = (QuestionDom) o;
+        return Objects.equals(quesBody, that.quesBody);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(quesBody);
     }
 
     @Override

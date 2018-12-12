@@ -7,12 +7,17 @@ import com.tensor.org.api.dao.enpity.exam.AnswerQuesVO;
 import com.tensor.org.api.dao.exam.AnswerQuesVODao;
 import com.tensor.org.api.utils.CurdTypeEnum;
 import com.tensor.org.dao.mapper.exam.AnswerQuesVOMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author liaochuntao
+ */
+@Slf4j
 @Component
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",

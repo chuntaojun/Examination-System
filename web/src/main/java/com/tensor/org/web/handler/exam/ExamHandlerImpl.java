@@ -27,10 +27,10 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @Component
 public class ExamHandlerImpl implements ExamHandler {
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}")
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}", timeout = 5000)
     private QuestionSearchService questionSearchService;
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}")
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}", timeout = 5000)
     private QuestionManagerService questionManagerService;
 
     @Override

@@ -24,7 +24,7 @@ public class ApiExamRouter {
     public RouterFunction<?> examApiRouter() {
         return route(
                 POST("/v1/api/exam/add/ques"), examHandler::addQues)
-                .andRoute(GET("/v1/api/exam/search/ques").and(accept(MediaType.APPLICATION_JSON)), examHandler::search);
+                .andRoute(POST("/v1/api/exam/search/ques").and(accept(MediaType.APPLICATION_JSON)), examHandler::search);
     }
 
 }

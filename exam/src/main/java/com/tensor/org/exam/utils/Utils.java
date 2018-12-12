@@ -17,7 +17,7 @@ public class Utils {
 
     public static Object jsonToQues(int quesType, Map quesBody) {
         String s = JsonUtils.toJson(quesBody);
-        if (BusinessType.QuestionType.QUESTION_TYPE_ANSWERE.getValue() == quesType) {
+        if (BusinessType.QuestionType.QUESTION_TYPE_ANSWER.getValue() == quesType) {
             return (AnswerQuesVO) JsonUtils.toObj(s, AnswerQuesVO.class);
         }
         if (BusinessType.QuestionType.QUESTION_TYPE_JUDGE.getValue() == quesType) {

@@ -13,6 +13,6 @@ public interface ExamQuesSearchService {
 
     ResultData save(QuestionPackage questionPackage);
 
-    ResultData<List<QuestionPackage>> findQuesFuzzy(SearchConditionPO searchConditionPO);
+    ResultData<List> findQuesFuzzy(SearchConditionPO searchConditionPO);
 
 }

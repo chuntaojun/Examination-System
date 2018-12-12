@@ -26,12 +26,10 @@ import java.util.List;
 public class QuestionManagerServiceImpl implements QuestionManagerService {
 
     @Autowired private QuesService quesService;
-    @Autowired private ExamQuesSearchService examQuesSearchService;
 
     @Override
     public ResultData saveQuesCurd(QuestionPackage questionPackage) {
         questionPackage.setQuesId(Utils.id());
-        examQuesSearchService.save(questionPackage);
         return quesService.save(questionPackage);
     }
 

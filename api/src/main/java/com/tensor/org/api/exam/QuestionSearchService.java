@@ -14,16 +14,9 @@ public interface QuestionSearchService {
 
     /**
      *
-     * @param questionPackage
-     * @return
-     */
-    ResultData save(QuestionPackage questionPackage);
-
-    /**
-     *
      * @param searchConditionPO
      * @return
      */
-    ResultData<List<QuestionPackage>> findQuesFuzz(SearchConditionPO searchConditionPO);
+    ResultData<List> findQuesFuzz(SearchConditionPO searchConditionPO);
 
 }

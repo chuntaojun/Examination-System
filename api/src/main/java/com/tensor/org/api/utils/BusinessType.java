@@ -14,20 +14,25 @@ public final class BusinessType {
     public enum QuestionType {
 
         /**
-         * 选择题
+         *
+         */
+        QUESTION_SELECT_ID("QS"),
+        QUESTION_ANSWER_ID("QA"),
+        QUESTION_JUDGE_ID("QJ"),
+
+        /**
+         * 试题类型
          */
         QUESTION_TYPE_SELECT(1, "select-question"),
-        /**
-         * 问答题
-         */
-        QUESTION_TYPE_ANSWERE(2, "answer-question"),
-        /**
-         * 判断题
-         */
+        QUESTION_TYPE_ANSWER(2, "answer-question"),
         QUESTION_TYPE_JUDGE(3, "judge-question");
 
         private int value;
         private String doc;
+
+        QuestionType(String doc) {
+            this.doc = doc;
+        }
 
         QuestionType(int value, String doc) {
             this.value = value;

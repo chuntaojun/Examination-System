@@ -1,6 +1,7 @@
 package com.tensor.org.api.utils;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.lang.reflect.Type;
 
@@ -12,7 +13,7 @@ public class JsonUtils<T> {
     private volatile static Gson gson;
 
     static {
-        gson = new Gson();
+        gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
     }
 
     private JsonUtils() {}

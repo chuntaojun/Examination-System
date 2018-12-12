@@ -24,12 +24,7 @@ public class QuestionSearchServiceImpl implements QuestionSearchService {
     @Autowired private ExamQuesSearchServiceImpl quesSearchService;
 
     @Override
-    public ResultData save(QuestionPackage questionPackage) {
-        return quesSearchService.save(questionPackage);
-    }
-
-    @Override
-    public ResultData<List<QuestionPackage>> findQuesFuzz(SearchConditionPO searchConditionPO) {
+    public ResultData<List> findQuesFuzz(SearchConditionPO searchConditionPO) {
         return quesSearchService.findQuesFuzzy(searchConditionPO);
     }
 }

@@ -12,7 +12,7 @@ public class SearchConditionPO implements Serializable {
 
     private static final long serialVersionUID = -1830668110327394061L;
 
-    private BusinessType.SearchConditionType searchConditionType;
+    private String searchConditionType;
 
     /**
      * 查询内容
@@ -22,16 +22,16 @@ public class SearchConditionPO implements Serializable {
     public SearchConditionPO() {
     }
 
-    public SearchConditionPO(BusinessType.SearchConditionType searchConditionType, String queryBody) {
+    public SearchConditionPO(String searchConditionType, String queryBody) {
         this.searchConditionType = searchConditionType;
         this.queryBody = queryBody;
     }
 
-    public BusinessType.SearchConditionType getSearchConditionType() {
+    public String getSearchConditionType() {
         return searchConditionType;
     }
 
-    public void setSearchConditionType(BusinessType.SearchConditionType searchConditionType) {
+    public void setSearchConditionType(String searchConditionType) {
         this.searchConditionType = searchConditionType;
     }
 
