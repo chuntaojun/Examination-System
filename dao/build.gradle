@@ -1,6 +1,19 @@
-plugins {
-    id 'java'
+buildscript {
+    ext {
+        springBootVersion = '2.1.0.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 group 'dao'
 version 'unspecified'
@@ -12,5 +25,30 @@ repositories {
 }
 
 dependencies {
+
+    compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
+    
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    //    SpringBoot依赖(核心)
+    implementation('org.springframework.boot:spring-boot-starter')
+    //    SpringBoot AOP切面编程依赖
+    implementation('org.springframework.boot:spring-boot-starter-aop')
+    //    SpringBoot MongoDB 数据库依赖
+    implementation('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
+    //    阿里Dubbo
+    compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'
+    implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
+    //    spring 配置文件加密
+    compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '2.1.0'
+    //    数据库相关依赖
+    //    MySQL数据库相关
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
+    //    MyBatis
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.2'
+    //    MyBatis分页插件
+    compile group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.2.9'
+    //    lombok插件
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    //    log4j日志架包
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }

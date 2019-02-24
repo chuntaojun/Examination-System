@@ -4,18 +4,20 @@
  * The settings file is used to specify which projects to include in your build.
  * 
  * Detailed information about configuring a multi-project build in Gradle can be found
- * in the user guide at https://docs.gradle.org/4.10.2/userguide/multi_project_builds.html
+ * in the com.tensor.org.api.user guide at https://docs.gradle.org/4.10.2/userguide/multi_project_builds.html
  */
 
 rootProject.name = 'dubbo-cloud'
 include 'web'
 findProject(':web')?.name = 'com.tensor.org.web'
+include 'dao'
+findProject(':dao')?.name = 'com.tensor.org.dao'
 include 'user'
 findProject(':user')?.name = 'com.tensor.org.user'
 include 'exam'
 findProject(':exam')?.name = 'com.tensor.org.exam'
-include 'dao'
-findProject(':dao')?.name = 'com.tensor.org.dao'
+include 'work'
+findProject(':work')?.name = 'com.tensor.org.work'
 include 'api'
 findProject(':api')?.name = 'com.tensor.org.api'
 
