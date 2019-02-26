@@ -1,9 +1,10 @@
 package com.tensor.org.work.service.socket.impl;
 
 import com.tensor.org.api.dao.enpity.notice.NoticePackage;
-import com.tensor.org.work.service.socket.ChannelIdPool;
+import com.tensor.org.work.service.socket.ClientChannelAttrManage;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.utils.StringsValue;
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -13,6 +14,11 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import org.springframework.stereotype.Component;
+
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_GLOBAL;
 import static com.tensor.org.work.service.socket.ChannelGroupTypeEnum.CHANNEL_GROUP_STUDENT;
@@ -57,7 +63,7 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
         } else {
             channel.writeAndFlush(new TextWebSocketFrame("客户端id ：" + channel.id()));
             NoticeConsumerCenterImpl.addReceiver(contexts[1]);
-            ChannelIdPool.add(contexts[1], channel.id());
+            channel.attr(ClientChannelAttrManage.CLIENT_ID_ATTRIBUTEKEY).set(contexts[1]);
             addToChannelGroup(contexts[0], channel);
         }
     }
@@ -70,7 +76,6 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         log.info("客户端编号为 [{}] 已断开链接", ctx.channel().id());
-        ChannelIdPool.remove(ctx.channel().id());
         super.channelInactive(ctx);
     }
 
@@ -84,29 +89,45 @@ public class NoticeChannelHandlerImpl extends SimpleChannelInboundHandler<TextWe
      * @param noticePackage
      */
     @Override
-    public void publishMsg(NoticePackage noticePackage, String receiver) {
+    public Set<String> publishMsg(NoticePackage noticePackage, HashSet<String> receiver) {
+        Set<String> list = null;
         if (noticePackage.getGroupType() == CHANNEL_GROUP_STUDENT.getValue()) {
-            send(receiver, studentChannels, noticePackage);
+            list = send(receiver, studentChannels, noticePackage);
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_TEACHER.getValue()) {
-            send(receiver, teacherChannels, noticePackage);
+            list = send(receiver, teacherChannels, noticePackage);
         } else if (noticePackage.getGroupType() == CHANNEL_GROUP_GLOBAL.getValue()) {
-            send(receiver, globalChannels, noticePackage);
+            list = send(receiver, globalChannels, noticePackage);
         }
+        return list;
     }
 
     /**
-     * @param channelId
+     * @param receiver
      * @param channels
      * @param noticePackage
      */
-    private void send(String channelId, ChannelGroup channels, NoticePackage noticePackage) {
+    private Set<String> send(HashSet<String> receiver, ChannelGroup channels, NoticePackage noticePackage) {
         TextWebSocketFrame frame = new TextWebSocketFrame(noticePackage.getMessage());
-        final Channel[] channel = {null};
-        ChannelIdPool.get(channelId).ifPresent(channelId2 -> {
-            channel[0] = channels.find(channelId2);
-            channel[0].writeAndFlush(frame).addListener(future ->
-                    log.info("消息主题为 [{}] 通知已向客户端 [{}] 推送完成", noticePackage.getNoticeLabel(), channel[0].id()));
-        });
+        Set<String> failures = new HashSet<>();
+        channels.stream()
+                .filter(client -> receiver.contains(client.attr(ClientChannelAttrManage.CLIENT_ID_ATTRIBUTEKEY).get()))
+                .flatMap(client -> {
+                    frame.retain();
+                    if (client.isWritable()) {
+                        client.writeAndFlush(frame).addListener(future -> {
+                            if (future.isSuccess()) {
+                                log.info("消息主题为 [{}] 通知已向客户端 [{}] 推送完成",
+                                        noticePackage.getMessage(), client.id());
+                            }
+                        });
+                    } else {
+                        log.error("消息主题为 [{}] 通知已向客户端 [{}] 推送失败",
+                                noticePackage.getMessage(), client.id());
+                        failures.add(client.attr(ClientChannelAttrManage.CLIENT_ID_ATTRIBUTEKEY).get());
+                    }
+                    return null;
+                }).count();
+        return failures;
     }
 
     /**

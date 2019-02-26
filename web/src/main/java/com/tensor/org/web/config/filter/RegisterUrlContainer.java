@@ -53,7 +53,7 @@ public class RegisterUrlContainer {
     public void updateRequestInfo(String pattern, RouterInfo routerInfo, boolean update) {
         urlContainer.put(pattern, routerInfo);
         if (update) {
-            apiRequestDao.save(JsonUtils.toJson(routerInfo));
+//            apiRequestDao.save(JsonUtils.toJson(routerInfo));
         }
     }
 

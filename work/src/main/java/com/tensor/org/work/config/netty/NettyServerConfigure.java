@@ -1,9 +1,14 @@
 package com.tensor.org.work.config.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
+import io.netty.channel.ChannelPipeline;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,13 +45,16 @@ public class NettyServerConfigure {
     @Value("${netty.server.so.backlog}")
     private int backlog;
 
+    @Autowired
+    @Qualifier("ChannelInitializer")
+    private NettyWebSocketChannelInitializer nettyWebSocketChannelInitializer;
+
     @Bean(value = "ServerBootstrap")
     public ServerBootstrap bootstrap() {
         ServerBootstrap b = new ServerBootstrap();
         b.group(bossGroup(), workerGroup())
                 .channel(NioServerSocketChannel.class)
-                .handler(new LoggingHandler(LogLevel.DEBUG))
-                .childHandler(nettyWebSocketChannelInitializer);
+                .handler(nettyWebSocketChannelInitializer);
         Map<ChannelOption<?>, Object> tcpChannelOptions = tcpChannelOptions();
         Set<ChannelOption<?>> keySet = tcpChannelOptions.keySet();
         for (@SuppressWarnings("rawtypes") ChannelOption option : keySet) {
@@ -55,15 +63,14 @@ public class NettyServerConfigure {
         return b;
     }
 
-    @Autowired
-    @Qualifier("ChannelInitializer")
-    private NettyWebSocketChannelInitializer nettyWebSocketChannelInitializer;
-
+    //TODO 问题理解！
     @Bean(name = "tcpChannelOptions")
     public Map<ChannelOption<?>, Object> tcpChannelOptions() {
-        Map<ChannelOption<?>, Object> options = new HashMap<>();
+        Map<ChannelOption<?>, Object> options = new HashMap<>(4);
         options.put(ChannelOption.SO_KEEPALIVE, keepAlive);
         options.put(ChannelOption.SO_BACKLOG, backlog);
+        options.put(ChannelOption.WRITE_BUFFER_HIGH_WATER_MARK, 64 * 1024);
+        options.put(ChannelOption.WRITE_BUFFER_LOW_WATER_MARK, 32 * 1024);
         return options;
     }
 

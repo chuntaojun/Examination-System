@@ -1,5 +1,6 @@
 package com.tensor.org.work.service.socket.impl;
 
+import com.alibaba.dubbo.common.utils.ConcurrentHashSet;
 import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
@@ -9,9 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Observable;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -24,7 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Component
 public class NoticeConsumerCenterImpl extends Observable implements NoticeConsumerCenter {
 
-    private static ConcurrentLinkedQueue<String> receivers = new ConcurrentLinkedQueue<>();
+    private final static ConcurrentHashSet<String> ONLINE_PEOPLES = new ConcurrentHashSet<>();
 
     @Autowired
     private NoticeChannelHandler noticeChannelHandler;
@@ -56,20 +55,20 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
     }
 
     public static void addReceiver(String receiver) {
-        if (!receivers.contains(receiver)) {
-            receivers.add(receiver);
+        if (!ONLINE_PEOPLES.contains(receiver)) {
+            ONLINE_PEOPLES.add(receiver);
         }
     }
 
     public static void removeReceiver(String receiver) {
-        receivers.remove(receiver);
+        ONLINE_PEOPLES.remove(receiver);
     }
 
     private class NoticeConsumeTask implements Runnable {
 
         private NoticePackage noticePackage;
 
-        public NoticeConsumeTask(NoticePackage noticePackage) {
+        NoticeConsumeTask(NoticePackage noticePackage) {
             this.noticePackage = noticePackage;
         }
 
@@ -78,16 +77,16 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
          */
         @Override
         public void run() {
-            List<String> already = new ArrayList<>();
+            HashSet<String> receivers = new HashSet<>();
             noticePackage.getReceivers()
                     .parallelStream()
-                    .filter(receiver -> receivers.contains(receiver))
+                    .filter(receiver -> ONLINE_PEOPLES.contains(receiver))
                     .peek(receiver -> {
-                        already.add(receiver);
-                        noticeChannelHandler.publishMsg(noticePackage, receiver);
+                        receivers.add(receiver);
                     })
                     .count();
-            noticePackage.getReceivers().removeAll(already);
+            receivers.remove(noticeChannelHandler.publishMsg(noticePackage, receivers));
+            noticePackage.getReceivers().removeAll(receivers);
             noticePackage.setTotalReceivers(noticePackage.getReceivers().size());
             setChanged();
             notifyObservers(noticePackage);

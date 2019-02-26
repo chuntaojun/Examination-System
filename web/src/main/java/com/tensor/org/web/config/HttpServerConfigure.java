@@ -1,6 +1,7 @@
 package com.tensor.org.web.config;
 
 import com.tensor.org.api.utils.BusinessType;
+import com.tensor.org.web.config.limiter.RateLimiterConfigure;
 import com.tensor.org.web.config.security.SecurityConfigure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -60,6 +61,11 @@ public class HttpServerConfigure {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
         return new CorsWebFilter(source);
+    }
+
+    @Bean(value = "rateLimiterConfigure")
+    public RateLimiterConfigure rateLimiterConfigure() {
+        return new RateLimiterConfigure();
     }
 
 }
