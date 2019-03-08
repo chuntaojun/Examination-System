@@ -2,6 +2,8 @@ package com.tensor.org.work.service.socket;
 
 import io.netty.util.AttributeKey;
 
+import java.util.concurrent.ConcurrentLinkedQueue;
+
 /**
  * @author liaochuntao
  */

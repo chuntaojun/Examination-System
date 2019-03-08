@@ -9,15 +9,13 @@
 
 rootProject.name = 'dubbo-cloud'
 include 'web'
-findProject(':web')?.name = 'com.tensor.org.web'
 include 'dao'
-findProject(':dao')?.name = 'com.tensor.org.dao'
 include 'user'
-findProject(':user')?.name = 'com.tensor.org.user'
 include 'exam'
-findProject(':exam')?.name = 'com.tensor.org.exam'
 include 'work'
-findProject(':work')?.name = 'com.tensor.org.work'
 include 'api'
-findProject(':api')?.name = 'com.tensor.org.api'
+
+rootProject.children.each {project ->
+    project.buildFileName = "build.gradle"
+}
 

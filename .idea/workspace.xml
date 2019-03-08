@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64fd663-508d-49e4-9263-2bbf26e23673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/TestString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/cache/MybatisRedisCacheConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/out/production/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/HttpServerConfigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/config/filter/RegisterUrlContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/build/libs/com.tensor.org.api-v0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dao/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/exam/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/libs/com.tensor.org.web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/exam/ExamHandlerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/classes/com/tensor/org/web/handler/file/FileHandlerImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/out/production/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/api/NoticePublishServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/ChannelIdPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/NoticeChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeConsumeTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$NoticeThreadFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl$RejectHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/work/out/production/classes/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelIdPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/work/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/api/build/" />
@@ -123,6 +119,32 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
+                <item name=":com.tensor.org.web" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
+                <item name=":com.tensor.org.web" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
+                <item name=":com.tensor.org.web" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dubbo-cloud" type="f1a62948:ProjectNode" />
+                <item name=":com.tensor.org.web" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -133,102 +155,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java">
+        <entry file="file://$PROJECT_DIR$/work/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
-              <folding>
-                <element signature="e#1568#1569#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="66" column="4" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="93" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java">
+        <entry file="file://$PROJECT_DIR$/dao/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/handler/codec/http/websocketx/TextWebSocketFrame.java">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/cache/MybatisRedisCacheConfigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="59" column="75" lean-forward="true" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/TcpServerConfigure.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -249,8 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TimezoneOffset</find>
-      <find>JDBC</find>
       <find>getTimeZone</find>
       <find>QuestionSearchServiceImpl</find>
       <find>QuestionManagerService</find>
@@ -275,6 +290,12 @@
       <find>onlines</find>
       <find>ChannelIdPool</find>
       <find>IllegalReferenceCountException</find>
+      <find>notEmpty</find>
+      <find>offer</find>
+      <find>poll</find>
+      <find>lock</find>
+      <find>http2</find>
+      <find>put</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -289,20 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/dao/enpity/exam/SelectQuesVO.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/SelectQuesVOMapper.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/mapper/exam/AnswerQuesVOMapper.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/utils/BusinessType.java" />
-        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/exam/impl/QuesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/ExamQuesSearchService.java" />
-        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/api/QuestionSearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tensor/org/api/exam/QuestionSearchService.java" />
-        <option value="$PROJECT_DIR$/exam/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/work/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/exam/src/main/java/com/tensor/org/exam/service/elastic/impl/ExamQuesSearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/CompilerResult.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/SimpleJavaFileObject.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/CompilerPool.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/JavaSourceObject.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/CompilerService.java" />
@@ -326,20 +333,34 @@
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/support/TensorClassLoader.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/support/ClassFileManager.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/compiler/support/CompilerPool.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/RateLimiter.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/ApiRate.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterConfigure.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/HttpServerConfigure.java" />
         <option value="$PROJECT_DIR$/web/src/test/java/TestString.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java" />
-        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java" />
         <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/cache/MybatisRedisCacheConfigure.java" />
+        <option value="$PROJECT_DIR$/api/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/work/build.gradle" />
+        <option value="$PROJECT_DIR$/web/build.gradle" />
+        <option value="$PROJECT_DIR$/user/build.gradle" />
+        <option value="$PROJECT_DIR$/exam/build.gradle" />
+        <option value="$PROJECT_DIR$/dao/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -357,6 +378,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,37 +390,7 @@
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -420,51 +413,6 @@
             <path>
               <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -472,159 +420,37 @@
               <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="work" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="false" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551192384414" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552040454981" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46013448" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -647,8 +473,9 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.22118863" />
   </component>
-  <component name="RunManager" selected="JUnit.TestString.test">
+  <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="dubbo-cloud" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -666,48 +493,48 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestString.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.tensor.org.web_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestString" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.tensor.org.dao_main" />
+      <module name="dao_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.dao.DaoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.tensor.org.exam_main" />
+      <module name="exam_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.exam.ExamApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.tensor.org.user_main" />
+      <module name="user_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.user.UserApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.tensor.org.web_main" />
+      <module name="web_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.web.WebApplication" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WorkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.tensor.org.work_main" />
+      <module name="work_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensor.org.work.WorkApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -719,11 +546,9 @@
       <item itemvalue="Spring Boot.WorkApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
       <item itemvalue="Spring Boot.WebApplication" />
-      <item itemvalue="JUnit.TestString.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestString.test" />
         <item itemvalue="Gradle.dubbo-cloud" />
       </list>
     </recent_temporary>
@@ -750,7 +575,16 @@
       <workItem from="1544583941982" duration="7191000" />
       <workItem from="1547448910976" duration="1636000" />
       <workItem from="1550989501289" duration="24495000" />
-      <workItem from="1551159608213" duration="22538000" />
+      <workItem from="1551159608213" duration="23081000" />
+      <workItem from="1551247170654" duration="13856000" />
+      <workItem from="1551272212761" duration="1804000" />
+      <workItem from="1551331414486" duration="1837000" />
+      <workItem from="1551589298414" duration="212000" />
+      <workItem from="1551945767899" duration="693000" />
+      <workItem from="1551950525197" duration="653000" />
+      <workItem from="1552011522157" duration="1011000" />
+      <workItem from="1552031983318" duration="1544000" />
+      <workItem from="1552035892139" duration="3148000" />
     </task>
     <servers />
   </component>
@@ -766,13 +600,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87155000" />
+    <option name="totallyTimeSpent" value="112456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="2005" height="1129" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23076923" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24401426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -787,11 +620,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49967128" weight="0.3297975" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49872643" weight="0.3297975" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297975" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49770758" weight="0.32883316" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50076413" side_tool="true" weight="0.3297975" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49923587" weight="0.3297975" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49821702" visible="true" weight="0.32883316" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501783" side_tool="true" weight="0.32883316" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49821702" weight="0.3297975" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32997763" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32997763" />
@@ -800,7 +633,7 @@
       <window_info anchor="bottom" id="Statistic" order="17" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="18" />
       <window_info anchor="bottom" id="JProfiler" order="19" />
-      <window_info anchor="bottom" id="Run Dashboard" order="20" weight="0.4165863" />
+      <window_info anchor="bottom" id="Run Dashboard" order="20" sideWeight="0.49974528" weight="0.4165863" />
       <window_info anchor="bottom" id="Docker" order="21" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -808,7 +641,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.32908812" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.29139072" />
       <window_info anchor="right" id="Database" order="7" weight="0.32959756" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -875,6 +708,168 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiFileRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/notice/NoticeHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="75" column="10" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/KafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaProducerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="69" lean-forward="true" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/file/FileHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/FileUploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/ArrayBlockingQueue.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/ConcurrentSkipListMap.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/locks/ReentrantLock.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.0.RELEASE/d62288e578b128c1be43de91cf65d6922220befb/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/web/server/Http2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/utils/JwtTokenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/com.tensor.org.api-v0.0.1.jar!/lombok/extern/slf4j/Slf4j.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="395" column="67" selection-start-line="395" selection-start-column="67" selection-end-line="395" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="1004" column="16" selection-start-line="1004" selection-start-column="13" selection-end-line="1004" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/bean/FileChunk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -882,246 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/7361b2e28910f2202851c14d4115435b248f668c/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/http/server/reactive/ReactorHttpHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.1.2.RELEASE/3e34ebb91a1c82ffc20108929644e4445572d2b6/spring-webflux-5.1.2.RELEASE-sources.jar!/org/springframework/web/reactive/function/server/RouterFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="195" column="65" lean-forward="true" selection-start-line="195" selection-start-column="65" selection-end-line="195" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/7361b2e28910f2202851c14d4115435b248f668c/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/web/server/adapter/HttpWebHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="251" column="101" selection-start-line="251" selection-start-column="101" selection-end-line="251" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.1.2.RELEASE/3e34ebb91a1c82ffc20108929644e4445572d2b6/spring-webflux-5.1.2.RELEASE-sources.jar!/org/springframework/web/reactive/config/WebFluxConfigurationSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="53" column="79" lean-forward="true" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/4f16a4df95fc152d71c9f334abb1f676ac3ec725/spring-jcl-5.1.2.RELEASE-sources.jar!/org/apache/commons/logging/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="186" column="9" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.1.2.RELEASE/3e34ebb91a1c82ffc20108929644e4445572d2b6/spring-webflux-5.1.2.RELEASE-sources.jar!/org/springframework/web/reactive/function/server/support/RouterFunctionMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HasRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/handler/exam/ExamHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/ApiRate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/aop/HttpFilterAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/GlobalExceptionConfigure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/security/SecurityConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/limiter/RateLimiterConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#4177#4178#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/TestString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/kafka/impl/KafkaConsumerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticePublishCenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="1341" column="16" selection-start-line="1341" selection-start-column="16" selection-end-line="1341" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelIdPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/util/AttributeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/util/ConstantPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/util/AttributeKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#1162#1367#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#1797#1798#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ChannelGroupTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiNoticeRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiLoginRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/router/ApiUserRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/DaoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-695">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1136,122 +895,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.29.Final/510fd5cf26024b39da89fb614e13f85a078a32e2/netty-common-4.1.29.Final-sources.jar!/io/netty/util/IllegalReferenceCountException.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/RouterFuncMapConfigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="675">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty/0.8.2.RELEASE/7189f41ca9d399854a72fb572df358c189d85fff/reactor-netty-0.8.2.RELEASE-sources.jar!/reactor/netty/ByteBufFlux.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/RegisterUrlContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="180" column="49" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/channel/ChannelFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/api/NoticePublishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/handler/logging/LoggingHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/channel/ChannelOutboundInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="229" column="18" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/buffer/DefaultByteBufHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/handler/codec/http/websocketx/TextWebSocketFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-636">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.29.Final/c929cb6cfd6e83a9d5532768177025896fce076b/netty-all-4.1.29.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyWebSocketChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="59" column="75" lean-forward="true" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/TcpServerConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/ClientChannelAttrManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/NoticeChannelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="45">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="5040">
+          <caret line="403" column="54" selection-start-line="403" selection-start-column="54" selection-end-line="403" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticePublishCenterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        <state relative-caret-position="345">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding>
             <element signature="e#1568#1569#0" expanded="true" />
             <element signature="e#1617#1618#0" expanded="true" />
@@ -1259,12 +947,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeConsumerCenterImpl.java">
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/service/socket/impl/NoticeChannelHandlerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="66" column="4" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/tensor/org/work/config/netty/NettyServerConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="72" column="72" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.6/bdf12283a2374b67a2411355947cd726bef6e800/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6000">
+          <caret line="612" column="27" selection-start-line="612" selection-start-column="27" selection-end-line="612" selection-end-column="27" />
+          <folding>
+            <element signature="e#21575#21576#0" expanded="true" />
+            <element signature="e#21607#21608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/tensor/org/web/config/filter/WebFluxFilterConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/tensor/org/dao/config/cache/MybatisRedisCacheConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>com.tensor.org.web_main|com.tensor.org.web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: org.projectlombok:lombok:1.18.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46013448" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

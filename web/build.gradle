@@ -1,27 +1,20 @@
+description = "Tensor Web"
+
 buildscript {
     ext {
         springBootVersion = '2.1.0.RELEASE'
     }
     repositories {
         mavenCentral()
+        maven { url 'https://projectlombok.org/edge-releases' }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
-apply plugin: 'java'
-apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-
-group = 'web'
-version = 'v0.0.1'
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
 
 configurations {
     compile.exclude	module:	"spring-boot-starter-tomcat"
@@ -29,7 +22,9 @@ configurations {
 
 dependencies {
 
-    compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
+//    compile fileTree(dir:'/Volumes/resources/code/IdeaProjects/dubbo-cloud/lib',include:['*.jar'])
+
+    compile(project(":api"))
 
     //    SpringBoot 核心依赖
     compile('org.springframework.boot:spring-boot-starter-web')
@@ -49,10 +44,6 @@ dependencies {
     implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
     //    apache common pool
     compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.6.0'
-    //    lombok插件
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
-    //    log4j日志架包
-    compile group: 'log4j', name: 'log4j', version: '1.2.17'
     //    spring 配置文件加密
     compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '2.1.0'
     //    编码相关

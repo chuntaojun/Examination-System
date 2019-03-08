@@ -1,6 +1,5 @@
 package com.tensor.org.web.handler.file;
 
-import com.alibaba.dubbo.common.utils.StringUtils;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.web.bean.FileChunk;
 import com.tensor.org.web.utils.FileUploadUtils;
