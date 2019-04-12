@@ -1,7 +1,5 @@
 package com.tensor.org.api.dao.enpity;
 
-import com.tensor.org.api.utils.BusinessType;
-
 import java.io.Serializable;
 
 /**

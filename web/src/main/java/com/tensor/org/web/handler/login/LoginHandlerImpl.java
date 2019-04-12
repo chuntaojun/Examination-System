@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
+import reactor.util.function.Tuples;
 
 import java.util.Optional;
 
@@ -34,12 +35,8 @@ public class LoginHandlerImpl implements LoginHandler {
     @Override
     public Mono<ServerResponse> login(ServerRequest request) {
         return request.bodyToMono(UserVO.class)
-                .map(userVO -> {
-                    final UserVO[] userDB = {null};
-                    Optional<ResultData<UserVO>> oneUserVO = Optional.ofNullable(userVODao.findOneUserVO(userVO.getAccount()));
-                    oneUserVO.ifPresent(userVOResultData -> userDB[0] = userVOResultData.getValue());
-                    return jwtTokenUtils.login(userVO, Optional.ofNullable(userDB[0])).createSign();
-                })
+                .map(userVO -> Tuples.of(userVO, userVODao.findOneUserVO(userVO.getAccount())))
+                .map(t -> jwtTokenUtils.login(t.getT1(), Optional.ofNullable(t.getT2().getValue())).createSign())
                 .flatMap(ResponseAdaperUtils::render);
     }
 

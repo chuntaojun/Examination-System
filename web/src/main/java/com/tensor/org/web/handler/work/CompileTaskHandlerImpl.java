@@ -20,7 +20,8 @@ public class CompileTaskHandlerImpl implements CompileTaskHandler {
 
     @Override
     public Mono<ServerResponse> compileWork(ServerRequest request) {
-        return request.bodyToMono(CompilerTaskPO.class).map(taskPO -> compilerTaskService.createCompilerTask(taskPO))
+        return request.bodyToMono(CompilerTaskPO.class)
+                .map(taskPO -> compilerTaskService.createCompilerTask(taskPO))
                 .map(Mono::just)
                 .flatMap(ResponseAdaperUtils::render);
     }

@@ -3,13 +3,13 @@ package com.tensor.org.exam.api;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.SearchConditionPO;
-import com.tensor.org.api.dao.enpity.exam.QuestionPackage;
 import com.tensor.org.api.exam.QuestionSearchService;
 import com.tensor.org.exam.service.elastic.impl.ExamQuesSearchServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+
 
 /**
  * @author liaochuntao

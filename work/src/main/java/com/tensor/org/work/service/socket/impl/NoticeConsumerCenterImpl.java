@@ -13,6 +13,7 @@ import javax.annotation.PostConstruct;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Predicate;
 
 /**
  * 通知消费者中心，websocket channel从这里获取信息进行消费
@@ -77,13 +78,12 @@ public class NoticeConsumerCenterImpl extends Observable implements NoticeConsum
          */
         @Override
         public void run() {
+            Predicate p = (Object s) -> s != null;
             HashSet<String> receivers = new HashSet<>();
             noticePackage.getReceivers()
-                    .parallelStream()
-                    .filter(receiver -> ONLINE_PEOPLES.contains(receiver))
-                    .peek(receiver -> {
-                        receivers.add(receiver);
-                    })
+                    .stream()
+                    .filter(ONLINE_PEOPLES::contains)
+                    .peek(receivers::add)
                     .count();
             receivers.remove(noticeChannelHandler.publishMsg(noticePackage, receivers));
             noticePackage.getReceivers().removeAll(receivers);

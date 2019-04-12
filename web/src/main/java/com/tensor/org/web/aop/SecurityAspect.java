@@ -15,7 +15,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 
 import java.lang.reflect.Method;
+import java.sql.Driver;
 import java.util.Optional;
+import java.util.concurrent.ForkJoinPool;
+import java.util.function.Predicate;
 
 /**
  * @author liaochuntao
@@ -30,7 +33,7 @@ public class SecurityAspect {
     @Pointcut("execution(* com.tensor.org.web.handler..*.*(..))")
     public void securityHandler() {}
 
-//    @Before("securityHandler()")
+    @Before("securityHandler()")
     public void beforeExecute(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         ServerRequest request = (ServerRequest) joinPoint.getArgs()[0];

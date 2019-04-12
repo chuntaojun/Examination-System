@@ -5,13 +5,14 @@ import com.tensor.org.api.dao.enpity.SearchConditionPO;
 import com.tensor.org.api.dao.enpity.exam.QuestionPackage;
 import com.tensor.org.api.exam.QuestionManagerService;
 import com.tensor.org.api.exam.QuestionSearchService;
+import com.tensor.org.web.aop.RateLimiter;
+import com.tensor.org.web.utils.LogUtils;
 import com.tensor.org.web.utils.ResponseAdaperUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
-
 
 /**
  * @author liaochuntao
@@ -26,13 +27,11 @@ public class ExamHandlerImpl implements ExamHandler {
     @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.exam}", timeout = 5000)
     private QuestionManagerService questionManagerService;
 
+    @RateLimiter()
     @Override
     public Mono<ServerResponse> addQues(ServerRequest request) {
         return request.bodyToMono(QuestionPackage.class)
-                .map(questionPackage -> {
-                    log.info("QuestionPackage : {}", questionPackage);
-                    return questionPackage;
-                })
+                .map(questionPackage -> new LogUtils<Object, QuestionPackage>().apply(questionPackage))
                 .map(questionPackage -> Mono.justOrEmpty(questionManagerService.saveQuesCurd(questionPackage)))
                 .flatMap(ResponseAdaperUtils::render);
     }
@@ -44,6 +43,6 @@ public class ExamHandlerImpl implements ExamHandler {
                 .map(ResponseAdaperUtils::change)
                 .map(Mono::justOrEmpty)
                 .flatMap(ResponseAdaperUtils::render);
-
     }
+
 }

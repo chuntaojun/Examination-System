@@ -5,14 +5,14 @@ package com.tensor.org.dao.config;
  */
 public class JdbcContextHolder {
 
-    private final static ThreadLocal<String> dbChose = new ThreadLocal<>();
+    private final static ThreadLocal<String> DB_CHOSE = ThreadLocal.withInitial(DataSourceType.MASTER_DB::getType);
 
-    public static String get() {
-        return dbChose.get();
+    static String get() {
+        return DB_CHOSE.get();
     }
 
     public static void set(DataSourceType dbType) {
-        dbChose.set(dbType.getType());
+        DB_CHOSE.set(dbType.getType());
     }
 
 }

@@ -23,8 +23,6 @@ import java.util.function.Predicate;
 @Aspect
 public class HttpFilterAspect {
 
-
-
     @Autowired private RegisterUrlContainer registerUrlContainer;
 
     private Predicate<PathPattern.PathMatchInfo> matchInfoPredicate = Objects::nonNull;
