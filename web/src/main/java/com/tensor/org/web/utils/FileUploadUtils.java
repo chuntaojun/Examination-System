@@ -1,8 +1,8 @@
 package com.tensor.org.web.utils;
 
-import com.alibaba.dubbo.common.utils.StringUtils;
 import com.tensor.org.api.ResultData;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.common.utils.StringUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.codec.multipart.FilePart;
 

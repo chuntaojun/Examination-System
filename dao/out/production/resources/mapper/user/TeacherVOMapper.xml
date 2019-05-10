@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tensor.org.dao.mapper.user.TeacherVOMapper">
+    <resultMap id="TeacherResultMap" type="com.tensor.org.api.dao.enpity.user.TeacherVO">
+        <id column="teacher_no" jdbcType="VARCHAR" property="teacherNo"/>
+        <result column="teacher_real_name" jdbcType="VARCHAR" property="teacherRealName"/>
+        <result column="user_id" jdbcType="VARCHAR" property="publisher"/>
+        <collection property="organizationVOS" column="teacher_no"
+                    fetchType="lazy"
+                    select="com.tensor.org.dao.mapper.organization.OrganizationVOMapper.findAllByTeacherNo" />
+    </resultMap>
+
+    <!--根据教师编号查找教师账户-->
+    <select id="findOneTeacherVO" resultType="com.tensor.org.api.dao.enpity.user.TeacherVO">
+        select * from user_account u left join teacher t on u.user_id=t.user_id where teacher_no = #{teacherNo}
+    </select>
+
+    <!--查找所有的教师账户-->
+    <select id="findAllTeacherVO" resultType="com.tensor.org.api.dao.enpity.user.TeacherVO">
+        select * from user_account u left join teacher t on u.user_id=t.user_id
+    </select>
+
+    <!--添加教师信息-->
+    <insert id="saveTeacherVO" parameterType="com.tensor.org.api.dao.enpity.user.TeacherVO">
+        insert into
+          teacher(teacher_no, teacher_real_name, user_id)
+        value (
+          #{teacherVO.teacherNo},
+          #{teacherVO.teacherRealName},
+          #{teacherVO.publisher}
+        )
+    </insert>
+
+    <!--更新教师信息-->
+    <update id="updateTeacherVO">
+        update teacher
+        <set>
+            <if test="teacherVO.teacherRealName != null and teacherVO.teacherRealName != ''">
+                teacher_real_name = #{teacherVO.teacherRealName}
+            </if>
+        </set>
+    </update>
+
+</mapper>
