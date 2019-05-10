@@ -28,9 +28,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
     //    SpringBoot kafka依赖
     compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.2.0.RELEASE'
-    //    阿里 Dubbo 依赖
-    compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'
-    implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
+
     //    log4j日志架包
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }

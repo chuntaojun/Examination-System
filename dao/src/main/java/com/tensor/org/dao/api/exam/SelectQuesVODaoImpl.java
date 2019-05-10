@@ -1,11 +1,11 @@
 package com.tensor.org.dao.api.exam;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.exam.SelectQuesVO;
 import com.tensor.org.api.dao.exam.SelectQuesVODao;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -15,7 +15,8 @@ import java.util.List;
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}")
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class SelectQuesVODaoImpl implements SelectQuesVODao {
     @Override
     public ResultData<SelectQuesVO> findSelectQuesVOById(String s) {

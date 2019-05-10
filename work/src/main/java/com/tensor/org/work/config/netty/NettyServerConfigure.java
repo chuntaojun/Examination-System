@@ -69,8 +69,7 @@ public class NettyServerConfigure {
         Map<ChannelOption<?>, Object> options = new HashMap<>(4);
         options.put(ChannelOption.SO_KEEPALIVE, keepAlive);
         options.put(ChannelOption.SO_BACKLOG, backlog);
-        options.put(ChannelOption.WRITE_BUFFER_HIGH_WATER_MARK, 64 * 1024);
-        options.put(ChannelOption.WRITE_BUFFER_LOW_WATER_MARK, 32 * 1024);
+        options.put(ChannelOption.WRITE_BUFFER_WATER_MARK, 64 * 1024);
         return options;
     }
 

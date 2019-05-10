@@ -1,10 +1,10 @@
 package com.tensor.org.dao.api.exam;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.exam.ExamVO;
 import com.tensor.org.api.dao.exam.ExamVODao;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,7 +16,8 @@ import java.util.List;
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}")
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class ExamVODaoImpl implements ExamVODao {
 
     @Override

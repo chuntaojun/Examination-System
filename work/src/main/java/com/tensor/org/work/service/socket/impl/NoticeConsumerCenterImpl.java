@@ -1,11 +1,11 @@
 package com.tensor.org.work.service.socket.impl;
 
-import com.alibaba.dubbo.common.utils.ConcurrentHashSet;
 import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.work.service.socket.NoticeChannelHandler;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.common.utils.ConcurrentHashSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

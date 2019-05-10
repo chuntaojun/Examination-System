@@ -14,8 +14,8 @@ import com.tensor.org.api.utils.CurdTypeEnum;
 import com.tensor.org.exam.service.elastic.ExamQuesSearchService;
 import com.tensor.org.exam.service.exam.QuesService;
 import com.tensor.org.exam.utils.Utils;
+import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.extern.slf4j.Slf4j;
-import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -63,7 +63,7 @@ public class QuesServiceImpl implements QuesService {
             questionPackage.setQuesId(((JudgeQuesVO) ques).getId());
             resultData = judgeQuesVODao.save((JudgeQuesVO) ques, CurdTypeEnum.INSERT.getValue());
         }
-        if (resultData.getCode() == HttpResponseStatus.OK.getCode()) {
+        if (resultData.getCode() == HttpResponseStatus.OK.code()) {
             quesSearchService.save(questionPackage);
         }
         return resultData;

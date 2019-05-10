@@ -17,7 +17,7 @@ public interface UserVODao {
      * @param login
      * @return
      */
-    ResultData<UserVO> findOneUserVO(String login);
+    ResultData findOneUserVO(String login);
 
     /**
      * 获取所有的账户信息

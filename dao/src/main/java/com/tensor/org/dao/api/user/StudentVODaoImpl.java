@@ -1,11 +1,11 @@
 package com.tensor.org.dao.api.user;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.user.StudentVO;
 import com.tensor.org.dao.aop.Dynamic;
 import com.tensor.org.dao.config.DataSourceType;
 import com.tensor.org.dao.mapper.user.StudentVOMapper;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,7 +19,8 @@ import java.util.List;
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}")
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class StudentVODaoImpl implements com.tensor.org.api.dao.user.StudentVODao {
 
     @Resource private StudentVOMapper studentVOMapper;

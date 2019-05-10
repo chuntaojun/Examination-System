@@ -1,12 +1,12 @@
 package com.tensor.org.dao.api.log;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.Page;
 import com.tensor.org.api.dao.enpity.log.LogApiRequestPO;
 import com.tensor.org.api.dao.log.ApiRequestDao;
 import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.dao.mapper.log.ApiRequestPOMapper;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.stereotype.Component;
@@ -21,14 +21,15 @@ import java.util.List;
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}")
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class LogApiRequestDaoImpl implements ApiRequestDao {
 
     @Resource private ApiRequestPOMapper apiRequestPOMapper;
     @Autowired private ReactiveMongoTemplate reactiveMongoTemplate;
 
     @Override
-    public ResultData<String> save(String s) {
+    public ResultData save(String s) {
         return apiRequestPOMapper.save((LogApiRequestPO) JsonUtils.toObj(s, LogApiRequestPO.class))
                 .map(logApiRequestPO -> ResultData.builder().value(JsonUtils.toJson(logApiRequestPO)).builded())
                 .block();

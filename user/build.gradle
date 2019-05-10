@@ -22,7 +22,5 @@ dependencies {
 
     //    SpringBoot依赖(核心)
     implementation('org.springframework.boot:spring-boot-starter')
-    //    阿里Dubbo
-    compile group: 'com.alibaba.boot', name: 'dubbo-spring-boot-starter', version: '0.2.0'
-    implementation group: 'com.alibaba', name: 'dubbo', version: '2.6.4'
+
 }

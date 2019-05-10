@@ -1,6 +1,5 @@
 package com.tensor.org.work.service.socket.impl;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.tensor.org.api.dao.log.NoticeDao;
 import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
 import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
@@ -10,6 +9,7 @@ import com.tensor.org.work.service.kafka.KafkaProducer;
 import com.tensor.org.work.service.socket.NoticeConsumerCenter;
 import com.tensor.org.work.service.socket.NoticePublishCenter;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -32,7 +32,7 @@ public class NoticePublishCenterImpl extends Observable implements NoticePublish
     @Value("${kafka.consumer.topic.notice}")
     private String kafkaTopicNotice;
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.dao}")
+    @Reference(version = "1.0.0", application = "${dubbo.application.id}")
     private NoticeDao noticeDao;
 
     @Autowired

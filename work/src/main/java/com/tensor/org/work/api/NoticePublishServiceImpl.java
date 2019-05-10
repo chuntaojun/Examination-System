@@ -1,7 +1,5 @@
 package com.tensor.org.work.api;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.config.annotation.Service;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.notice.KafkaMsg;
 import com.tensor.org.api.dao.enpity.notice.KafkaPackage;
@@ -12,6 +10,8 @@ import com.tensor.org.api.utils.JsonUtils;
 import com.tensor.org.work.service.kafka.KafkaProducer;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -27,14 +27,15 @@ import java.util.UUID;
 @Slf4j
 @Component
 @Service(version = "1.0.0",
-         application = "${dubbo.application.id}",
-         protocol = "${dubbo.protocol.id}",
-         registry = "${dubbo.registry.id}")
+        application = "${dubbo.application.id}",
+        protocol = "${dubbo.protocol.id}",
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class NoticePublishServiceImpl implements NoticeService {
 
     @Value("${kafka.consumer.topic.notice}") private String kafkaTopicNotice;
 
-    @Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "${dubbo.provider.url.dao}")
+    @Reference(version = "1.0.0", application = "dubbo-provider-dao")
     private NoticeDao noticeDao;
 
     @Autowired private KafkaProducer kafkaProducer;

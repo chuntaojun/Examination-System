@@ -1,7 +1,6 @@
 package com.tensor.org.api;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * 全局设置返回消息包装类
@@ -52,38 +51,38 @@ public class ResultData<V> implements Serializable {
         this.value = value;
     }
 
-    public static <V> Builder<V> builder() {
-        return new Builder<V>();
+    public static  Builder builder() {
+        return new Builder();
     }
 
     /**
      * 建造者模式
-     * @param <V>
+     * @param 
      */
     public static class Builder<V> {
 
-        private ResultData<V> resultData;
+        private ResultData resultData;
 
         Builder() {
-            resultData = new ResultData<V>();
+            resultData = new ResultData();
         }
 
-        public Builder<V> code(int code) {
+        public Builder code(int code) {
             resultData.code = code;
             return this;
         }
 
-        public Builder<V> errMsg(String errMsg) {
+        public Builder errMsg(String errMsg) {
             resultData.errMsg = errMsg;
             return this;
         }
 
-        public Builder<V> value(V value) {
+        public Builder value(V value) {
             resultData.value = value;
             return this;
         }
 
-        public ResultData<V> builded() {
+        public ResultData builded() {
             return resultData;
         }
     }

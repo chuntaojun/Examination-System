@@ -36,7 +36,7 @@ public class LoginHandlerImpl implements LoginHandler {
     public Mono<ServerResponse> login(ServerRequest request) {
         return request.bodyToMono(UserVO.class)
                 .map(userVO -> Tuples.of(userVO, userVODao.findOneUserVO(userVO.getAccount())))
-                .map(t -> jwtTokenUtils.login(t.getT1(), Optional.ofNullable(t.getT2().getValue())).createSign())
+                .map(t -> jwtTokenUtils.login(t.getT1(), Optional.ofNullable((UserVO) t.getT2().getValue())).createSign())
                 .flatMap(ResponseAdaperUtils::render);
     }
 

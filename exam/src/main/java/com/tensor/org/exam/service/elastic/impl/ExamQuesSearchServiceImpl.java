@@ -42,7 +42,7 @@ public class ExamQuesSearchServiceImpl implements ExamQuesSearchService {
     }
 
     @Override
-    public ResultData<List> findQuesFuzzy(SearchConditionPO searchConditionPO) {
+    public ResultData findQuesFuzzy(SearchConditionPO searchConditionPO) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(QueryBuilders
                         .functionScoreQuery(QueryBuilders

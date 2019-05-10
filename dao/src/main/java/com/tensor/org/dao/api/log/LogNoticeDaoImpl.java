@@ -1,13 +1,12 @@
 package com.tensor.org.dao.api.log;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.mongodb.client.result.UpdateResult;
 import com.tensor.org.api.ResultData;
 import com.tensor.org.api.dao.enpity.notice.NoticePackage;
 import com.tensor.org.api.dao.log.NoticeDao;
 import com.tensor.org.dao.mapper.log.NoticeLogPOMapper;
 import com.tensor.org.dao.mongo.MongoQueryField;
-import org.jboss.netty.handler.codec.http.HttpResponseStatus;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -25,19 +24,20 @@ import javax.annotation.Resource;
 @Service(version = "1.0.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}")
+        registry = "${dubbo.registry.id}",
+        filter = "tracing")
 public class LogNoticeDaoImpl implements NoticeDao {
 
     @Resource
     private NoticeLogPOMapper noticeLogPOMapper;
+
     @Autowired private ReactiveMongoTemplate reactiveMongoTemplate;
 
     @Override
-    public ResultData<NoticePackage> save(NoticePackage noticePackage) {
+    public ResultData save(NoticePackage noticePackage) {
         return noticeLogPOMapper.save(noticePackage)
                 .map(noticePackage1 -> ResultData.builder()
-                        .code(noticePackage1 == null ?
-                                HttpResponseStatus.BAD_REQUEST.getCode() : HttpResponseStatus.OK.getCode())
+                        .code(noticePackage1 == null ? 403 : 200)
                         .value(noticePackage)
                         .builded()).block();
     }
